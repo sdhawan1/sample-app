@@ -43,3 +43,12 @@ Completed 200 OK in 28ms (Views: 27.8ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/" for 127.0.0.1 at 2015-04-01 18:39:42 -0400
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (586.1ms)
+Completed 200 OK in 6154ms (Views: 5694.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-01 18:40:48 -0400
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 2569ms (Views: 2567.9ms | ActiveRecord: 0.0ms)
