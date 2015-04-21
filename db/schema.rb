@@ -11,7 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150409175612) do
+ActiveRecord::Schema.define(version: 20150421030054) do
+
+  create_table "professors", force: :cascade do |t|
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "netid"
+    t.string   "department"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "professors", ["netid"], name: "index_professors_on_netid", unique: true
 
   create_table "users", force: :cascade do |t|
     t.string   "name"

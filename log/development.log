@@ -5356,3 +5356,762 @@ Completed 200 OK in 2133ms (Views: 2118.4ms | ActiveRecord: 10.0ms)
 
 
 Started GET "/assets/static_pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-09 14:21:52 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateProfessors (20150421024656)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.7ms)[0m  [1mCREATE TABLE "professors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "last_name" varchar, "netid" varchar, "department" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150421024656"]]
+  [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddIndexToProfessorsNetid (20150421030054)
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  CREATE UNIQUE INDEX "index_professors_on_netid" ON "professors" ("netid")
+  [1m[36mSQL (3.9ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150421030054"]]
+  [1m[35m (12.4ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_professors_on_netid' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_professors_on_netid' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-20 23:09:53 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (36.1ms)
+  Rendered layouts/_shim.html.erb (1.1ms)
+  Rendered layouts/_header.html.erb (39.3ms)
+  Rendered layouts/_footer.html.erb (1.2ms)
+Completed 200 OK in 15834ms (Views: 15797.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom-53f59fc9def409f9dde5e3a0bbf2ef8f.css?body=1" for 127.0.0.1 at 2015-04-20 23:10:12 -0400
+
+
+Started GET "/assets/professors-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-20 23:10:12 -0400
+
+
+Started GET "/assets/application-1dc460c656d7a69cbcc7f1b213b7bf17.css?body=1" for 127.0.0.1 at 2015-04-20 23:10:12 -0400
+
+
+Started GET "/assets/application-54813782a825e6384ee029453c2f2071.js?body=1" for 127.0.0.1 at 2015-04-20 23:10:12 -0400
+
+
+Started GET "/assets/professors-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-20 23:10:13 -0400
+
+
+Started GET "/assets/static_pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-20 23:10:13 -0400
+
+
+Started GET "/professos" for 127.0.0.1 at 2015-04-20 23:10:28 -0400
+
+ActionController::RoutingError (No route matches [GET] "/professos"):
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:22:in `middleware_call'
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /home/cindy/.rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/cindy/.rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/cindy/.rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/cindy/.gem/ruby/2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (65.5ms)
+  Rendered /home/cindy/.gem/ruby/2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (776.6ms)
+
+
+Started GET "/professors" for 127.0.0.1 at 2015-04-20 23:10:33 -0400
+
+ActionController::RoutingError (No route matches [GET] "/professors"):
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:22:in `middleware_call'
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /home/cindy/.rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/cindy/.rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/cindy/.rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/cindy/.gem/ruby/2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (24.5ms)
+  Rendered /home/cindy/.gem/ruby/2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (146.9ms)
+
+
+Started GET "/professors/new" for 127.0.0.1 at 2015-04-20 23:10:38 -0400
+Processing by ProfessorsController#new as HTML
+  Rendered professors/new.html.erb within layouts/application (6.1ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (7.1ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 1955ms (Views: 1929.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static_pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-20 23:10:41 -0400
+
+
+Started GET "/assets/static_pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-20 23:19:36 -0400
+  [1m[36m (0.9ms)[0m  [1mbegin transaction[0m
+  [1m[35mProfessor Exists (0.3ms)[0m  SELECT  1 AS one FROM "professors" WHERE "professors"."netid" = 'sbhatt' LIMIT 1
+  [1m[36mSQL (19.1ms)[0m  [1mINSERT INTO "professors" ("first_name", "last_name", "netid", "department", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Swati"], ["last_name", "Bhatt"], ["netid", "sbhatt"], ["department", "Economics"], ["created_at", "2015-04-21 03:24:36.091300"], ["updated_at", "2015-04-21 03:24:36.091300"]]
+  [1m[35m (7.0ms)[0m  commit transaction
+
+
+Started GET "/professors/1" for 127.0.0.1 at 2015-04-20 23:33:59 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProfessorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProfessor Load (0.9ms)[0m  SELECT  "professors".* FROM "professors" WHERE "professors"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered professors/show.html.erb within layouts/application (6.4ms)
+  Rendered layouts/_shim.html.erb (1.2ms)
+  Rendered layouts/_header.html.erb (13.7ms)
+  Rendered layouts/_footer.html.erb (1.7ms)
+Completed 200 OK in 1130ms (Views: 969.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/custom-53f59fc9def409f9dde5e3a0bbf2ef8f.css?body=1" for 127.0.0.1 at 2015-04-20 23:34:02 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-20 23:34:02 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-20 23:34:02 -0400
+
+
+Started GET "/assets/professors-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-20 23:34:02 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-20 23:34:02 -0400
+
+
+Started GET "/assets/application-1dc460c656d7a69cbcc7f1b213b7bf17.css?body=1" for 127.0.0.1 at 2015-04-20 23:34:02 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-20 23:34:03 -0400
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for 127.0.0.1 at 2015-04-20 23:34:03 -0400
+
+
+Started GET "/assets/turbolinks-d9dcd5206ee131f11181e8ca09537148.js?body=1" for 127.0.0.1 at 2015-04-20 23:34:03 -0400
+
+
+Started GET "/assets/professors-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-20 23:34:03 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-20 23:34:03 -0400
+
+
+Started GET "/assets/static_pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-20 23:34:03 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-20 23:34:03 -0400
+
+
+Started GET "/assets/application-54813782a825e6384ee029453c2f2071.js?body=1" for 127.0.0.1 at 2015-04-20 23:34:03 -0400
+
+
+Started GET "/assets/static_pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-20 23:34:03 -0400
+
+
+Started GET "/professors/1" for 127.0.0.1 at 2015-04-20 23:41:31 -0400
+Processing by ProfessorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProfessor Load (17.3ms)[0m  [1mSELECT  "professors".* FROM "professors" WHERE "professors"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered professors/show.html.erb within layouts/application (70.1ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (2.6ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 3116ms (Views: 2904.4ms | ActiveRecord: 17.3ms)
+
+
+Started GET "/assets/custom-53f59fc9def409f9dde5e3a0bbf2ef8f.css?body=1" for 127.0.0.1 at 2015-04-20 23:41:35 -0400
+
+
+Started GET "/assets/application-1dc460c656d7a69cbcc7f1b213b7bf17.css?body=1" for 127.0.0.1 at 2015-04-20 23:41:35 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-20 23:41:35 -0400
+
+
+Started GET "/assets/static_pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-20 23:41:35 -0400
+
+
+Started GET "/assets/professors-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-20 23:41:35 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-20 23:41:35 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-20 23:41:35 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-20 23:41:36 -0400
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for 127.0.0.1 at 2015-04-20 23:41:36 -0400
+
+
+Started GET "/assets/turbolinks-d9dcd5206ee131f11181e8ca09537148.js?body=1" for 127.0.0.1 at 2015-04-20 23:41:36 -0400
+
+
+Started GET "/assets/professors-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-20 23:41:36 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-20 23:41:36 -0400
+
+
+Started GET "/assets/static_pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-20 23:41:36 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-20 23:41:36 -0400
+
+
+Started GET "/assets/application-54813782a825e6384ee029453c2f2071.js?body=1" for 127.0.0.1 at 2015-04-20 23:41:36 -0400
+
+
+Started GET "/professors/new" for 127.0.0.1 at 2015-04-20 23:52:17 -0400
+Processing by ProfessorsController#new as HTML
+  Rendered professors/new.html.erb within layouts/application (630.7ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (4.5ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 2563ms (Views: 2266.6ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/assets/custom-53f59fc9def409f9dde5e3a0bbf2ef8f.css?body=1" for 127.0.0.1 at 2015-04-20 23:52:23 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-20 23:52:23 -0400
+
+
+Started GET "/assets/professors-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-20 23:52:23 -0400
+
+
+Started GET "/assets/static_pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-20 23:52:23 -0400
+
+
+Started GET "/assets/application-1dc460c656d7a69cbcc7f1b213b7bf17.css?body=1" for 127.0.0.1 at 2015-04-20 23:52:23 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-20 23:52:23 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-20 23:52:23 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-20 23:52:23 -0400
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for 127.0.0.1 at 2015-04-20 23:52:23 -0400
+
+
+Started GET "/assets/turbolinks-d9dcd5206ee131f11181e8ca09537148.js?body=1" for 127.0.0.1 at 2015-04-20 23:52:23 -0400
+
+
+Started GET "/assets/professors-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-20 23:52:24 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-20 23:52:24 -0400
+
+
+Started GET "/assets/static_pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-20 23:52:24 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-20 23:52:24 -0400
+
+
+Started GET "/assets/application-54813782a825e6384ee029453c2f2071.js?body=1" for 127.0.0.1 at 2015-04-20 23:52:24 -0400
+
+
+Started POST "/professors" for 127.0.0.1 at 2015-04-21 00:02:28 -0400
+Processing by ProfessorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BDdsQSSQdxZgnBFfE4//TVCbVkSpPCdnRgf+CikzPann449uyLEWas6GTpMtv6//ShSeCHTMkF59q1wGHYfwuw==", "professor"=>{"first_name"=>"", "last_name"=>"", "netid"=>"", "department"=>""}, "commit"=>"Add advisor"}
+Completed 500 Internal Server Error in 192ms
+
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  app/controllers/professors_controller.rb:12:in `create'
+
+
+  Rendered /home/cindy/.gem/ruby/2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_source.erb (74.4ms)
+  Rendered /home/cindy/.gem/ruby/2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (58.2ms)
+  Rendered /home/cindy/.gem/ruby/2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (21.0ms)
+  Rendered /home/cindy/.gem/ruby/2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_web_console.html.erb (2.3ms)
+  Rendered /home/cindy/.gem/ruby/2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (282.5ms)
+
+
+Started GET "/professors/new" for 127.0.0.1 at 2015-04-21 00:02:38 -0400
+Processing by ProfessorsController#new as HTML
+  Rendered professors/new.html.erb within layouts/application (43.6ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (2.6ms)
+  Rendered layouts/_footer.html.erb (1.7ms)
+Completed 200 OK in 984ms (Views: 962.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom-53f59fc9def409f9dde5e3a0bbf2ef8f.css?body=1" for 127.0.0.1 at 2015-04-21 00:02:39 -0400
+
+
+Started GET "/assets/professors-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-21 00:02:39 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-21 00:02:39 -0400
+
+
+Started GET "/assets/static_pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-21 00:02:39 -0400
+
+
+Started GET "/assets/application-1dc460c656d7a69cbcc7f1b213b7bf17.css?body=1" for 127.0.0.1 at 2015-04-21 00:02:39 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-21 00:02:39 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-21 00:02:39 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-21 00:02:39 -0400
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for 127.0.0.1 at 2015-04-21 00:02:39 -0400
+
+
+Started GET "/assets/turbolinks-d9dcd5206ee131f11181e8ca09537148.js?body=1" for 127.0.0.1 at 2015-04-21 00:02:39 -0400
+
+
+Started GET "/assets/professors-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-21 00:02:39 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-21 00:02:39 -0400
+
+
+Started GET "/assets/static_pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-21 00:02:39 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-21 00:02:39 -0400
+
+
+Started GET "/assets/application-54813782a825e6384ee029453c2f2071.js?body=1" for 127.0.0.1 at 2015-04-21 00:02:39 -0400
+
+
+Started GET "/professors/new" for 127.0.0.1 at 2015-04-21 00:09:44 -0400
+Processing by ProfessorsController#new as HTML
+  Rendered professors/new.html.erb within layouts/application (35.1ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (18.5ms)
+Completed 200 OK in 2144ms (Views: 1916.6ms | ActiveRecord: 16.3ms)
+
+
+Started GET "/assets/custom-53f59fc9def409f9dde5e3a0bbf2ef8f.css?body=1" for 127.0.0.1 at 2015-04-21 00:09:49 -0400
+
+
+Started GET "/assets/professors-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-21 00:09:49 -0400
+
+
+Started GET "/assets/static_pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-21 00:09:49 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-21 00:09:49 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-21 00:09:49 -0400
+
+
+Started GET "/assets/application-1dc460c656d7a69cbcc7f1b213b7bf17.css?body=1" for 127.0.0.1 at 2015-04-21 00:09:49 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-21 00:09:49 -0400
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for 127.0.0.1 at 2015-04-21 00:09:49 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-21 00:09:49 -0400
+
+
+Started GET "/assets/turbolinks-d9dcd5206ee131f11181e8ca09537148.js?body=1" for 127.0.0.1 at 2015-04-21 00:09:49 -0400
+
+
+Started GET "/assets/professors-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-21 00:09:49 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-21 00:09:49 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-21 00:09:49 -0400
+
+
+Started GET "/assets/static_pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-21 00:09:49 -0400
+
+
+Started GET "/assets/application-54813782a825e6384ee029453c2f2071.js?body=1" for 127.0.0.1 at 2015-04-21 00:09:49 -0400
+
+
+Started GET "/professors/new" for 127.0.0.1 at 2015-04-21 00:18:19 -0400
+Processing by ProfessorsController#new as HTML
+  Rendered shared/_error_messages_professors.html.erb (17.6ms)
+  Rendered professors/new.html.erb within layouts/application (235.4ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (22.0ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 2098ms (Views: 1951.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom-53f59fc9def409f9dde5e3a0bbf2ef8f.css?body=1" for 127.0.0.1 at 2015-04-21 00:18:22 -0400
+
+
+Started GET "/assets/static_pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-21 00:18:22 -0400
+
+
+Started GET "/assets/professors-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-21 00:18:23 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-21 00:18:23 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-21 00:18:23 -0400
+
+
+Started GET "/assets/application-1dc460c656d7a69cbcc7f1b213b7bf17.css?body=1" for 127.0.0.1 at 2015-04-21 00:18:23 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-21 00:18:23 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-21 00:18:23 -0400
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for 127.0.0.1 at 2015-04-21 00:18:23 -0400
+
+
+Started GET "/assets/turbolinks-d9dcd5206ee131f11181e8ca09537148.js?body=1" for 127.0.0.1 at 2015-04-21 00:18:23 -0400
+
+
+Started GET "/assets/professors-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-21 00:18:23 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-21 00:18:23 -0400
+
+
+Started GET "/assets/static_pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-21 00:18:23 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-21 00:18:23 -0400
+
+
+Started GET "/assets/application-54813782a825e6384ee029453c2f2071.js?body=1" for 127.0.0.1 at 2015-04-21 00:18:23 -0400
+
+
+Started POST "/professors" for 127.0.0.1 at 2015-04-21 00:18:27 -0400
+Processing by ProfessorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pUcDnyXyfw46wZ7vDw/YVMHhUOvi9GqVusMEK4KmgaJGk+CwydMecpTbwSMxP4jm226Ypz8E3ayBb6YnthJMsA==", "professor"=>{"first_name"=>"", "last_name"=>"", "netid"=>"", "department"=>""}, "commit"=>"Add advisor"}
+  [1m[35m (8.5ms)[0m  begin transaction
+  [1m[36mProfessor Exists (4.5ms)[0m  [1mSELECT  1 AS one FROM "professors" WHERE "professors"."netid" = '' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  Rendered shared/_error_messages_professors.html.erb (13.7ms)
+  Rendered professors/new.html.erb within layouts/application (43.8ms)
+Completed 500 Internal Server Error in 2231ms
+
+NoMethodError (undefined method `errors' for nil:NilClass):
+  app/views/shared/_error_messages_professors.html.erb:4:in `_app_views_shared__error_messages_professors_html_erb__90788043516180336_70338055409260'
+  app/views/professors/new.html.erb:6:in `block in _app_views_professors_new_html_erb__1657586299723439905_70338055477580'
+  app/views/professors/new.html.erb:5:in `_app_views_professors_new_html_erb__1657586299723439905_70338055477580'
+  app/controllers/professors_controller.rb:16:in `create'
+
+
+  Rendered /home/cindy/.gem/ruby/2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_source.erb (24.9ms)
+  Rendered /home/cindy/.gem/ruby/2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (19.2ms)
+  Rendered /home/cindy/.gem/ruby/2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (8.3ms)
+  Rendered /home/cindy/.gem/ruby/2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_web_console.html.erb (5.6ms)
+  Rendered /home/cindy/.gem/ruby/2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (144.2ms)
+
+
+Started GET "/professors/new" for 127.0.0.1 at 2015-04-21 00:18:41 -0400
+Processing by ProfessorsController#new as HTML
+  Rendered shared/_error_messages_professors.html.erb (0.2ms)
+  Rendered professors/new.html.erb within layouts/application (11.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 588ms (Views: 581.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom-53f59fc9def409f9dde5e3a0bbf2ef8f.css?body=1" for 127.0.0.1 at 2015-04-21 00:18:43 -0400
+
+
+Started GET "/assets/professors-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-21 00:18:43 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-21 00:18:43 -0400
+
+
+Started GET "/assets/application-1dc460c656d7a69cbcc7f1b213b7bf17.css?body=1" for 127.0.0.1 at 2015-04-21 00:18:43 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-21 00:18:43 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-21 00:18:43 -0400
+
+
+Started GET "/assets/static_pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-21 00:18:43 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-21 00:18:43 -0400
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for 127.0.0.1 at 2015-04-21 00:18:43 -0400
+
+
+Started GET "/assets/turbolinks-d9dcd5206ee131f11181e8ca09537148.js?body=1" for 127.0.0.1 at 2015-04-21 00:18:43 -0400
+
+
+Started GET "/assets/professors-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-21 00:18:43 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-21 00:18:43 -0400
+
+
+Started GET "/assets/static_pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-21 00:18:43 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-21 00:18:43 -0400
+
+
+Started GET "/assets/application-54813782a825e6384ee029453c2f2071.js?body=1" for 127.0.0.1 at 2015-04-21 00:18:43 -0400
+
+
+Started POST "/professors" for 127.0.0.1 at 2015-04-21 00:20:30 -0400
+Processing by ProfessorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3YtYVaAiYvYL4rx20tFMl2PNYNEl+NIOpj+oqhmYzFQ+X7t6TAMDiqX447rs4RwleUKonfgIZTedkwqmLSwBRg==", "professor"=>{"first_name"=>"", "last_name"=>"", "netid"=>"", "department"=>""}, "commit"=>"Add advisor"}
+  [1m[36m (13.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mProfessor Exists (1.9ms)[0m  SELECT  1 AS one FROM "professors" WHERE "professors"."netid" = '' LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  Rendered shared/_error_messages_professors.html.erb (135.2ms)
+  Rendered professors/new.html.erb within layouts/application (219.9ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (6.5ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 3780ms (Views: 3388.4ms | ActiveRecord: 15.5ms)
+
+
+Started GET "/assets/custom-53f59fc9def409f9dde5e3a0bbf2ef8f.css?body=1" for 127.0.0.1 at 2015-04-21 00:20:34 -0400
+
+
+Started GET "/assets/professors-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-21 00:20:34 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-21 00:20:34 -0400
+
+
+Started GET "/assets/application-1dc460c656d7a69cbcc7f1b213b7bf17.css?body=1" for 127.0.0.1 at 2015-04-21 00:20:34 -0400
+
+
+Started GET "/assets/static_pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-21 00:20:34 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-21 00:20:34 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-21 00:20:34 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-21 00:20:34 -0400
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for 127.0.0.1 at 2015-04-21 00:20:34 -0400
+
+
+Started GET "/assets/turbolinks-d9dcd5206ee131f11181e8ca09537148.js?body=1" for 127.0.0.1 at 2015-04-21 00:20:34 -0400
+
+
+Started GET "/assets/professors-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-21 00:20:34 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-21 00:20:34 -0400
+
+
+Started GET "/assets/static_pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-21 00:20:34 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-21 00:20:34 -0400
+
+
+Started GET "/assets/application-54813782a825e6384ee029453c2f2071.js?body=1" for 127.0.0.1 at 2015-04-21 00:20:34 -0400
+
+
+Started POST "/professors" for 127.0.0.1 at 2015-04-21 00:27:57 -0400
+Processing by ProfessorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NbGXIDX6vRz0j42H1Bhfc3EX9pq1UPtSoh7no2pi1s3WZXQP2dvcYFqV0kvqKA/Ba5g+1migTGuZskWvXtYb3w==", "professor"=>{"first_name"=>"Henry", "last_name"=>"Farber", "netid"=>"farber", "department"=>"Economics"}, "commit"=>"Add advisor"}
+  [1m[35m (1.0ms)[0m  begin transaction
+  [1m[36mProfessor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "professors" WHERE "professors"."netid" = 'farber' LIMIT 1[0m
+  [1m[35mSQL (16.2ms)[0m  INSERT INTO "professors" ("first_name", "last_name", "netid", "department", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Henry"], ["last_name", "Farber"], ["netid", "farber"], ["department", "Economics"], ["created_at", "2015-04-21 04:27:59.988049"], ["updated_at", "2015-04-21 04:27:59.988049"]]
+  [1m[36m (3.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/professors/2
+Completed 302 Found in 437ms (ActiveRecord: 26.1ms)
+
+
+Started GET "/professors/2" for 127.0.0.1 at 2015-04-21 00:28:00 -0400
+Processing by ProfessorsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mProfessor Load (0.4ms)[0m  SELECT  "professors".* FROM "professors" WHERE "professors"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered professors/show.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 1612ms (Views: 1586.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/custom-53f59fc9def409f9dde5e3a0bbf2ef8f.css?body=1" for 127.0.0.1 at 2015-04-21 00:28:02 -0400
+
+
+Started GET "/assets/professors-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-21 00:28:02 -0400
+
+
+Started GET "/assets/application-1dc460c656d7a69cbcc7f1b213b7bf17.css?body=1" for 127.0.0.1 at 2015-04-21 00:28:02 -0400
+
+
+Started GET "/assets/static_pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-21 00:28:02 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-21 00:28:02 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-21 00:28:02 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-21 00:28:02 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-21 00:28:02 -0400
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for 127.0.0.1 at 2015-04-21 00:28:02 -0400
+
+
+Started GET "/assets/turbolinks-d9dcd5206ee131f11181e8ca09537148.js?body=1" for 127.0.0.1 at 2015-04-21 00:28:02 -0400
+
+
+Started GET "/assets/professors-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-21 00:28:02 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-21 00:28:02 -0400
+
+
+Started GET "/assets/static_pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-21 00:28:02 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-21 00:28:02 -0400
+
+
+Started GET "/assets/application-54813782a825e6384ee029453c2f2071.js?body=1" for 127.0.0.1 at 2015-04-21 00:28:02 -0400
+
+
+Started GET "/professors/2" for 127.0.0.1 at 2015-04-21 00:28:12 -0400
+Processing by ProfessorsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProfessor Load (2.7ms)[0m  [1mSELECT  "professors".* FROM "professors" WHERE "professors"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered professors/show.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 526ms (Views: 516.4ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/custom-53f59fc9def409f9dde5e3a0bbf2ef8f.css?body=1" for 127.0.0.1 at 2015-04-21 00:28:12 -0400
+
+
+Started GET "/assets/professors-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-21 00:28:12 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-21 00:28:12 -0400
+
+
+Started GET "/assets/static_pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-21 00:28:12 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-21 00:28:12 -0400
+
+
+Started GET "/assets/application-1dc460c656d7a69cbcc7f1b213b7bf17.css?body=1" for 127.0.0.1 at 2015-04-21 00:28:12 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-21 00:28:12 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-21 00:28:12 -0400
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for 127.0.0.1 at 2015-04-21 00:28:12 -0400
+
+
+Started GET "/assets/turbolinks-d9dcd5206ee131f11181e8ca09537148.js?body=1" for 127.0.0.1 at 2015-04-21 00:28:12 -0400
+
+
+Started GET "/assets/professors-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-21 00:28:12 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-21 00:28:12 -0400
+
+
+Started GET "/assets/static_pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-21 00:28:13 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-21 00:28:13 -0400
+
+
+Started GET "/assets/application-54813782a825e6384ee029453c2f2071.js?body=1" for 127.0.0.1 at 2015-04-21 00:28:13 -0400
