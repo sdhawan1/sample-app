@@ -2,6 +2,7 @@ class ProfessorsController < ApplicationController
   
   def show
     @professor = Professor.find(params[:id])
+    @reviews = @professor.reviews.paginate(page: params[:page])
   end
 
   def new

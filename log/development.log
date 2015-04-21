@@ -6115,3 +6115,349 @@ Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0
 
 
 Started GET "/assets/application-54813782a825e6384ee029453c2f2071.js?body=1" for 127.0.0.1 at 2015-04-21 00:28:13 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateReviews (20150421130310)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (1.1ms)[0m  [1mCREATE TABLE "reviews" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "student_netid" varchar, "student_class" varchar, "professor_netid" varchar, "relationship" varchar, "availability" integer, "responsiveness" integer, "knowledge" integer, "organization" integer, "friendliness" integer, "helpfulness" integer, "comments" text, "professor_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.2ms)[0m  [1mCREATE  INDEX "index_reviews_on_professor_id" ON "reviews" ("professor_id")[0m
+  [1m[35mSQL (2.8ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150421130310"]]
+  [1m[36m (4.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_professors_on_netid' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_professors_on_netid' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_reviews_on_professor_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_reviews_on_professor_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateReviews (20150421130310)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (3.7ms)[0m  DROP TABLE "reviews"
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20150421130310"]]
+  [1m[35m (5.4ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_professors_on_netid' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_professors_on_netid' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateReviews (20150421130310)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.8ms)[0m  [1mCREATE TABLE "reviews" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "student_netid" varchar, "student_class" varchar, "professor_netid" varchar, "relationship" varchar, "availability" integer, "responsiveness" integer, "knowledge" integer, "organization" integer, "friendliness" integer, "helpfulness" integer, "comments" text, "professor_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (0.2ms)[0m  [1mCREATE  INDEX "index_reviews_on_professor_id" ON "reviews" ("professor_id")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_reviews_on_professor_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_reviews_on_professor_id' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1mCREATE  INDEX "index_reviews_on_professor_id_and_created_at" ON "reviews" ("professor_id", "created_at")[0m
+  [1m[35mSQL (6.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150421130310"]]
+  [1m[36m (10.3ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_professors_on_netid' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_professors_on_netid' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_reviews_on_professor_id_and_created_at' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_reviews_on_professor_id_and_created_at' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_reviews_on_professor_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_reviews_on_professor_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+
+
+Started GET "/assets/custom-53f59fc9def409f9dde5e3a0bbf2ef8f.css?body=1" for 127.0.0.1 at 2015-04-21 09:44:10 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-21 09:44:11 -0400
+
+
+Started GET "/assets/professors-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-21 09:44:11 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-21 09:44:11 -0400
+
+
+Started GET "/assets/application-1dc460c656d7a69cbcc7f1b213b7bf17.css?body=1" for 127.0.0.1 at 2015-04-21 09:44:11 -0400
+
+
+Started GET "/assets/static_pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-21 09:44:11 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-21 09:44:11 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-21 09:44:11 -0400
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for 127.0.0.1 at 2015-04-21 09:44:12 -0400
+
+
+Started GET "/assets/turbolinks-d9dcd5206ee131f11181e8ca09537148.js?body=1" for 127.0.0.1 at 2015-04-21 09:44:12 -0400
+
+
+Started GET "/assets/professors-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-21 09:44:12 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-21 09:44:12 -0400
+
+
+Started GET "/assets/static_pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-21 09:44:12 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-21 09:44:12 -0400
+
+
+Started GET "/assets/application-54813782a825e6384ee029453c2f2071.js?body=1" for 127.0.0.1 at 2015-04-21 09:44:12 -0400
+
+
+Started GET "/professors/new" for 127.0.0.1 at 2015-04-21 10:35:27 -0400
+Processing by ProfessorsController#new as HTML
+  Rendered shared/_error_messages.html.erb (47.4ms)
+  Rendered professors/new.html.erb within layouts/application (332.2ms)
+  Rendered layouts/_shim.html.erb (2.6ms)
+  Rendered layouts/_header.html.erb (6.7ms)
+  Rendered layouts/_footer.html.erb (2.6ms)
+Completed 200 OK in 3885ms (Views: 3391.8ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/assets/reviews-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-21 10:35:35 -0400
+
+
+Started GET "/assets/reviews-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-21 10:35:35 -0400
+
+
+Started GET "/assets/application-b215c12cd796dcac63e0ba0c049eb42b.js?body=1" for 127.0.0.1 at 2015-04-21 10:35:35 -0400
+
+
+Started GET "/assets/static_pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-21 10:35:35 -0400
+
+
+Started POST "/professors" for 127.0.0.1 at 2015-04-21 10:35:38 -0400
+Processing by ProfessorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dgAyIDJ+ehPbn2Xt2KJHdB4XGVvTVUWX88eykVyJYpqV1NEP3l8bb3WFOiHmkhfGBJjRFw6l8q7IaxCdaD2viA==", "professor"=>{"first_name"=>"", "last_name"=>"", "netid"=>"", "department"=>""}, "commit"=>"Add advisor"}
+  [1m[35m (45.8ms)[0m  begin transaction
+  [1m[36mProfessor Exists (1.0ms)[0m  [1mSELECT  1 AS one FROM "professors" WHERE "professors"."netid" = '' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered shared/_error_messages.html.erb (5.7ms)
+  Rendered professors/new.html.erb within layouts/application (11.5ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (3.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 1642ms (Views: 529.6ms | ActiveRecord: 46.9ms)
+
+
+Started GET "/assets/static_pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-21 10:35:40 -0400
+
+
+Started GET "/microposts/new" for 127.0.0.1 at 2015-04-21 11:00:10 -0400
+
+ActionController::RoutingError (No route matches [GET] "/microposts/new"):
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:22:in `middleware_call'
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /home/cindy/.rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/cindy/.rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/cindy/.rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/cindy/.gem/ruby/2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (33.7ms)
+  Rendered /home/cindy/.gem/ruby/2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (571.8ms)
+
+
+Started GET "/reviews/new" for 127.0.0.1 at 2015-04-21 11:00:58 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ReviewsController#new as HTML
+  Rendered shared/_error_messages.html.erb (3.5ms)
+  Rendered reviews/new.html.erb within layouts/application (75.6ms)
+  Rendered layouts/_shim.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (5.2ms)
+  Rendered layouts/_footer.html.erb (11.7ms)
+Completed 200 OK in 1018ms (Views: 889.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/static_pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-21 11:01:00 -0400
+
+
+Started POST "/reviews" for 127.0.0.1 at 2015-04-21 11:01:58 -0400
+Processing by ReviewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pkheNnEmD7uexDMq+NJ2jcGUpk2gUTgYyeIngFO+q1BFnL0ZnQduxzDebObG4iY/2xtuAX2hjyHyToWMZwpmQg==", "review"=>{"student_netid"=>"cxduan", "student_class"=>"2015", "professor_netid"=>"sbhatt", "relationship"=>"None", "availability"=>"1", "responsiveness"=>"1", "knowledge"=>"1", "organization"=>"1", "friendliness"=>"1", "helpfulness"=>"1", "comments"=>"First test...."}, "commit"=>"Add review"}
+  [1m[35mProfessor Load (28.8ms)[0m  SELECT  "professors".* FROM "professors" WHERE "professors"."netid" = ? LIMIT 1  [["netid", "sbhatt"]]
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (8.0ms)[0m  INSERT INTO "reviews" ("student_netid", "student_class", "professor_netid", "relationship", "availability", "responsiveness", "knowledge", "organization", "friendliness", "helpfulness", "comments", "professor_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["student_netid", "cxduan"], ["student_class", "2015"], ["professor_netid", "sbhatt"], ["relationship", "None"], ["availability", 1], ["responsiveness", 1], ["knowledge", 1], ["organization", 1], ["friendliness", 1], ["helpfulness", 1], ["comments", "First test...."], ["professor_id", 1], ["created_at", "2015-04-21 15:01:59.420883"], ["updated_at", "2015-04-21 15:01:59.420883"]]
+  [1m[36m (19.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 495ms (ActiveRecord: 78.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-21 11:01:59 -0400
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (28.2ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 443ms (Views: 433.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static_pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-21 11:02:00 -0400
+
+
+Started GET "/professors/1" for 127.0.0.1 at 2015-04-21 11:02:10 -0400
+Processing by ProfessorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProfessor Load (15.5ms)[0m  SELECT  "professors".* FROM "professors" WHERE "professors"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mReview Exists (2.1ms)[0m  [1mSELECT  1 AS one FROM "reviews" WHERE "reviews"."professor_id" = ? LIMIT 1[0m  [["professor_id", 1]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."professor_id" = ?  [["professor_id", 1]]
+  [1m[36mReview Load (2.9ms)[0m  [1mSELECT  "reviews".* FROM "reviews" WHERE "reviews"."professor_id" = ?  ORDER BY "reviews"."created_at" DESC LIMIT 30 OFFSET 0[0m  [["professor_id", 1]]
+  Rendered reviews/_review.html.erb (1057.6ms)
+  Rendered professors/show.html.erb within layouts/application (1193.4ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 1613ms (Views: 1574.1ms | ActiveRecord: 20.8ms)
+
+
+Started GET "/assets/static_pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-21 11:02:12 -0400
+
+
+Started GET "/professors/1" for 127.0.0.1 at 2015-04-21 11:08:28 -0400
+Processing by ProfessorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProfessor Load (8.6ms)[0m  SELECT  "professors".* FROM "professors" WHERE "professors"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mReview Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "reviews" WHERE "reviews"."professor_id" = ? LIMIT 1[0m  [["professor_id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."professor_id" = ?  [["professor_id", 1]]
+  [1m[36mReview Load (0.2ms)[0m  [1mSELECT  "reviews".* FROM "reviews" WHERE "reviews"."professor_id" = ?  ORDER BY "reviews"."created_at" DESC LIMIT 30 OFFSET 0[0m  [["professor_id", 1]]
+  Rendered reviews/_review.html.erb (10.3ms)
+  Rendered professors/show.html.erb within layouts/application (57.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (14.1ms)
+  Rendered layouts/_footer.html.erb (7.7ms)
+Completed 200 OK in 794ms (Views: 764.1ms | ActiveRecord: 9.5ms)
+
+
+Started GET "/assets/custom-53f59fc9def409f9dde5e3a0bbf2ef8f.css?body=1" for 127.0.0.1 at 2015-04-21 11:08:29 -0400
+
+
+Started GET "/assets/reviews-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-21 11:08:29 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-21 11:08:29 -0400
+
+
+Started GET "/assets/professors-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-21 11:08:29 -0400
+
+
+Started GET "/assets/static_pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-21 11:08:29 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-21 11:08:29 -0400
+
+
+Started GET "/assets/application-1dc460c656d7a69cbcc7f1b213b7bf17.css?body=1" for 127.0.0.1 at 2015-04-21 11:08:29 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-21 11:08:30 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-21 11:08:30 -0400
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for 127.0.0.1 at 2015-04-21 11:08:30 -0400
+
+
+Started GET "/assets/turbolinks-d9dcd5206ee131f11181e8ca09537148.js?body=1" for 127.0.0.1 at 2015-04-21 11:08:30 -0400
+
+
+Started GET "/assets/professors-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-21 11:08:30 -0400
+
+
+Started GET "/assets/reviews-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-21 11:08:30 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-21 11:08:30 -0400
+
+
+Started GET "/assets/static_pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-21 11:08:30 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-21 11:08:30 -0400
+
+
+Started GET "/assets/application-b215c12cd796dcac63e0ba0c049eb42b.js?body=1" for 127.0.0.1 at 2015-04-21 11:08:30 -0400

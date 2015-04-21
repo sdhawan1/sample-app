@@ -3,7 +3,7 @@
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
     <%= form_for(@professor) do |f| %>
-      <%= render 'shared/error_messages_professors' %>
+      <%= render 'shared/error_messages', object: f.object %>
 
       <%= f.label :first_name, "First Name" %>
       <%= f.text_field :first_name, class: 'form-control' %>
