@@ -1,7 +1,5 @@
 
 Rails.application.routes.draw do
-  get 'professors/new'
-
   root                'static_pages#home'
   get    'help'    => 'static_pages#help'
   get    'about'   => 'static_pages#about'
@@ -10,6 +8,9 @@ Rails.application.routes.draw do
   get    'login'   => 'sessions#new'
   post   'login'   => 'sessions#create'
   delete 'logout'  => 'sessions#destroy'
+  get    'find'    => 'searchs#new'
+  post   'find'    => 'searchs#create'
+  get    'results' => 'searchs#index'
   resources :users
   resources :professors
   resources :reviews
