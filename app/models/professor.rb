@@ -5,4 +5,8 @@ class Professor < ActiveRecord::Base
   validates :last_name, presence: true
   validates :netid, presence: true, uniqueness: true
   validates :department, presence: true
+
+  # methods for averages
+
+
 end
