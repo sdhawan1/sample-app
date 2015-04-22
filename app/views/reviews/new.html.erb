@@ -17,6 +17,14 @@
       <%= f.label :relationship, "Relationship with professor" %>
       <%= f.text_field :relationship, class: 'form-control' %>
 
+      <% if false %>
+      <%= f.label :availability, "Availability" %>
+      <%= f.radio_button :availability, 1, class: 'form-control' %>
+      <%= f.label :availability, :value => "1" %>
+      <%= f.radio_button :availability, 2, class: 'form-control' %>
+      <%= f.label :availability, :value => "2" %>
+      <% end %>
+
       <%= f.label :availability, "Availability" %>
       <%= f.text_field :availability, class: 'form-control' %>
 
