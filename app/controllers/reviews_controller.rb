@@ -6,17 +6,18 @@ class ReviewsController < ApplicationController
 
   def create
     @professor = Professor.find_by(netid: params[:review][:professor_netid])
-
-    # need to handle case where professor is not in database yet or
-    # @professor is nil
-
-    @review = @professor.reviews.build(review_params)
-    if @review.save
-      flash[:success] = "Review created!"
-      redirect_to root_url  # change this to professor's page
+    if @professor
+      @review = @professor.reviews.build(review_params)
+      if @review.save
+        flash[:success] = "Review created!"
+        redirect_to root_url  # change this to professor's page
+      else
+        render 'new'
+      end
     else
-      render 'new'
-    end
+      flash[:danger] = "This advisor does not yet exist in our system! Please add him/her before posting your review!"
+      redirect_to new_professor_path
+    end  
   end
 
   private

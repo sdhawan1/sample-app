@@ -4,8 +4,11 @@ class SearchsController < ApplicationController
 
   def create
     # only searching with department for now for simplicity
+    # need to flesh this out with more complexity
     @professors = Professor.where("department = ?", params[:search][:department])
-    if @professors
+    # @professors = @professors.select
+
+    if @professors.count >= 1
       render 'index'  # try redirect_to if render doesn't work
     else
       flash.now[:danger] = 'No professors match your criteria!'
@@ -14,8 +17,6 @@ class SearchsController < ApplicationController
   end
 
   def index
-    # need to add something here if search results doesn't work
-    # need to pass params from create if that's the case
   end
 
 end
