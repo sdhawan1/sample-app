@@ -10,7 +10,7 @@ class ReviewsController < ApplicationController
       @review = @professor.reviews.build(review_params)
       if @review.save
         flash[:success] = "Review created!"
-        redirect_to root_url  # change this to professor's page
+        redirect_to @professor  # change this to professor's page
       else
         render 'new'
       end
