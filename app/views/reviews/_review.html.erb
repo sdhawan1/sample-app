@@ -1,7 +1,10 @@
 <li id="review-<%= review.id %>">
+  <span class="relationship">Type of work with advisor: <%= review.relationship %></span>
+  <br>
   <span class="comments"><%= review.comments %></span>
-  <span class="relationship"><%= review.relationship %></span>
+  <br>
   <span class="timestamp">
     Posted <%= time_ago_in_words(review.created_at) %> ago.
+  <p></p>
   </span>
 </li>
