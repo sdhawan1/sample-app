@@ -1,4 +1,5 @@
 class StaticPagesController < ApplicationController
+  before_filter CASClient::Frameworks::Rails::Filter
   def home
   end
 
@@ -9,6 +10,10 @@ class StaticPagesController < ApplicationController
   end
 
   def contact
+  end
+
+  def logout
+   CASClient::Frameworks::Rails::Filter.logout(self)
   end
 
 end

@@ -11530,3 +11530,1101 @@ Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 140.1
 
 
 Started GET "/assets/application-e94cf4c4695c8066496efbd7787abd46.js?body=1" for 140.180.241.77 at 2015-04-22 22:58:31 +0000
+
+
+Started GET "/" for 140.180.241.77 at 2015-04-23 00:36:49 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (3.8ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 3000ms (Views: 2992.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 140.180.241.77 at 2015-04-23 00:36:53 +0000
+
+
+Started GET "/assets/reviews-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 140.180.241.77 at 2015-04-23 00:36:53 +0000
+
+
+Started GET "/assets/custom-ac381ed3810d2ca931f26f845c482319.css?body=1" for 140.180.241.77 at 2015-04-23 00:36:53 +0000
+
+
+Started GET "/assets/searchs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 140.180.241.77 at 2015-04-23 00:36:53 +0000
+
+
+Started GET "/assets/professors-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 140.180.241.77 at 2015-04-23 00:36:53 +0000
+
+
+Started GET "/assets/static_pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 140.180.241.77 at 2015-04-23 00:36:53 +0000
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 140.180.241.77 at 2015-04-23 00:36:53 +0000
+
+
+Started GET "/assets/application-a44d112db54721f8e82e76fe1485b1df.css?body=1" for 140.180.241.77 at 2015-04-23 00:36:53 +0000
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 140.180.241.77 at 2015-04-23 00:36:53 +0000
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for 140.180.241.77 at 2015-04-23 00:36:53 +0000
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 140.180.241.77 at 2015-04-23 00:36:53 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/turbolinks-d9dcd5206ee131f11181e8ca09537148.js?body=1" for 140.180.241.77 at 2015-04-23 00:36:53 +0000
+
+
+Started GET "/assets/professors-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 140.180.241.77 at 2015-04-23 00:36:53 +0000
+
+
+Started GET "/assets/reviews-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 140.180.241.77 at 2015-04-23 00:36:53 +0000
+
+
+Started GET "/assets/searchs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 140.180.241.77 at 2015-04-23 00:36:53 +0000
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 140.180.241.77 at 2015-04-23 00:36:53 +0000
+
+
+Started GET "/assets/static_pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 140.180.241.77 at 2015-04-23 00:36:53 +0000
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 140.180.241.77 at 2015-04-23 00:36:53 +0000
+
+
+Started GET "/assets/application-e94cf4c4695c8066496efbd7787abd46.js?body=1" for 140.180.241.77 at 2015-04-23 00:36:53 +0000
+
+
+Started GET "/" for 140.180.241.77 at 2015-04-23 01:28:22 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+Guessed service url: "http://ec2-54-201-70-193.us-west-2.compute.amazonaws.com/"
+Generated login url: https://fed.princeton.edu/cas/login?service=http%3A%2F%2Fec2-54-201-70-193.us-west-2.compute.amazonaws.com%2F
+Redirecting to "https://fed.princeton.edu/cas/login?service=http%3A%2F%2Fec2-54-201-70-193.us-west-2.compute.amazonaws.com%2F"
+Redirected to https://fed.princeton.edu/cas/login?service=http%3A%2F%2Fec2-54-201-70-193.us-west-2.compute.amazonaws.com%2F
+Filter chain halted as CASClient::Frameworks::Rails::Filter rendered or redirected
+Completed 302 Found in 9ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/?ticket=ST-133584-1id0TEdESR7sggzwj4pO-fed05" for 140.180.241.77 at 2015-04-23 01:28:28 +0000
+Processing by StaticPagesController#home as HTML
+  Parameters: {"ticket"=>"ST-133584-1id0TEdESR7sggzwj4pO-fed05"}
+Request contains ticket "ST-133584-1id0TEdESR7sggzwj4pO-fed05".
+Guessed service url: "http://ec2-54-201-70-193.us-west-2.compute.amazonaws.com/"
+Requesting CAS response for URI https://fed.princeton.edu/cas/proxyValidate?service=http%3A%2F%2Fec2-54-201-70-193.us-west-2.compute.amazonaws.com%2F&ticket=ST-133584-1id0TEdESR7sggzwj4pO-fed05
+CAS server responded with #<Net::HTTPOK 200 OK readbody=true>:
+<cas:serviceResponse xmlns:cas='http://www.yale.edu/tp/cas'>
+	<cas:authenticationSuccess>
+		<cas:user>fng</cas:user>
+
+
+	</cas:authenticationSuccess>
+</cas:serviceResponse>
+
+Ticket "ST-133584-1id0TEdESR7sggzwj4pO-fed05" for service "http://ec2-54-201-70-193.us-west-2.compute.amazonaws.com/" belonging to user "fng" is VALID.
+Extra user attributes provided along with ticket "ST-133584-1id0TEdESR7sggzwj4pO-fed05": {}.
+  Rendered static_pages/home.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (3.6ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 1018ms (Views: 190.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/professors-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 140.180.241.77 at 2015-04-23 01:28:29 +0000
+
+
+Started GET "/assets/reviews-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 140.180.241.77 at 2015-04-23 01:28:29 +0000
+
+
+Started GET "/assets/searchs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 140.180.241.77 at 2015-04-23 01:28:29 +0000
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 140.180.241.77 at 2015-04-23 01:28:29 +0000
+
+
+Started GET "/assets/static_pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 140.180.241.77 at 2015-04-23 01:28:29 +0000
+
+
+Started GET "/assets/professors-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 140.180.241.77 at 2015-04-23 01:28:29 +0000
+
+
+Started GET "/assets/reviews-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 140.180.241.77 at 2015-04-23 01:28:29 +0000
+
+
+Started GET "/assets/searchs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 140.180.241.77 at 2015-04-23 01:28:29 +0000
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 140.180.241.77 at 2015-04-23 01:28:29 +0000
+
+
+Started GET "/assets/static_pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 140.180.241.77 at 2015-04-23 01:28:29 +0000
+
+
+Started GET "/assets/application-b215c12cd796dcac63e0ba0c049eb42b.js?body=1" for 140.180.241.77 at 2015-04-23 01:28:29 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/signup" for 140.180.241.77 at 2015-04-23 01:28:41 +0000
+
+ActionController::RoutingError (uninitialized constant UsersController):
+  activesupport (4.2.0) lib/active_support/inflector/methods.rb:261:in `const_get'
+  activesupport (4.2.0) lib/active_support/inflector/methods.rb:261:in `block in constantize'
+  activesupport (4.2.0) lib/active_support/inflector/methods.rb:259:in `each'
+  activesupport (4.2.0) lib/active_support/inflector/methods.rb:259:in `inject'
+  activesupport (4.2.0) lib/active_support/inflector/methods.rb:259:in `constantize'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:69:in `controller_reference'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:59:in `controller'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:38:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:802:in `call'
+  rack (1.6.0) lib/rack/etag.rb:24:in `call'
+  rack (1.6.0) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.0) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:647:in `call'
+  activerecord (4.2.0) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_call_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:18:in `middleware_call'
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  /var/lib/gems/1.9.1/gems/passenger-5.0.6/lib/phusion_passenger/rack/thread_handler_extension.rb:85:in `process_request'
+  /var/lib/gems/1.9.1/gems/passenger-5.0.6/lib/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+  /var/lib/gems/1.9.1/gems/passenger-5.0.6/lib/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+  /var/lib/gems/1.9.1/gems/passenger-5.0.6/lib/phusion_passenger/request_handler.rb:414:in `block (3 levels) in start_threads'
+  /var/lib/gems/1.9.1/gems/passenger-5.0.6/lib/phusion_passenger/utils.rb:111:in `block in create_thread_and_abort_on_exception'
+
+
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (27.1ms)
+
+
+Started GET "/signup" for 140.180.241.77 at 2015-04-23 01:28:42 +0000
+
+ActionController::RoutingError (uninitialized constant UsersController):
+  activesupport (4.2.0) lib/active_support/inflector/methods.rb:261:in `const_get'
+  activesupport (4.2.0) lib/active_support/inflector/methods.rb:261:in `block in constantize'
+  activesupport (4.2.0) lib/active_support/inflector/methods.rb:259:in `each'
+  activesupport (4.2.0) lib/active_support/inflector/methods.rb:259:in `inject'
+  activesupport (4.2.0) lib/active_support/inflector/methods.rb:259:in `constantize'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:69:in `controller_reference'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:59:in `controller'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:38:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:802:in `call'
+  rack (1.6.0) lib/rack/etag.rb:24:in `call'
+  rack (1.6.0) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.0) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:647:in `call'
+  activerecord (4.2.0) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_call_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:18:in `middleware_call'
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  /var/lib/gems/1.9.1/gems/passenger-5.0.6/lib/phusion_passenger/rack/thread_handler_extension.rb:85:in `process_request'
+  /var/lib/gems/1.9.1/gems/passenger-5.0.6/lib/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+  /var/lib/gems/1.9.1/gems/passenger-5.0.6/lib/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+  /var/lib/gems/1.9.1/gems/passenger-5.0.6/lib/phusion_passenger/request_handler.rb:414:in `block (3 levels) in start_threads'
+  /var/lib/gems/1.9.1/gems/passenger-5.0.6/lib/phusion_passenger/utils.rb:111:in `block in create_thread_and_abort_on_exception'
+
+
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (22.9ms)
+
+
+Started GET "/find" for 140.180.241.77 at 2015-04-23 01:28:44 +0000
+Processing by SearchsController#new as HTML
+  Rendered searchs/new.html.erb within layouts/application (7.6ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 112ms (Views: 111.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reviews/new" for 140.180.241.77 at 2015-04-23 01:28:48 +0000
+Processing by ReviewsController#new as HTML
+  Rendered shared/_error_messages.html.erb (1.5ms)
+  Rendered reviews/new.html.erb within layouts/application (6.2ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 127ms (Views: 113.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 140.180.241.77 at 2015-04-23 01:28:51 +0000
+Processing by StaticPagesController#home as HTML
+Existing local CAS session detected for "fng". Previous ticket "ST-133584-1id0TEdESR7sggzwj4pO-fed05" will be re-used.
+  Rendered static_pages/home.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 103ms (Views: 102.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 140.180.241.77 at 2015-04-23 01:28:54 +0000
+Processing by StaticPagesController#about as HTML
+Existing local CAS session detected for "fng". Previous ticket "ST-133584-1id0TEdESR7sggzwj4pO-fed05" will be re-used.
+  Rendered static_pages/about.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 106ms (Views: 105.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 140.180.241.77 at 2015-04-23 01:29:38 +0000
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (256.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 367ms (Views: 366.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 140.180.241.77 at 2015-04-23 01:30:06 +0000
+Processing by StaticPagesController#home as HTML
+Existing local CAS session detected for "fng". Previous ticket "ST-133584-1id0TEdESR7sggzwj4pO-fed05" will be re-used.
+  Rendered static_pages/home.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 111ms (Views: 110.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/professors-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 140.180.241.77 at 2015-04-23 01:30:07 +0000
+
+
+Started GET "/assets/reviews-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 140.180.241.77 at 2015-04-23 01:30:07 +0000
+
+
+Started GET "/assets/static_pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 140.180.241.77 at 2015-04-23 01:30:07 +0000
+
+
+Started GET "/assets/searchs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 140.180.241.77 at 2015-04-23 01:30:07 +0000
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 140.180.241.77 at 2015-04-23 01:30:07 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/professors-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 140.180.241.77 at 2015-04-23 01:30:07 +0000
+
+
+Started GET "/assets/reviews-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 140.180.241.77 at 2015-04-23 01:30:07 +0000
+
+
+Started GET "/assets/searchs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 140.180.241.77 at 2015-04-23 01:30:07 +0000
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 140.180.241.77 at 2015-04-23 01:30:07 +0000
+
+
+Started GET "/assets/static_pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 140.180.241.77 at 2015-04-23 01:30:07 +0000
+
+
+Started GET "/login" for 140.180.241.77 at 2015-04-23 01:37:14 +0000
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (258.2ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (3.8ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 438ms (Views: 430.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 140.180.241.77 at 2015-04-23 01:37:17 +0000
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7KkS2htmwHZvRdjBQoA0a8caOVB/mS5F4YwpxabnR/ZCRtcNUhX8fBNckGvyMqKSD1oMv3FuRhw8WIGmuvDLAg==", "session"=>{"email"=>"fng@princeton.edu", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+Completed 500 Internal Server Error in 2ms
+
+NameError (uninitialized constant SessionsController::User):
+  app/controllers/sessions_controller.rb:7:in `create'
+
+
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_source.erb (5.0ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.8ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (25.1ms)
+
+
+Started GET "/find" for 140.180.241.77 at 2015-04-23 01:38:18 +0000
+Processing by SearchsController#new as HTML
+  Rendered searchs/new.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 103ms (Views: 102.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 140.180.241.77 at 2015-04-23 01:38:23 +0000
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (5.5ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 109ms (Views: 108.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/find" for 140.180.241.77 at 2015-04-23 01:38:27 +0000
+Processing by SearchsController#new as HTML
+  Rendered searchs/new.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 106ms (Views: 105.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 140.180.241.77 at 2015-04-23 01:38:32 +0000
+Processing by StaticPagesController#home as HTML
+Existing local CAS session detected for "fng". Previous ticket "ST-133584-1id0TEdESR7sggzwj4pO-fed05" will be re-used.
+  Rendered static_pages/home.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 107ms (Views: 106.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/help" for 140.180.241.77 at 2015-04-23 01:38:50 +0000
+Processing by StaticPagesController#help as HTML
+Existing local CAS session detected for "fng". Previous ticket "ST-133584-1id0TEdESR7sggzwj4pO-fed05" will be re-used.
+  Rendered static_pages/help.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 107ms (Views: 106.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 140.180.241.77 at 2015-04-23 01:38:52 +0000
+Processing by StaticPagesController#home as HTML
+Existing local CAS session detected for "fng". Previous ticket "ST-133584-1id0TEdESR7sggzwj4pO-fed05" will be re-used.
+  Rendered static_pages/home.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 107ms (Views: 106.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 140.180.241.77 at 2015-04-23 01:42:03 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+Existing local CAS session detected for "fng". Previous ticket "ST-133584-1id0TEdESR7sggzwj4pO-fed05" will be re-used.
+  Rendered static_pages/home.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (3.8ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 179ms (Views: 171.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom-ac381ed3810d2ca931f26f845c482319.css?body=1" for 140.180.241.77 at 2015-04-23 01:42:04 +0000
+
+
+Started GET "/assets/professors-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 140.180.241.77 at 2015-04-23 01:42:04 +0000
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 140.180.241.77 at 2015-04-23 01:42:04 +0000
+
+
+Started GET "/assets/reviews-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 140.180.241.77 at 2015-04-23 01:42:04 +0000
+
+
+Started GET "/assets/searchs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 140.180.241.77 at 2015-04-23 01:42:04 +0000
+
+
+Started GET "/assets/static_pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 140.180.241.77 at 2015-04-23 01:42:04 +0000
+
+
+Started GET "/assets/application-a44d112db54721f8e82e76fe1485b1df.css?body=1" for 140.180.241.77 at 2015-04-23 01:42:04 +0000
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for 140.180.241.77 at 2015-04-23 01:42:04 +0000
+
+
+Started GET "/assets/turbolinks-d9dcd5206ee131f11181e8ca09537148.js?body=1" for 140.180.241.77 at 2015-04-23 01:42:04 +0000
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 140.180.241.77 at 2015-04-23 01:42:04 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 140.180.241.77 at 2015-04-23 01:42:04 +0000
+
+
+Started GET "/assets/professors-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 140.180.241.77 at 2015-04-23 01:42:04 +0000
+
+
+Started GET "/assets/reviews-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 140.180.241.77 at 2015-04-23 01:42:04 +0000
+
+
+Started GET "/assets/searchs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 140.180.241.77 at 2015-04-23 01:42:04 +0000
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 140.180.241.77 at 2015-04-23 01:42:04 +0000
+
+
+Started GET "/assets/static_pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 140.180.241.77 at 2015-04-23 01:42:04 +0000
+
+
+Started GET "/assets/application-b215c12cd796dcac63e0ba0c049eb42b.js?body=1" for 140.180.241.77 at 2015-04-23 01:42:04 +0000
+
+
+Started GET "/logout" for 140.180.241.77 at 2015-04-23 01:42:07 +0000
+
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:22:in `middleware_call'
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  /var/lib/gems/1.9.1/gems/passenger-5.0.6/lib/phusion_passenger/rack/thread_handler_extension.rb:85:in `process_request'
+  /var/lib/gems/1.9.1/gems/passenger-5.0.6/lib/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+  /var/lib/gems/1.9.1/gems/passenger-5.0.6/lib/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+  /var/lib/gems/1.9.1/gems/passenger-5.0.6/lib/phusion_passenger/request_handler.rb:414:in `block (3 levels) in start_threads'
+  /var/lib/gems/1.9.1/gems/passenger-5.0.6/lib/phusion_passenger/utils.rb:111:in `block in create_thread_and_abort_on_exception'
+
+
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (20.6ms)
+
+
+Started GET "/logout" for 140.180.241.77 at 2015-04-23 01:42:08 +0000
+
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:22:in `middleware_call'
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  /var/lib/gems/1.9.1/gems/passenger-5.0.6/lib/phusion_passenger/rack/thread_handler_extension.rb:85:in `process_request'
+  /var/lib/gems/1.9.1/gems/passenger-5.0.6/lib/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+  /var/lib/gems/1.9.1/gems/passenger-5.0.6/lib/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+  /var/lib/gems/1.9.1/gems/passenger-5.0.6/lib/phusion_passenger/request_handler.rb:414:in `block (3 levels) in start_threads'
+  /var/lib/gems/1.9.1/gems/passenger-5.0.6/lib/phusion_passenger/utils.rb:111:in `block in create_thread_and_abort_on_exception'
+
+
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (18.3ms)
+
+
+Started GET "/logout" for 140.180.241.77 at 2015-04-23 01:43:21 +0000
+
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:22:in `middleware_call'
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  /var/lib/gems/1.9.1/gems/passenger-5.0.6/lib/phusion_passenger/rack/thread_handler_extension.rb:85:in `process_request'
+  /var/lib/gems/1.9.1/gems/passenger-5.0.6/lib/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+  /var/lib/gems/1.9.1/gems/passenger-5.0.6/lib/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+  /var/lib/gems/1.9.1/gems/passenger-5.0.6/lib/phusion_passenger/request_handler.rb:414:in `block (3 levels) in start_threads'
+  /var/lib/gems/1.9.1/gems/passenger-5.0.6/lib/phusion_passenger/utils.rb:111:in `block in create_thread_and_abort_on_exception'
+
+
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (17.3ms)
+
+
+Started GET "/logout" for 140.180.241.77 at 2015-04-23 01:43:22 +0000
+
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:22:in `middleware_call'
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  /var/lib/gems/1.9.1/gems/passenger-5.0.6/lib/phusion_passenger/rack/thread_handler_extension.rb:85:in `process_request'
+  /var/lib/gems/1.9.1/gems/passenger-5.0.6/lib/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+  /var/lib/gems/1.9.1/gems/passenger-5.0.6/lib/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+  /var/lib/gems/1.9.1/gems/passenger-5.0.6/lib/phusion_passenger/request_handler.rb:414:in `block (3 levels) in start_threads'
+  /var/lib/gems/1.9.1/gems/passenger-5.0.6/lib/phusion_passenger/utils.rb:111:in `block in create_thread_and_abort_on_exception'
+
+
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (18.7ms)
+
+
+Started GET "/" for 140.180.241.77 at 2015-04-23 01:47:21 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+Existing local CAS session detected for "fng". Previous ticket "ST-133584-1id0TEdESR7sggzwj4pO-fed05" will be re-used.
+  Rendered static_pages/home.html.erb within layouts/application (11.0ms)
+Completed 500 Internal Server Error in 25ms
+
+NameError (undefined local variable or method `signup_path' for #<#<Class:0x007f33bc176438>:0x007f33bc182b20>):
+  app/views/static_pages/home.html.erb:14:in `_app_views_static_pages_home_html_erb__1782446356324911980_69930087984020'
+
+
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_source.erb (6.1ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.6ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (37.8ms)
+
+
+Started GET "/" for 140.180.241.77 at 2015-04-23 01:47:25 +0000
+Processing by StaticPagesController#home as HTML
+Existing local CAS session detected for "fng". Previous ticket "ST-133584-1id0TEdESR7sggzwj4pO-fed05" will be re-used.
+  Rendered static_pages/home.html.erb within layouts/application (8.7ms)
+Completed 500 Internal Server Error in 11ms
+
+NameError (undefined local variable or method `signup_path' for #<#<Class:0x007f33bc176438>:0x007f33bcd261e8>):
+  app/views/static_pages/home.html.erb:14:in `_app_views_static_pages_home_html_erb__1782446356324911980_69930087984020'
+
+
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_source.erb (6.5ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.7ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (30.3ms)
+
+
+Started GET "/" for 140.180.241.77 at 2015-04-23 01:48:42 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+Existing local CAS session detected for "fng". Previous ticket "ST-133584-1id0TEdESR7sggzwj4pO-fed05" will be re-used.
+  Rendered static_pages/home.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (3.9ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 183ms (Views: 175.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom-ac381ed3810d2ca931f26f845c482319.css?body=1" for 140.180.241.77 at 2015-04-23 01:48:43 +0000
+
+
+Started GET "/assets/professors-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 140.180.241.77 at 2015-04-23 01:48:43 +0000
+
+
+Started GET "/assets/reviews-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 140.180.241.77 at 2015-04-23 01:48:43 +0000
+
+
+Started GET "/assets/searchs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 140.180.241.77 at 2015-04-23 01:48:43 +0000
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 140.180.241.77 at 2015-04-23 01:48:43 +0000
+
+
+Started GET "/assets/static_pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 140.180.241.77 at 2015-04-23 01:48:43 +0000
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 140.180.241.77 at 2015-04-23 01:48:43 +0000
+
+
+Started GET "/assets/application-a44d112db54721f8e82e76fe1485b1df.css?body=1" for 140.180.241.77 at 2015-04-23 01:48:43 +0000
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 140.180.241.77 at 2015-04-23 01:48:43 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for 140.180.241.77 at 2015-04-23 01:48:43 +0000
+
+
+Started GET "/assets/turbolinks-d9dcd5206ee131f11181e8ca09537148.js?body=1" for 140.180.241.77 at 2015-04-23 01:48:43 +0000
+
+
+Started GET "/assets/professors-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 140.180.241.77 at 2015-04-23 01:48:43 +0000
+
+
+Started GET "/assets/reviews-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 140.180.241.77 at 2015-04-23 01:48:43 +0000
+
+
+Started GET "/assets/searchs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 140.180.241.77 at 2015-04-23 01:48:43 +0000
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 140.180.241.77 at 2015-04-23 01:48:43 +0000
+
+
+Started GET "/assets/static_pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 140.180.241.77 at 2015-04-23 01:48:43 +0000
+
+
+Started GET "/assets/application-b215c12cd796dcac63e0ba0c049eb42b.js?body=1" for 140.180.241.77 at 2015-04-23 01:48:43 +0000
+
+
+Started GET "/logout" for 140.180.241.77 at 2015-04-23 01:48:47 +0000
+Processing by StaticPagesController#logout as HTML
+Existing local CAS session detected for "fng". Previous ticket "ST-133584-1id0TEdESR7sggzwj4pO-fed05" will be re-used.
+Redirected to https://fed.princeton.edu/cas/logout?destination=http%3A%2F%2Fec2-54-201-70-193.us-west-2.compute.amazonaws.com%2F&gateway=true
+Completed 403 Forbidden in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/logout" for 140.180.241.77 at 2015-04-23 01:48:47 +0000
+Processing by StaticPagesController#logout as HTML
+Guessed service url: "http://ec2-54-201-70-193.us-west-2.compute.amazonaws.com/logout"
+Generated login url: https://fed.princeton.edu/cas/login?service=http%3A%2F%2Fec2-54-201-70-193.us-west-2.compute.amazonaws.com%2Flogout
+Redirecting to "https://fed.princeton.edu/cas/login?service=http%3A%2F%2Fec2-54-201-70-193.us-west-2.compute.amazonaws.com%2Flogout"
+Redirected to https://fed.princeton.edu/cas/login?service=http%3A%2F%2Fec2-54-201-70-193.us-west-2.compute.amazonaws.com%2Flogout
+Filter chain halted as CASClient::Frameworks::Rails::Filter rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 140.180.241.77 at 2015-04-23 01:56:07 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+Guessed service url: "http://ec2-54-201-70-193.us-west-2.compute.amazonaws.com/"
+Generated login url: https://fed.princeton.edu/cas/login?service=http%3A%2F%2Fec2-54-201-70-193.us-west-2.compute.amazonaws.com%2F
+Redirecting to "https://fed.princeton.edu/cas/login?service=http%3A%2F%2Fec2-54-201-70-193.us-west-2.compute.amazonaws.com%2F"
+Redirected to https://fed.princeton.edu/cas/login?service=http%3A%2F%2Fec2-54-201-70-193.us-west-2.compute.amazonaws.com%2F
+Filter chain halted as CASClient::Frameworks::Rails::Filter rendered or redirected
+Completed 302 Found in 11ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 140.180.241.77 at 2015-04-23 01:56:23 +0000
+Processing by StaticPagesController#home as HTML
+Guessed service url: "http://ec2-54-201-70-193.us-west-2.compute.amazonaws.com/"
+Generated login url: https://fed.princeton.edu/cas/login?service=http%3A%2F%2Fec2-54-201-70-193.us-west-2.compute.amazonaws.com%2F
+Redirecting to "https://fed.princeton.edu/cas/login?service=http%3A%2F%2Fec2-54-201-70-193.us-west-2.compute.amazonaws.com%2F"
+Redirected to https://fed.princeton.edu/cas/login?service=http%3A%2F%2Fec2-54-201-70-193.us-west-2.compute.amazonaws.com%2F
+Filter chain halted as CASClient::Frameworks::Rails::Filter rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 140.180.241.77 at 2015-04-23 02:00:33 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+Guessed service url: "http://ec2-54-201-70-193.us-west-2.compute.amazonaws.com/"
+Generated login url: https://fed.princeton.edu/cas/login?service=http%3A%2F%2Fec2-54-201-70-193.us-west-2.compute.amazonaws.com%2F
+Redirecting to "https://fed.princeton.edu/cas/login?service=http%3A%2F%2Fec2-54-201-70-193.us-west-2.compute.amazonaws.com%2F"
+Redirected to https://fed.princeton.edu/cas/login?service=http%3A%2F%2Fec2-54-201-70-193.us-west-2.compute.amazonaws.com%2F
+Filter chain halted as CASClient::Frameworks::Rails::Filter rendered or redirected
+Completed 302 Found in 9ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 140.180.241.77 at 2015-04-23 02:08:27 +0000
+Processing by StaticPagesController#home as HTML
+Guessed service url: "http://ec2-54-201-70-193.us-west-2.compute.amazonaws.com/"
+Generated login url: https://fed.princeton.edu/cas/login?service=http%3A%2F%2Fec2-54-201-70-193.us-west-2.compute.amazonaws.com%2F
+Redirecting to "https://fed.princeton.edu/cas/login?service=http%3A%2F%2Fec2-54-201-70-193.us-west-2.compute.amazonaws.com%2F"
+Redirected to https://fed.princeton.edu/cas/login?service=http%3A%2F%2Fec2-54-201-70-193.us-west-2.compute.amazonaws.com%2F
+Filter chain halted as CASClient::Frameworks::Rails::Filter rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/?ticket=ST-133893-ZDca9n1tgJTw6eDKRS1C-fed05" for 140.180.241.77 at 2015-04-23 02:08:27 +0000
+Processing by StaticPagesController#home as HTML
+  Parameters: {"ticket"=>"ST-133893-ZDca9n1tgJTw6eDKRS1C-fed05"}
+Request contains ticket "ST-133893-ZDca9n1tgJTw6eDKRS1C-fed05".
+Guessed service url: "http://ec2-54-201-70-193.us-west-2.compute.amazonaws.com/"
+Requesting CAS response for URI https://fed.princeton.edu/cas/proxyValidate?service=http%3A%2F%2Fec2-54-201-70-193.us-west-2.compute.amazonaws.com%2F&ticket=ST-133893-ZDca9n1tgJTw6eDKRS1C-fed05
+Completed   in 36003ms
+
+
+Started GET "/" for 140.180.241.77 at 2015-04-23 02:09:06 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+Guessed service url: "http://ec2-54-201-70-193.us-west-2.compute.amazonaws.com/"
+Generated login url: https://fed.princeton.edu/cas/login?service=http%3A%2F%2Fec2-54-201-70-193.us-west-2.compute.amazonaws.com%2F
+Redirecting to "https://fed.princeton.edu/cas/login?service=http%3A%2F%2Fec2-54-201-70-193.us-west-2.compute.amazonaws.com%2F"
+Redirected to https://fed.princeton.edu/cas/login?service=http%3A%2F%2Fec2-54-201-70-193.us-west-2.compute.amazonaws.com%2F
+Filter chain halted as CASClient::Frameworks::Rails::Filter rendered or redirected
+Completed 302 Found in 16ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/?ticket=ST-133893-ZDca9n1tgJTw6eDKRS1C-fed05" for 140.180.241.77 at 2015-04-23 02:09:06 +0000
+Processing by StaticPagesController#home as HTML
+  Parameters: {"ticket"=>"ST-133893-ZDca9n1tgJTw6eDKRS1C-fed05"}
+Request contains ticket "ST-133893-ZDca9n1tgJTw6eDKRS1C-fed05".
+Guessed service url: "http://ec2-54-201-70-193.us-west-2.compute.amazonaws.com/"
+Requesting CAS response for URI https://fed.princeton.edu/cas/proxyValidate?service=http%3A%2F%2Fec2-54-201-70-193.us-west-2.compute.amazonaws.com%2F&ticket=ST-133893-ZDca9n1tgJTw6eDKRS1C-fed05
+
+
+Started GET "/?ticket=ST-133905-BOss4CEcGXfpZLcCuyqK-fed05" for 140.180.241.77 at 2015-04-23 02:09:06 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Parameters: {"ticket"=>"ST-133905-BOss4CEcGXfpZLcCuyqK-fed05"}
+Request contains ticket "ST-133905-BOss4CEcGXfpZLcCuyqK-fed05".
+Guessed service url: "http://ec2-54-201-70-193.us-west-2.compute.amazonaws.com/"
+Requesting CAS response for URI https://fed.princeton.edu/cas/proxyValidate?service=http%3A%2F%2Fec2-54-201-70-193.us-west-2.compute.amazonaws.com%2F&ticket=ST-133905-BOss4CEcGXfpZLcCuyqK-fed05
+CAS server responded with #<Net::HTTPOK 200 OK readbody=true>:
+<cas:serviceResponse xmlns:cas='http://www.yale.edu/tp/cas'>
+	<cas:authenticationSuccess>
+		<cas:user>fng</cas:user>
+
+
+	</cas:authenticationSuccess>
+</cas:serviceResponse>
+
+Ticket "ST-133905-BOss4CEcGXfpZLcCuyqK-fed05" for service "http://ec2-54-201-70-193.us-west-2.compute.amazonaws.com/" belonging to user "fng" is VALID.
+Extra user attributes provided along with ticket "ST-133905-BOss4CEcGXfpZLcCuyqK-fed05": {}.
+  Rendered static_pages/home.html.erb within layouts/application (1.5ms)
+CAS server responded with #<Net::HTTPOK 200 OK readbody=true>:
+<cas:serviceResponse xmlns:cas='http://www.yale.edu/tp/cas'>
+	<cas:authenticationFailure code='INVALID_TICKET'>
+		ticket &#039;ST-133893-ZDca9n1tgJTw6eDKRS1C-fed05&#039; not recognized
+	</cas:authenticationFailure>
+</cas:serviceResponse>
+
+Ticket "ST-133893-ZDca9n1tgJTw6eDKRS1C-fed05" failed validation -- INVALID_TICKET: ticket 'ST-133893-ZDca9n1tgJTw6eDKRS1C-fed05' not recognized
+Guessed service url: "http://ec2-54-201-70-193.us-west-2.compute.amazonaws.com/"
+Generated login url: https://fed.princeton.edu/cas/login?service=http%3A%2F%2Fec2-54-201-70-193.us-west-2.compute.amazonaws.com%2F
+Redirecting to "https://fed.princeton.edu/cas/login?service=http%3A%2F%2Fec2-54-201-70-193.us-west-2.compute.amazonaws.com%2F"
+Redirected to https://fed.princeton.edu/cas/login?service=http%3A%2F%2Fec2-54-201-70-193.us-west-2.compute.amazonaws.com%2F
+Filter chain halted as CASClient::Frameworks::Rails::Filter rendered or redirected
+Completed 302 Found in 14192ms (ActiveRecord: 0.0ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 13953ms (Views: 176.3ms | ActiveRecord: 0.0ms)
+
+
+
+
+Started GET "/assets/professors-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 140.180.241.77 at 2015-04-23 02:09:21 +0000
+Started GET "/assets/reviews-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 140.180.241.77 at 2015-04-23 02:09:21 +0000
+
+
+Started GET "/assets/searchs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 140.180.241.77 at 2015-04-23 02:09:21 +0000
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 140.180.241.77 at 2015-04-23 02:09:21 +0000
+
+
+Started GET "/assets/static_pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 140.180.241.77 at 2015-04-23 02:09:21 +0000
+
+
+Started GET "/assets/professors-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 140.180.241.77 at 2015-04-23 02:09:21 +0000
+
+
+Started GET "/assets/reviews-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 140.180.241.77 at 2015-04-23 02:09:21 +0000
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 140.180.241.77 at 2015-04-23 02:09:21 +0000
+
+
+Started GET "/assets/searchs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 140.180.241.77 at 2015-04-23 02:09:21 +0000
+
+
+Started GET "/assets/static_pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 140.180.241.77 at 2015-04-23 02:09:21 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/logout" for 140.180.241.77 at 2015-04-23 02:09:31 +0000
+Processing by StaticPagesController#logout as HTML
+Existing local CAS session detected for "fng". Previous ticket "ST-133905-BOss4CEcGXfpZLcCuyqK-fed05" will be re-used.
+  Rendered static_pages/logout.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 173ms (Views: 172.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 140.180.241.77 at 2015-04-23 02:10:21 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+Existing local CAS session detected for "fng". Previous ticket "ST-133905-BOss4CEcGXfpZLcCuyqK-fed05" will be re-used.
+  Rendered static_pages/home.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 181ms (Views: 173.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/professors-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 140.180.241.77 at 2015-04-23 02:10:22 +0000
+
+
+Started GET "/assets/reviews-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 140.180.241.77 at 2015-04-23 02:10:22 +0000
+
+
+Started GET "/assets/static_pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 140.180.241.77 at 2015-04-23 02:10:22 +0000
+
+
+Started GET "/assets/searchs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 140.180.241.77 at 2015-04-23 02:10:22 +0000
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 140.180.241.77 at 2015-04-23 02:10:22 +0000
+
+
+Started GET "/assets/professors-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 140.180.241.77 at 2015-04-23 02:10:22 +0000
+
+
+Started GET "/assets/reviews-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 140.180.241.77 at 2015-04-23 02:10:22 +0000
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 140.180.241.77 at 2015-04-23 02:10:22 +0000
+
+
+Started GET "/assets/searchs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 140.180.241.77 at 2015-04-23 02:10:22 +0000
+
+
+Started GET "/assets/static_pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 140.180.241.77 at 2015-04-23 02:10:22 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/logout" for 140.180.241.77 at 2015-04-23 02:10:25 +0000
+Processing by StaticPagesController#logout as HTML
+Existing local CAS session detected for "fng". Previous ticket "ST-133905-BOss4CEcGXfpZLcCuyqK-fed05" will be re-used.
+Redirected to https://fed.princeton.edu/cas/logout?destination=http%3A%2F%2Fec2-54-201-70-193.us-west-2.compute.amazonaws.com%2F&gateway=true
+Completed 403 Forbidden in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/logout" for 140.180.241.77 at 2015-04-23 02:10:25 +0000
+Processing by StaticPagesController#logout as HTML
+Guessed service url: "http://ec2-54-201-70-193.us-west-2.compute.amazonaws.com/logout"
+Generated login url: https://fed.princeton.edu/cas/login?service=http%3A%2F%2Fec2-54-201-70-193.us-west-2.compute.amazonaws.com%2Flogout
+Redirecting to "https://fed.princeton.edu/cas/login?service=http%3A%2F%2Fec2-54-201-70-193.us-west-2.compute.amazonaws.com%2Flogout"
+Redirected to https://fed.princeton.edu/cas/login?service=http%3A%2F%2Fec2-54-201-70-193.us-west-2.compute.amazonaws.com%2Flogout
+Filter chain halted as CASClient::Frameworks::Rails::Filter rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/logout?ticket=ST-133919-2gMUed3DrtrORkdpSVke-fed05" for 140.180.241.77 at 2015-04-23 02:10:25 +0000
+Processing by StaticPagesController#logout as HTML
+  Parameters: {"ticket"=>"ST-133919-2gMUed3DrtrORkdpSVke-fed05"}
+Request contains ticket "ST-133919-2gMUed3DrtrORkdpSVke-fed05".
+Guessed service url: "http://ec2-54-201-70-193.us-west-2.compute.amazonaws.com/logout"
+Requesting CAS response for URI https://fed.princeton.edu/cas/proxyValidate?service=http%3A%2F%2Fec2-54-201-70-193.us-west-2.compute.amazonaws.com%2Flogout&ticket=ST-133919-2gMUed3DrtrORkdpSVke-fed05
+CAS server responded with #<Net::HTTPOK 200 OK readbody=true>:
+<cas:serviceResponse xmlns:cas='http://www.yale.edu/tp/cas'>
+	<cas:authenticationSuccess>
+		<cas:user>fng</cas:user>
+
+
+	</cas:authenticationSuccess>
+</cas:serviceResponse>
+
+Ticket "ST-133919-2gMUed3DrtrORkdpSVke-fed05" for service "http://ec2-54-201-70-193.us-west-2.compute.amazonaws.com/logout" belonging to user "fng" is VALID.
+Extra user attributes provided along with ticket "ST-133919-2gMUed3DrtrORkdpSVke-fed05": {}.
+Redirected to https://fed.princeton.edu/cas/logout?destination=http%3A%2F%2Fec2-54-201-70-193.us-west-2.compute.amazonaws.com%2F&gateway=true
+Completed 302 Found in 549ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 128.112.129.64 at 2015-04-23 02:10:26 +0000
+
+ActionController::RoutingError (No route matches [POST] "/"):
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:22:in `middleware_call'
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  /var/lib/gems/1.9.1/gems/passenger-5.0.6/lib/phusion_passenger/rack/thread_handler_extension.rb:85:in `process_request'
+  /var/lib/gems/1.9.1/gems/passenger-5.0.6/lib/phusion_passenger/request_handler/thread_handler.rb:155:in `accept_and_process_next_request'
+  /var/lib/gems/1.9.1/gems/passenger-5.0.6/lib/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+  /var/lib/gems/1.9.1/gems/passenger-5.0.6/lib/phusion_passenger/request_handler.rb:414:in `block (3 levels) in start_threads'
+  /var/lib/gems/1.9.1/gems/passenger-5.0.6/lib/phusion_passenger/utils.rb:111:in `block in create_thread_and_abort_on_exception'
+
+
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (19.6ms)
+
+
+Started POST "/" for 128.112.129.64 at 2015-04-23 02:10:27 +0000
+
+ActionController::RoutingError (No route matches [POST] "/"):
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:22:in `middleware_call'
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  /var/lib/gems/1.9.1/gems/passenger-5.0.6/lib/phusion_passenger/rack/thread_handler_extension.rb:85:in `process_request'
+  /var/lib/gems/1.9.1/gems/passenger-5.0.6/lib/phusion_passenger/request_handler/thread_handler.rb:155:in `accept_and_process_next_request'
+  /var/lib/gems/1.9.1/gems/passenger-5.0.6/lib/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+  /var/lib/gems/1.9.1/gems/passenger-5.0.6/lib/phusion_passenger/request_handler.rb:414:in `block (3 levels) in start_threads'
+  /var/lib/gems/1.9.1/gems/passenger-5.0.6/lib/phusion_passenger/utils.rb:111:in `block in create_thread_and_abort_on_exception'
+
+
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (17.2ms)
+
+
+Started POST "/logout" for 128.112.129.64 at 2015-04-23 02:10:27 +0000
+
+ActionController::RoutingError (No route matches [POST] "/logout"):
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:22:in `middleware_call'
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  /var/lib/gems/1.9.1/gems/passenger-5.0.6/lib/phusion_passenger/rack/thread_handler_extension.rb:85:in `process_request'
+  /var/lib/gems/1.9.1/gems/passenger-5.0.6/lib/phusion_passenger/request_handler/thread_handler.rb:155:in `accept_and_process_next_request'
+  /var/lib/gems/1.9.1/gems/passenger-5.0.6/lib/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+  /var/lib/gems/1.9.1/gems/passenger-5.0.6/lib/phusion_passenger/request_handler.rb:414:in `block (3 levels) in start_threads'
+  /var/lib/gems/1.9.1/gems/passenger-5.0.6/lib/phusion_passenger/utils.rb:111:in `block in create_thread_and_abort_on_exception'
+
+
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (17.0ms)
+
+
+Started POST "/" for 128.112.129.64 at 2015-04-23 02:10:27 +0000
+
+ActionController::RoutingError (No route matches [POST] "/"):
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:22:in `middleware_call'
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  /var/lib/gems/1.9.1/gems/passenger-5.0.6/lib/phusion_passenger/rack/thread_handler_extension.rb:85:in `process_request'
+  /var/lib/gems/1.9.1/gems/passenger-5.0.6/lib/phusion_passenger/request_handler/thread_handler.rb:155:in `accept_and_process_next_request'
+  /var/lib/gems/1.9.1/gems/passenger-5.0.6/lib/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+  /var/lib/gems/1.9.1/gems/passenger-5.0.6/lib/phusion_passenger/request_handler.rb:414:in `block (3 levels) in start_threads'
+  /var/lib/gems/1.9.1/gems/passenger-5.0.6/lib/phusion_passenger/utils.rb:111:in `block in create_thread_and_abort_on_exception'
+
+
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (17.7ms)
