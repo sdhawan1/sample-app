@@ -7,6 +7,70 @@ class Professor < ActiveRecord::Base
   validates :department, presence: true
 
   # methods for averages
+  def avg_avail
+    reviews = self.reviews
+    counter = 0
+    sum = 0
+    reviews.each do |review|
+      sum += review.availability
+      counter += 1
+    end 
+    return Float(sum) / Float(counter)
+  end
 
+  def avg_resp
+    reviews = self.reviews
+    counter = 0
+    sum = 0
+    reviews.each do |review|
+      sum += review.responsiveness
+      counter += 1
+    end 
+    return Float(sum) / Float(counter)
+  end
+
+  def avg_know
+    reviews = self.reviews
+    counter = 0
+    sum = 0
+    reviews.each do |review|
+      sum += review.knowledge
+      counter += 1
+    end 
+    return Float(sum) / Float(counter)
+  end
+
+  def avg_org
+    reviews = self.reviews
+    counter = 0
+    sum = 0
+    reviews.each do |review|
+      sum += review.organization
+      counter += 1
+    end 
+    return Float(sum) / Float(counter)
+  end
+
+  def avg_friend
+    reviews = self.reviews
+    counter = 0
+    sum = 0
+    reviews.each do |review|
+      sum += review.friendliness
+      counter += 1
+    end 
+    return Float(sum) / Float(counter)
+  end
+
+  def avg_help
+    reviews = self.reviews
+    counter = 0
+    sum = 0
+    reviews.each do |review|
+      sum += review.helpfulness
+      counter += 1
+    end 
+    return Float(sum) / Float(counter)
+  end
 
 end
