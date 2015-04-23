@@ -19,10 +19,10 @@
       <h3>Average Organization (<%= @professor.avg_org %>)</h3>
       <h3>Average Friendliness (<%= @professor.avg_friend %>)</h3>
       <h3>Average Helpfulness (<%= @professor.avg_help %>)</h3>
-      <h3>Reviews (<%= @professor.reviews.count %>)</h3>
-      <ol class="reviews">
+      <h3>Comments (<%= @professor.reviews.count %>)</h3>
+      <ul class="reviews">
         <%= render @reviews %>
-      </ol>
+      </ul>
       <%= will_paginate @reviews %>
     <% end %>
   </div>
