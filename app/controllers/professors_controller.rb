@@ -19,6 +19,15 @@ class ProfessorsController < ApplicationController
     end
   end
 
+  def index
+    if params[:query].present?
+      @professors = Professor.search(params[:query], page: params[:page])
+    else
+      @professors = Professor.all.page params[:page]
+    end
+  end
+
+
   private
 
     def professor_params

@@ -5,6 +5,7 @@ class Professor < ActiveRecord::Base
   validates :last_name, presence: true
   validates :netid, presence: true, uniqueness: true
   validates :department, presence: true
+  searchkick
 
   # methods for averages
   def avg_avail
