@@ -15,7 +15,7 @@
     <%= submit_tag "Search", class: "btn btn-primary" %>
     <% if params[:query].present? %>
       <%= link_to "clear", professors_path %>
-      <% end %>
-      <% end %>
+    <% end %>
+  <% end %>
 
 </div>

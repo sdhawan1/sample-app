@@ -1,10 +1,11 @@
-<h1>Search results</h1>
+<h1>Search results 2</h1>
 
 <ul class="results">
   <% @professors.each do |professor| %>
     <li>
-      <%= professor.first_name %> <%= professor.last_name %>
+      <p>professor.first_name professor.last_name,
       <%= link_to professor.netid, professor %>
+      </p>
     </li>
   <% end %>
 </ul>
