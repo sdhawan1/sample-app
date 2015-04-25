@@ -10,7 +10,7 @@ class ReviewsController < ApplicationController
       @review = @professor.reviews.build(review_params)
       if @review.save
         flash[:success] = "Review created!"
-        redirect_to @professor  # change this to professor's page
+        redirect_to @professor
       else
         render 'new'
       end
@@ -18,6 +18,14 @@ class ReviewsController < ApplicationController
       flash[:danger] = "This advisor does not yet exist in our system! Please add him/her before posting your review!"
       redirect_to new_professor_path
     end  
+  end
+
+  def destroy
+    review = Review.find(params[:id])
+    @professor = review.professor
+    review.destroy
+    flash[:success] = "Review deleted"
+    redirect_to @professor
   end
 
   private

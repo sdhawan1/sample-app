@@ -16545,3 +16545,565 @@ Faraday::ConnectionFailed (Connection refused - connect(2) for "localhost" port 
   Rendered /home/cindy/.gem/ruby/2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (22.3ms)
   Rendered /home/cindy/.gem/ruby/2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_web_console.html.erb (7.8ms)
   Rendered /home/cindy/.gem/ruby/2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (257.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-24 23:50:58 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+Existing local CAS session detected for "cxduan". Previous ticket "ST-11926-uJkF9WdSVbqacvXYUNVF-fed05" will be re-used.
+  Rendered static_pages/home.html.erb within layouts/application (15.1ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 691ms (Views: 660.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom-53f59fc9def409f9dde5e3a0bbf2ef8f.css?body=1" for 127.0.0.1 at 2015-04-24 23:50:59 -0400
+
+
+Started GET "/assets/static_pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-24 23:50:59 -0400
+
+
+Started GET "/professors/2" for 127.0.0.1 at 2015-04-24 23:51:05 -0400
+Processing by ProfessorsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mProfessor Load (0.4ms)[0m  SELECT  "professors".* FROM "professors" WHERE "professors"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mReview Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "reviews" WHERE "reviews"."professor_id" = ? LIMIT 1[0m  [["professor_id", 2]]
+  [1m[35mReview Load (0.3ms)[0m  SELECT "reviews".* FROM "reviews" WHERE "reviews"."professor_id" = ?  ORDER BY "reviews"."created_at" DESC  [["professor_id", 2]]
+  [1m[36m (11.2ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."professor_id" = ?[0m  [["professor_id", 2]]
+  [1m[35mReview Load (0.4ms)[0m  SELECT  "reviews".* FROM "reviews" WHERE "reviews"."professor_id" = ?  ORDER BY "reviews"."created_at" DESC LIMIT 30 OFFSET 0  [["professor_id", 2]]
+  Rendered reviews/_review.html.erb (1162.5ms)
+  Rendered professors/show.html.erb within layouts/application (1318.9ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 2027ms (Views: 1750.0ms | ActiveRecord: 16.1ms)
+
+
+Started GET "/assets/custom-53f59fc9def409f9dde5e3a0bbf2ef8f.css?body=1" for 127.0.0.1 at 2015-04-24 23:51:07 -0400
+
+
+Started GET "/assets/static_pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-24 23:51:07 -0400
+
+
+Started GET "/reviews/new" for 127.0.0.1 at 2015-04-25 00:49:51 -0400
+Processing by ReviewsController#new as HTML
+  Rendered shared/_error_messages.html.erb (166.5ms)
+  Rendered reviews/new.html.erb within layouts/application (1147.5ms)
+  Rendered layouts/_shim.html.erb (1.6ms)
+  Rendered layouts/_header.html.erb (3.1ms)
+  Rendered layouts/_footer.html.erb (3.7ms)
+Completed 200 OK in 5776ms (Views: 5512.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-25 01:02:18 -0400
+Processing by StaticPagesController#home as HTML
+Existing local CAS session detected for "cxduan". Previous ticket "ST-11926-uJkF9WdSVbqacvXYUNVF-fed05" will be re-used.
+  Rendered static_pages/home.html.erb within layouts/application (18.5ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 377ms (Views: 365.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2015-04-25 01:02:23 -0400
+Processing by StaticPagesController#about as HTML
+Existing local CAS session detected for "cxduan". Previous ticket "ST-11926-uJkF9WdSVbqacvXYUNVF-fed05" will be re-used.
+  Rendered static_pages/about.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 308ms (Views: 306.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-25 01:02:28 -0400
+Processing by StaticPagesController#home as HTML
+Existing local CAS session detected for "cxduan". Previous ticket "ST-11926-uJkF9WdSVbqacvXYUNVF-fed05" will be re-used.
+  Rendered static_pages/home.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 191ms (Views: 190.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2015-04-25 01:02:33 -0400
+Processing by StaticPagesController#logout as HTML
+Existing local CAS session detected for "cxduan". Previous ticket "ST-11926-uJkF9WdSVbqacvXYUNVF-fed05" will be re-used.
+Redirected to https://fed.princeton.edu/cas/logout?destination=http%3A%2F%2Flocalhost%3A3000%2F&gateway=true
+Completed 403 Forbidden in 22ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2015-04-25 01:02:33 -0400
+Processing by StaticPagesController#logout as HTML
+Guessed service url: "http://localhost:3000/logout"
+Generated login url: https://fed.princeton.edu/cas/login?service=http%3A%2F%2Flocalhost%3A3000%2Flogout
+Redirecting to "https://fed.princeton.edu/cas/login?service=http%3A%2F%2Flocalhost%3A3000%2Flogout"
+Redirected to https://fed.princeton.edu/cas/login?service=http%3A%2F%2Flocalhost%3A3000%2Flogout
+Filter chain halted as CASClient::Frameworks::Rails::Filter rendered or redirected
+Completed 302 Found in 55ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/logout?ticket=ST-11473-5pLLAp4TpWgscZ7jCAgT-fed06" for 127.0.0.1 at 2015-04-25 01:02:34 -0400
+Processing by StaticPagesController#logout as HTML
+  Parameters: {"ticket"=>"ST-11473-5pLLAp4TpWgscZ7jCAgT-fed06"}
+Request contains ticket "ST-11473-5pLLAp4TpWgscZ7jCAgT-fed06".
+Guessed service url: "http://localhost:3000/logout"
+Requesting CAS response for URI https://fed.princeton.edu/cas/proxyValidate?service=http%3A%2F%2Flocalhost%3A3000%2Flogout&ticket=ST-11473-5pLLAp4TpWgscZ7jCAgT-fed06
+CAS server responded with #<Net::HTTPOK 200 OK readbody=true>:
+<cas:serviceResponse xmlns:cas='http://www.yale.edu/tp/cas'>
+	<cas:authenticationSuccess>
+		<cas:user>cxduan</cas:user>
+
+
+	</cas:authenticationSuccess>
+</cas:serviceResponse>
+
+Ticket "ST-11473-5pLLAp4TpWgscZ7jCAgT-fed06" for service "http://localhost:3000/logout" belonging to user "cxduan" is VALID.
+Extra user attributes provided along with ticket "ST-11473-5pLLAp4TpWgscZ7jCAgT-fed06": {}.
+Redirected to https://fed.princeton.edu/cas/logout?destination=http%3A%2F%2Flocalhost%3A3000%2F&gateway=true
+Completed 302 Found in 487ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-25 01:02:52 -0400
+Processing by StaticPagesController#home as HTML
+Guessed service url: "http://localhost:3000/"
+Generated login url: https://fed.princeton.edu/cas/login?service=http%3A%2F%2Flocalhost%3A3000%2F
+Redirecting to "https://fed.princeton.edu/cas/login?service=http%3A%2F%2Flocalhost%3A3000%2F"
+Redirected to https://fed.princeton.edu/cas/login?service=http%3A%2F%2Flocalhost%3A3000%2F
+Filter chain halted as CASClient::Frameworks::Rails::Filter rendered or redirected
+Completed 302 Found in 8ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/?ticket=ST-11475-OufVGQ5ldFfgWcQuV3p3-fed06" for 127.0.0.1 at 2015-04-25 01:03:03 -0400
+Processing by StaticPagesController#home as HTML
+  Parameters: {"ticket"=>"ST-11475-OufVGQ5ldFfgWcQuV3p3-fed06"}
+Request contains ticket "ST-11475-OufVGQ5ldFfgWcQuV3p3-fed06".
+Guessed service url: "http://localhost:3000/"
+Requesting CAS response for URI https://fed.princeton.edu/cas/proxyValidate?service=http%3A%2F%2Flocalhost%3A3000%2F&ticket=ST-11475-OufVGQ5ldFfgWcQuV3p3-fed06
+CAS server responded with #<Net::HTTPOK 200 OK readbody=true>:
+<cas:serviceResponse xmlns:cas='http://www.yale.edu/tp/cas'>
+	<cas:authenticationSuccess>
+		<cas:user>cxduan</cas:user>
+
+
+	</cas:authenticationSuccess>
+</cas:serviceResponse>
+
+Ticket "ST-11475-OufVGQ5ldFfgWcQuV3p3-fed06" for service "http://localhost:3000/" belonging to user "cxduan" is VALID.
+Extra user attributes provided along with ticket "ST-11475-OufVGQ5ldFfgWcQuV3p3-fed06": {}.
+  Rendered static_pages/home.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 666ms (Views: 553.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom-53f59fc9def409f9dde5e3a0bbf2ef8f.css?body=1" for 127.0.0.1 at 2015-04-25 01:03:04 -0400
+
+
+Started GET "/assets/static_pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 01:03:04 -0400
+
+
+Started GET "/about" for 127.0.0.1 at 2015-04-25 01:03:15 -0400
+Processing by StaticPagesController#about as HTML
+Existing local CAS session detected for "cxduan". Previous ticket "ST-11475-OufVGQ5ldFfgWcQuV3p3-fed06" will be re-used.
+  Rendered static_pages/about.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 184ms (Views: 182.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2015-04-25 01:03:29 -0400
+Processing by StaticPagesController#logout as HTML
+Existing local CAS session detected for "cxduan". Previous ticket "ST-11475-OufVGQ5ldFfgWcQuV3p3-fed06" will be re-used.
+Redirected to https://fed.princeton.edu/cas/logout?destination=http%3A%2F%2Flocalhost%3A3000%2Fabout&gateway=true
+Completed 403 Forbidden in 8ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2015-04-25 01:03:29 -0400
+Processing by StaticPagesController#logout as HTML
+Guessed service url: "http://localhost:3000/logout"
+Generated login url: https://fed.princeton.edu/cas/login?service=http%3A%2F%2Flocalhost%3A3000%2Flogout
+Redirecting to "https://fed.princeton.edu/cas/login?service=http%3A%2F%2Flocalhost%3A3000%2Flogout"
+Redirected to https://fed.princeton.edu/cas/login?service=http%3A%2F%2Flocalhost%3A3000%2Flogout
+Filter chain halted as CASClient::Frameworks::Rails::Filter rendered or redirected
+Completed 302 Found in 7ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/logout?ticket=ST-11476-X3KORMfqYFTZpX5JbX9q-fed06" for 127.0.0.1 at 2015-04-25 01:03:29 -0400
+Processing by StaticPagesController#logout as HTML
+  Parameters: {"ticket"=>"ST-11476-X3KORMfqYFTZpX5JbX9q-fed06"}
+Request contains ticket "ST-11476-X3KORMfqYFTZpX5JbX9q-fed06".
+Guessed service url: "http://localhost:3000/logout"
+Requesting CAS response for URI https://fed.princeton.edu/cas/proxyValidate?service=http%3A%2F%2Flocalhost%3A3000%2Flogout&ticket=ST-11476-X3KORMfqYFTZpX5JbX9q-fed06
+CAS server responded with #<Net::HTTPOK 200 OK readbody=true>:
+<cas:serviceResponse xmlns:cas='http://www.yale.edu/tp/cas'>
+	<cas:authenticationSuccess>
+		<cas:user>cxduan</cas:user>
+
+
+	</cas:authenticationSuccess>
+</cas:serviceResponse>
+
+Ticket "ST-11476-X3KORMfqYFTZpX5JbX9q-fed06" for service "http://localhost:3000/logout" belonging to user "cxduan" is VALID.
+Extra user attributes provided along with ticket "ST-11476-X3KORMfqYFTZpX5JbX9q-fed06": {}.
+Redirected to https://fed.princeton.edu/cas/logout?destination=http%3A%2F%2Flocalhost%3A3000%2Fabout&gateway=true
+Completed 302 Found in 255ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2015-04-25 01:03:35 -0400
+Processing by StaticPagesController#about as HTML
+Guessed service url: "http://localhost:3000/about"
+Generated login url: https://fed.princeton.edu/cas/login?service=http%3A%2F%2Flocalhost%3A3000%2Fabout
+Redirecting to "https://fed.princeton.edu/cas/login?service=http%3A%2F%2Flocalhost%3A3000%2Fabout"
+Redirected to https://fed.princeton.edu/cas/login?service=http%3A%2F%2Flocalhost%3A3000%2Fabout
+Filter chain halted as CASClient::Frameworks::Rails::Filter rendered or redirected
+Completed 302 Found in 12ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/professors/2" for 127.0.0.1 at 2015-04-25 01:04:00 -0400
+Processing by ProfessorsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProfessor Load (6.5ms)[0m  [1mSELECT  "professors".* FROM "professors" WHERE "professors"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mReview Exists (0.2ms)[0m  SELECT  1 AS one FROM "reviews" WHERE "reviews"."professor_id" = ? LIMIT 1  [["professor_id", 2]]
+  [1m[36mReview Load (0.9ms)[0m  [1mSELECT "reviews".* FROM "reviews" WHERE "reviews"."professor_id" = ?  ORDER BY "reviews"."created_at" DESC[0m  [["professor_id", 2]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."professor_id" = ?  [["professor_id", 2]]
+  [1m[36mReview Load (0.2ms)[0m  [1mSELECT  "reviews".* FROM "reviews" WHERE "reviews"."professor_id" = ?  ORDER BY "reviews"."created_at" DESC LIMIT 30 OFFSET 0[0m  [["professor_id", 2]]
+  Rendered reviews/_review.html.erb (11.2ms)
+  Rendered professors/show.html.erb within layouts/application (63.6ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 516ms (Views: 453.5ms | ActiveRecord: 7.8ms)
+
+
+Started GET "/assets/custom-53f59fc9def409f9dde5e3a0bbf2ef8f.css?body=1" for 127.0.0.1 at 2015-04-25 01:04:00 -0400
+
+
+Started GET "/assets/static_pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 01:04:00 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-25 01:04:29 -0400
+Processing by StaticPagesController#home as HTML
+Guessed service url: "http://localhost:3000/"
+Generated login url: https://fed.princeton.edu/cas/login?service=http%3A%2F%2Flocalhost%3A3000%2F
+Redirecting to "https://fed.princeton.edu/cas/login?service=http%3A%2F%2Flocalhost%3A3000%2F"
+Redirected to https://fed.princeton.edu/cas/login?service=http%3A%2F%2Flocalhost%3A3000%2F
+Filter chain halted as CASClient::Frameworks::Rails::Filter rendered or redirected
+Completed 302 Found in 21ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-25 01:04:44 -0400
+Processing by StaticPagesController#home as HTML
+Guessed service url: "http://localhost:3000/"
+Generated login url: https://fed.princeton.edu/cas/login?service=http%3A%2F%2Flocalhost%3A3000%2F
+Redirecting to "https://fed.princeton.edu/cas/login?service=http%3A%2F%2Flocalhost%3A3000%2F"
+Redirected to https://fed.princeton.edu/cas/login?service=http%3A%2F%2Flocalhost%3A3000%2F
+Filter chain halted as CASClient::Frameworks::Rails::Filter rendered or redirected
+Completed 302 Found in 10ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-25 10:44:25 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+Guessed service url: "http://localhost:3000/"
+Generated login url: https://fed.princeton.edu/cas/login?service=http%3A%2F%2Flocalhost%3A3000%2F
+Redirecting to "https://fed.princeton.edu/cas/login?service=http%3A%2F%2Flocalhost%3A3000%2F"
+Redirected to https://fed.princeton.edu/cas/login?service=http%3A%2F%2Flocalhost%3A3000%2F
+Filter chain halted as CASClient::Frameworks::Rails::Filter rendered or redirected
+Completed 302 Found in 170ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/?ticket=ST-13842-SI0KyEkGZWqPOVqHZE1M-fed05" for 127.0.0.1 at 2015-04-25 10:44:35 -0400
+Processing by StaticPagesController#home as HTML
+  Parameters: {"ticket"=>"ST-13842-SI0KyEkGZWqPOVqHZE1M-fed05"}
+Request contains ticket "ST-13842-SI0KyEkGZWqPOVqHZE1M-fed05".
+Guessed service url: "http://localhost:3000/"
+Requesting CAS response for URI https://fed.princeton.edu/cas/proxyValidate?service=http%3A%2F%2Flocalhost%3A3000%2F&ticket=ST-13842-SI0KyEkGZWqPOVqHZE1M-fed05
+CAS server responded with #<Net::HTTPOK 200 OK readbody=true>:
+<cas:serviceResponse xmlns:cas='http://www.yale.edu/tp/cas'>
+	<cas:authenticationSuccess>
+		<cas:user>cxduan</cas:user>
+
+
+	</cas:authenticationSuccess>
+</cas:serviceResponse>
+
+Ticket "ST-13842-SI0KyEkGZWqPOVqHZE1M-fed05" for service "http://localhost:3000/" belonging to user "cxduan" is VALID.
+Extra user attributes provided along with ticket "ST-13842-SI0KyEkGZWqPOVqHZE1M-fed05": {}.
+  Rendered static_pages/home.html.erb within layouts/application (164.6ms)
+  Rendered layouts/_shim.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (29.8ms)
+  Rendered layouts/_footer.html.erb (3.3ms)
+Completed 200 OK in 9492ms (Views: 7046.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom-53f59fc9def409f9dde5e3a0bbf2ef8f.css?body=1" for 127.0.0.1 at 2015-04-25 10:44:46 -0400
+
+
+Started GET "/assets/static_pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 10:44:46 -0400
+
+
+Started GET "/professors?utf8=%E2%9C%93&query=Felic&commit=Search" for 127.0.0.1 at 2015-04-25 10:44:56 -0400
+Processing by ProfessorsController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"Felic", "commit"=>"Search"}
+  [1m[33mProfessor Search (2645.2ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"dis_max":{"queries":[{"match":{"_all":{"query":"Felic","operator":"and","boost":10,"analyzer":"searchkick_search"}}},{"match":{"_all":{"query":"Felic","operator":"and","boost":10,"analyzer":"searchkick_search2"}}},{"match":{"_all":{"query":"Felic","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search"}}},{"match":{"_all":{"query":"Felic","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search2"}}}]}},"size":100000,"from":0,"fields":[]}'
+  Rendered professors/index.html.erb within layouts/application (29.3ms)
+  Rendered layouts/_shim.html.erb (2.0ms)
+  Rendered layouts/_header.html.erb (34.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 4286ms (Views: 1121.3ms | Searchkick: 2645.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom-53f59fc9def409f9dde5e3a0bbf2ef8f.css?body=1" for 127.0.0.1 at 2015-04-25 10:45:01 -0400
+
+
+Started GET "/assets/static_pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 10:45:01 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-25 10:45:06 -0400
+Processing by StaticPagesController#home as HTML
+Existing local CAS session detected for "cxduan". Previous ticket "ST-13842-SI0KyEkGZWqPOVqHZE1M-fed05" will be re-used.
+  Rendered static_pages/home.html.erb within layouts/application (7.5ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 1185ms (Views: 1173.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/professors?utf8=%E2%9C%93&query=Felici&commit=Search" for 127.0.0.1 at 2015-04-25 10:45:11 -0400
+Processing by ProfessorsController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"Felici", "commit"=>"Search"}
+  [1m[33mProfessor Search (629.6ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"dis_max":{"queries":[{"match":{"_all":{"query":"Felici","operator":"and","boost":10,"analyzer":"searchkick_search"}}},{"match":{"_all":{"query":"Felici","operator":"and","boost":10,"analyzer":"searchkick_search2"}}},{"match":{"_all":{"query":"Felici","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search"}}},{"match":{"_all":{"query":"Felici","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search2"}}}]}},"size":100000,"from":0,"fields":[]}'
+  [1m[35mProfessor Load (0.5ms)[0m  SELECT "professors".* FROM "professors" WHERE "professors"."id" = 3
+  Rendered professors/index.html.erb within layouts/application (172.5ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 1210ms (Views: 558.8ms | Searchkick: 629.6ms | ActiveRecord: 19.3ms)
+
+
+Started GET "/assets/custom-53f59fc9def409f9dde5e3a0bbf2ef8f.css?body=1" for 127.0.0.1 at 2015-04-25 10:45:12 -0400
+
+
+Started GET "/assets/static_pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 10:45:12 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-25 10:45:16 -0400
+Processing by StaticPagesController#home as HTML
+Existing local CAS session detected for "cxduan". Previous ticket "ST-13842-SI0KyEkGZWqPOVqHZE1M-fed05" will be re-used.
+  Rendered static_pages/home.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 198ms (Views: 196.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-25 11:13:04 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+Existing local CAS session detected for "cxduan". Previous ticket "ST-13842-SI0KyEkGZWqPOVqHZE1M-fed05" will be re-used.
+  Rendered static_pages/home.html.erb within layouts/application (42.8ms)
+  Rendered layouts/_shim.html.erb (1.3ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 1530ms (Views: 1465.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom-53f59fc9def409f9dde5e3a0bbf2ef8f.css?body=1" for 127.0.0.1 at 2015-04-25 11:13:06 -0400
+
+
+Started GET "/assets/static_pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 11:13:06 -0400
+
+
+Started GET "/find" for 127.0.0.1 at 2015-04-25 11:13:10 -0400
+Processing by SearchsController#new as HTML
+  Rendered searchs/new.html.erb within layouts/application (52.4ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 258ms (Views: 251.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-25 11:13:13 -0400
+Processing by StaticPagesController#home as HTML
+Existing local CAS session detected for "cxduan". Previous ticket "ST-13842-SI0KyEkGZWqPOVqHZE1M-fed05" will be re-used.
+  Rendered static_pages/home.html.erb within layouts/application (4.6ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 188ms (Views: 186.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/professors?utf8=%E2%9C%93&query=Felicia&commit=Search" for 127.0.0.1 at 2015-04-25 11:13:19 -0400
+Processing by ProfessorsController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"Felicia", "commit"=>"Search"}
+  [1m[33mProfessor Search (2010.6ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"dis_max":{"queries":[{"match":{"_all":{"query":"Felicia","operator":"and","boost":10,"analyzer":"searchkick_search"}}},{"match":{"_all":{"query":"Felicia","operator":"and","boost":10,"analyzer":"searchkick_search2"}}},{"match":{"_all":{"query":"Felicia","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search"}}},{"match":{"_all":{"query":"Felicia","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search2"}}}]}},"size":100000,"from":0,"fields":[]}'
+  [1m[35mProfessor Load (1.6ms)[0m  SELECT "professors".* FROM "professors" WHERE "professors"."id" = 3
+  Rendered professors/index.html.erb within layouts/application (241.0ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (2.6ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 4351ms (Views: 1686.5ms | Searchkick: 2010.6ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/assets/custom-53f59fc9def409f9dde5e3a0bbf2ef8f.css?body=1" for 127.0.0.1 at 2015-04-25 11:13:24 -0400
+
+
+Started GET "/assets/static_pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 11:13:24 -0400
+
+
+Started GET "/professors/3" for 127.0.0.1 at 2015-04-25 11:13:26 -0400
+Processing by ProfessorsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mProfessor Load (2.0ms)[0m  [1mSELECT  "professors".* FROM "professors" WHERE "professors"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mReview Exists (2.0ms)[0m  SELECT  1 AS one FROM "reviews" WHERE "reviews"."professor_id" = ? LIMIT 1  [["professor_id", 3]]
+  [1m[36mReview Load (2.0ms)[0m  [1mSELECT "reviews".* FROM "reviews" WHERE "reviews"."professor_id" = ?  ORDER BY "reviews"."created_at" DESC[0m  [["professor_id", 3]]
+  [1m[35m (0.7ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."professor_id" = ?  [["professor_id", 3]]
+  [1m[36mReview Load (4.2ms)[0m  [1mSELECT  "reviews".* FROM "reviews" WHERE "reviews"."professor_id" = ?  ORDER BY "reviews"."created_at" DESC LIMIT 30 OFFSET 0[0m  [["professor_id", 3]]
+  Rendered reviews/_review.html.erb (1089.3ms)
+  Rendered professors/show.html.erb within layouts/application (1297.9ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 1861ms (Views: 1503.0ms | ActiveRecord: 17.5ms)
+
+
+Started DELETE "/reviews/13" for 127.0.0.1 at 2015-04-25 11:13:43 -0400
+Processing by ReviewsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Xj4pPiTUD8/F0Nu2q7xsuamv3PX7UIqfxYpiSLEIiUkF+Hx9zktCobtdSYuKl+qooKAZJhfMVxP5sp9N56D07Q==", "id"=>"13"}
+  [1m[35mReview Load (1.1ms)[0m  SELECT  "reviews".* FROM "reviews" WHERE "reviews"."id" = ?  ORDER BY "reviews"."created_at" DESC LIMIT 1  [["id", 13]]
+  [1m[36mProfessor Load (0.2ms)[0m  [1mSELECT  "professors".* FROM "professors" WHERE "professors"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35m (5.4ms)[0m  begin transaction
+  [1m[36mSQL (12.8ms)[0m  [1mDELETE FROM "reviews" WHERE "reviews"."id" = ?[0m  [["id", 13]]
+  [1m[35m (2.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/professors/3
+Completed 302 Found in 48ms (ActiveRecord: 22.0ms)
+
+
+Started GET "/professors/3" for 127.0.0.1 at 2015-04-25 11:13:44 -0400
+Processing by ProfessorsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mProfessor Load (0.3ms)[0m  [1mSELECT  "professors".* FROM "professors" WHERE "professors"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mReview Exists (0.3ms)[0m  SELECT  1 AS one FROM "reviews" WHERE "reviews"."professor_id" = ? LIMIT 1  [["professor_id", 3]]
+  [1m[36mReview Load (0.3ms)[0m  [1mSELECT "reviews".* FROM "reviews" WHERE "reviews"."professor_id" = ?  ORDER BY "reviews"."created_at" DESC[0m  [["professor_id", 3]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."professor_id" = ?  [["professor_id", 3]]
+  [1m[36mReview Load (0.2ms)[0m  [1mSELECT  "reviews".* FROM "reviews" WHERE "reviews"."professor_id" = ?  ORDER BY "reviews"."created_at" DESC LIMIT 30 OFFSET 0[0m  [["professor_id", 3]]
+  Rendered reviews/_review.html.erb (32.1ms)
+  Rendered professors/show.html.erb within layouts/application (79.5ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 645ms (Views: 638.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/custom-53f59fc9def409f9dde5e3a0bbf2ef8f.css?body=1" for 127.0.0.1 at 2015-04-25 11:13:44 -0400
+
+
+Started GET "/assets/static_pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 11:13:44 -0400
+
+
+Started GET "/professors/3" for 127.0.0.1 at 2015-04-25 11:14:47 -0400
+Processing by ProfessorsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mProfessor Load (0.2ms)[0m  SELECT  "professors".* FROM "professors" WHERE "professors"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mReview Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "reviews" WHERE "reviews"."professor_id" = ? LIMIT 1[0m  [["professor_id", 3]]
+  [1m[35mReview Load (0.3ms)[0m  SELECT "reviews".* FROM "reviews" WHERE "reviews"."professor_id" = ?  ORDER BY "reviews"."created_at" DESC  [["professor_id", 3]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."professor_id" = ?[0m  [["professor_id", 3]]
+  [1m[35mReview Load (0.2ms)[0m  SELECT  "reviews".* FROM "reviews" WHERE "reviews"."professor_id" = ?  ORDER BY "reviews"."created_at" DESC LIMIT 30 OFFSET 0  [["professor_id", 3]]
+  Rendered reviews/_review.html.erb (6.4ms)
+  Rendered professors/show.html.erb within layouts/application (35.5ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 493ms (Views: 488.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/custom-53f59fc9def409f9dde5e3a0bbf2ef8f.css?body=1" for 127.0.0.1 at 2015-04-25 11:14:47 -0400
+
+
+Started GET "/assets/professors-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 11:14:47 -0400
+
+
+Started GET "/assets/searchs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 11:14:47 -0400
+
+
+Started GET "/assets/reviews-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 11:14:47 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 11:14:48 -0400
+
+
+Started GET "/assets/static_pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 11:14:48 -0400
+
+
+Started GET "/assets/application-43e3eee9388d8722a4a0fc5dfbfc57c6.css?body=1" for 127.0.0.1 at 2015-04-25 11:14:48 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-25 11:14:48 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-25 11:14:48 -0400
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for 127.0.0.1 at 2015-04-25 11:14:48 -0400
+
+
+Started GET "/assets/turbolinks-d9dcd5206ee131f11181e8ca09537148.js?body=1" for 127.0.0.1 at 2015-04-25 11:14:48 -0400
+
+
+Started GET "/assets/professors-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 11:14:48 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 11:14:48 -0400
+
+
+Started GET "/assets/reviews-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 11:14:48 -0400
+
+
+Started GET "/assets/searchs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 11:14:48 -0400
+
+
+Started GET "/assets/static_pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 11:14:48 -0400
+
+
+Started GET "/assets/application-b215c12cd796dcac63e0ba0c049eb42b.js?body=1" for 127.0.0.1 at 2015-04-25 11:14:48 -0400
+
+
+Started GET "/logout" for 127.0.0.1 at 2015-04-25 11:14:53 -0400
+Processing by StaticPagesController#logout as HTML
+Existing local CAS session detected for "cxduan". Previous ticket "ST-13842-SI0KyEkGZWqPOVqHZE1M-fed05" will be re-used.
+Redirected to https://fed.princeton.edu/cas/logout?destination=http%3A%2F%2Flocalhost%3A3000%2Fprofessors%2F3&gateway=true
+Completed 403 Forbidden in 13ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2015-04-25 11:14:53 -0400
+Processing by StaticPagesController#logout as HTML
+Guessed service url: "http://localhost:3000/logout"
+Generated login url: https://fed.princeton.edu/cas/login?service=http%3A%2F%2Flocalhost%3A3000%2Flogout
+Redirecting to "https://fed.princeton.edu/cas/login?service=http%3A%2F%2Flocalhost%3A3000%2Flogout"
+Redirected to https://fed.princeton.edu/cas/login?service=http%3A%2F%2Flocalhost%3A3000%2Flogout
+Filter chain halted as CASClient::Frameworks::Rails::Filter rendered or redirected
+Completed 302 Found in 12ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/logout?ticket=ST-13955-NJDF4cyZg4Do2dbkVUNO-fed05" for 127.0.0.1 at 2015-04-25 11:14:53 -0400
+Processing by StaticPagesController#logout as HTML
+  Parameters: {"ticket"=>"ST-13955-NJDF4cyZg4Do2dbkVUNO-fed05"}
+Request contains ticket "ST-13955-NJDF4cyZg4Do2dbkVUNO-fed05".
+Guessed service url: "http://localhost:3000/logout"
+Requesting CAS response for URI https://fed.princeton.edu/cas/proxyValidate?service=http%3A%2F%2Flocalhost%3A3000%2Flogout&ticket=ST-13955-NJDF4cyZg4Do2dbkVUNO-fed05
+CAS server responded with #<Net::HTTPOK 200 OK readbody=true>:
+<cas:serviceResponse xmlns:cas='http://www.yale.edu/tp/cas'>
+	<cas:authenticationSuccess>
+		<cas:user>cxduan</cas:user>
+
+
+	</cas:authenticationSuccess>
+</cas:serviceResponse>
+
+Ticket "ST-13955-NJDF4cyZg4Do2dbkVUNO-fed05" for service "http://localhost:3000/logout" belonging to user "cxduan" is VALID.
+Extra user attributes provided along with ticket "ST-13955-NJDF4cyZg4Do2dbkVUNO-fed05": {}.
+Redirected to https://fed.princeton.edu/cas/logout?destination=http%3A%2F%2Flocalhost%3A3000%2Fprofessors%2F3&gateway=true
+Completed 302 Found in 303ms (ActiveRecord: 0.0ms)
