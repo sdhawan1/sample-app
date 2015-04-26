@@ -11,11 +11,17 @@
   <p></p>
 
   <%= form_tag professors_path, class: "form-inline", method: :get do %>
-    <%= text_field_tag :query, params[:query], class: "form-control" %>
-    <%= submit_tag "Search", class: "btn btn-primary" %>
+  <div class="input-group input-group-lg" >
     <% if params[:query].present? %>
-      <%= link_to "clear", professors_path %>
+    <div class="input-group-btn">
+      <%= link_to "clear", professors_path, class: "btn btn-default" %>
+    </div>
     <% end %>
+    <%= text_field_tag :query, params[:query], class: "form-control", id: "professor_search", autocomplete: "off" %>
+    <div class="input-group-btn">
+    <%= submit_tag "Search", class: "btn btn-primary" %>
+    </div>
   <% end %>
+  </div>
 
 </div>

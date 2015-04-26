@@ -21,10 +21,21 @@ class ProfessorsController < ApplicationController
 
   def index
     if params[:query].present?
-      @professors = Professor.search(params[:query], page: params[:page])
+      @professors = Professor.search(params[:query], 
+                                     fields: [:first_name, :last_name, :netid, :department],
+                                     page: params[:page])
     else
       @professors = Professor.all.page params[:page]
     end
+  end
+
+  def autocomplete
+    render json: Professor.search(params[:query],
+                 autocomplete: true,
+                 fields: [:first_name, :last_name, :netid, :department],
+                 limit: 10).map { |professor|
+                   professor.first_name + " " + professor.last_name + " " + professor.netid + " " + professor.department
+                 }
   end
 
 
