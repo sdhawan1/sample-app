@@ -10,6 +10,10 @@ Rails.application.routes.draw do
   post   'find'    => 'searchs#create'
   get    'results' => 'searchs#index'
   resources :users
-  resources :professors
+  resources :professors do
+    collection do
+      get :autocomplete
+    end
+  end
   resources :reviews
 end

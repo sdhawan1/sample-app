@@ -17107,3 +17107,2709 @@ Ticket "ST-13955-NJDF4cyZg4Do2dbkVUNO-fed05" for service "http://localhost:3000/
 Extra user attributes provided along with ticket "ST-13955-NJDF4cyZg4Do2dbkVUNO-fed05": {}.
 Redirected to https://fed.princeton.edu/cas/logout?destination=http%3A%2F%2Flocalhost%3A3000%2Fprofessors%2F3&gateway=true
 Completed 302 Found in 303ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-25 19:51:45 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+Existing local CAS session detected for "cxduan". Previous ticket "ST-13020-hLAJBTZhgC3g1Gq57LoW-fed06" will be re-used.
+  Rendered static_pages/home.html.erb within layouts/application (39.4ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 11357ms (Views: 11305.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom-53f59fc9def409f9dde5e3a0bbf2ef8f.css?body=1" for 127.0.0.1 at 2015-04-25 19:51:57 -0400
+
+
+Started GET "/assets/professors-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 19:51:57 -0400
+
+
+Started GET "/assets/static_pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 19:51:57 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 19:51:57 -0400
+
+
+Started GET "/assets/reviews-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 19:51:57 -0400
+
+
+Started GET "/assets/searchs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 19:51:57 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-25 19:51:57 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-25 19:51:57 -0400
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for 127.0.0.1 at 2015-04-25 19:51:57 -0400
+
+
+Started GET "/assets/turbolinks-d9dcd5206ee131f11181e8ca09537148.js?body=1" for 127.0.0.1 at 2015-04-25 19:51:57 -0400
+
+
+Started GET "/assets/reviews-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 19:51:57 -0400
+
+
+Started GET "/assets/searchs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 19:51:57 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 19:51:57 -0400
+
+
+Started GET "/assets/static_pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 19:51:57 -0400
+
+
+Started GET "/professors?utf8=%E2%9C%93&query=Cin&commit=Search" for 127.0.0.1 at 2015-04-25 19:52:11 -0400
+Processing by ProfessorsController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"Cin", "commit"=>"Search"}
+  [1m[33mProfessor Search (265.5ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"dis_max":{"queries":[{"match":{"_all":{"query":"Cin","operator":"and","boost":10,"analyzer":"searchkick_search"}}},{"match":{"_all":{"query":"Cin","operator":"and","boost":10,"analyzer":"searchkick_search2"}}},{"match":{"_all":{"query":"Cin","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search"}}},{"match":{"_all":{"query":"Cin","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search2"}}}]}},"size":100000,"from":0,"fields":[]}'
+  Rendered professors/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 1220ms (Views: 811.1ms | Searchkick: 265.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom-53f59fc9def409f9dde5e3a0bbf2ef8f.css?body=1" for 127.0.0.1 at 2015-04-25 19:52:12 -0400
+
+
+Started GET "/assets/professors-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 19:52:12 -0400
+
+
+Started GET "/assets/searchs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 19:52:12 -0400
+
+
+Started GET "/assets/static_pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 19:52:12 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 19:52:12 -0400
+
+
+Started GET "/assets/reviews-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 19:52:12 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-25 19:52:12 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-25 19:52:12 -0400
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for 127.0.0.1 at 2015-04-25 19:52:12 -0400
+
+
+Started GET "/assets/turbolinks-d9dcd5206ee131f11181e8ca09537148.js?body=1" for 127.0.0.1 at 2015-04-25 19:52:12 -0400
+
+
+Started GET "/assets/searchs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 19:52:12 -0400
+
+
+Started GET "/assets/reviews-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 19:52:12 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 19:52:12 -0400
+
+
+Started GET "/assets/static_pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 19:52:12 -0400
+
+
+Started GET "/find" for 127.0.0.1 at 2015-04-25 19:52:20 -0400
+Processing by SearchsController#new as HTML
+  Rendered searchs/new.html.erb within layouts/application (28.8ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 205ms (Views: 203.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-25 19:52:22 -0400
+Processing by StaticPagesController#home as HTML
+Existing local CAS session detected for "cxduan". Previous ticket "ST-13020-hLAJBTZhgC3g1Gq57LoW-fed06" will be re-used.
+  Rendered static_pages/home.html.erb within layouts/application (11.9ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 177ms (Views: 170.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/professors?utf8=%E2%9C%93&query=Cind&commit=Search" for 127.0.0.1 at 2015-04-25 19:52:39 -0400
+Processing by ProfessorsController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"Cind", "commit"=>"Search"}
+  [1m[33mProfessor Search (163.6ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"dis_max":{"queries":[{"match":{"_all":{"query":"Cind","operator":"and","boost":10,"analyzer":"searchkick_search"}}},{"match":{"_all":{"query":"Cind","operator":"and","boost":10,"analyzer":"searchkick_search2"}}},{"match":{"_all":{"query":"Cind","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search"}}},{"match":{"_all":{"query":"Cind","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search2"}}}]}},"size":100000,"from":0,"fields":[]}'
+  [1m[35mProfessor Load (5.9ms)[0m  SELECT "professors".* FROM "professors" WHERE "professors"."id" = 4
+  Rendered professors/index.html.erb within layouts/application (82.9ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 569ms (Views: 394.6ms | Searchkick: 163.6ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/assets/custom-53f59fc9def409f9dde5e3a0bbf2ef8f.css?body=1" for 127.0.0.1 at 2015-04-25 19:52:40 -0400
+
+
+Started GET "/assets/professors-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 19:52:40 -0400
+
+
+Started GET "/assets/reviews-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 19:52:40 -0400
+
+
+Started GET "/assets/static_pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 19:52:40 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 19:52:40 -0400
+
+
+Started GET "/assets/searchs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 19:52:40 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-25 19:52:40 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-25 19:52:40 -0400
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for 127.0.0.1 at 2015-04-25 19:52:40 -0400
+
+
+Started GET "/assets/turbolinks-d9dcd5206ee131f11181e8ca09537148.js?body=1" for 127.0.0.1 at 2015-04-25 19:52:40 -0400
+
+
+Started GET "/assets/reviews-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 19:52:40 -0400
+
+
+Started GET "/assets/searchs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 19:52:40 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 19:52:40 -0400
+
+
+Started GET "/assets/static_pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 19:52:40 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-25 19:52:42 -0400
+Processing by StaticPagesController#home as HTML
+Existing local CAS session detected for "cxduan". Previous ticket "ST-13020-hLAJBTZhgC3g1Gq57LoW-fed06" will be re-used.
+  Rendered static_pages/home.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 189ms (Views: 184.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-25 19:52:45 -0400
+Processing by StaticPagesController#home as HTML
+Existing local CAS session detected for "cxduan". Previous ticket "ST-13020-hLAJBTZhgC3g1Gq57LoW-fed06" will be re-used.
+  Rendered static_pages/home.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 210ms (Views: 208.3ms | ActiveRecord: 0.0ms)
+  [1m[36mProfessor Load (0.3ms)[0m  [1mSELECT  "professors".* FROM "professors"  ORDER BY "professors"."id" ASC LIMIT 1000[0m
+  [1m[33mProfessor Import (454.9ms)[0m  {"count":4}
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-25 20:05:14 -0400
+Processing by StaticPagesController#home as HTML
+Existing local CAS session detected for "cxduan". Previous ticket "ST-13020-hLAJBTZhgC3g1Gq57LoW-fed06" will be re-used.
+  Rendered static_pages/home.html.erb within layouts/application (28.0ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 999ms (Views: 957.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom-53f59fc9def409f9dde5e3a0bbf2ef8f.css?body=1" for 127.0.0.1 at 2015-04-25 20:05:18 -0400
+
+
+Started GET "/assets/professors-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 20:05:18 -0400
+
+
+Started GET "/assets/reviews-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 20:05:18 -0400
+
+
+Started GET "/assets/searchs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 20:05:18 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 20:05:18 -0400
+
+
+Started GET "/assets/application-43e3eee9388d8722a4a0fc5dfbfc57c6.css?body=1" for 127.0.0.1 at 2015-04-25 20:05:18 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-25 20:05:19 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-25 20:05:19 -0400
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for 127.0.0.1 at 2015-04-25 20:05:19 -0400
+
+
+Started GET "/assets/turbolinks-d9dcd5206ee131f11181e8ca09537148.js?body=1" for 127.0.0.1 at 2015-04-25 20:05:19 -0400
+
+
+Started GET "/assets/professors-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 20:05:19 -0400
+
+
+Started GET "/assets/reviews-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 20:05:19 -0400
+
+
+Started GET "/assets/searchs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 20:05:19 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 20:05:19 -0400
+
+
+Started GET "/assets/static_pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 20:05:19 -0400
+
+
+Started GET "/assets/application-b215c12cd796dcac63e0ba0c049eb42b.js?body=1" for 127.0.0.1 at 2015-04-25 20:05:19 -0400
+
+
+Started GET "/assets/static_pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 20:05:19 -0400
+
+
+Started GET "/assets/check-mark-md-152688ec8b538da2b1908d0ae1368711.png" for 127.0.0.1 at 2015-04-25 20:05:19 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-25 20:14:02 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as */*
+Guessed service url: "http://localhost:3000/"
+Generated login url: https://fed.princeton.edu/cas/login?service=http%3A%2F%2Flocalhost%3A3000%2F
+Redirecting to "https://fed.princeton.edu/cas/login?service=http%3A%2F%2Flocalhost%3A3000%2F"
+Redirected to https://fed.princeton.edu/cas/login?service=http%3A%2F%2Flocalhost%3A3000%2F
+Filter chain halted as CASClient::Frameworks::Rails::Filter rendered or redirected
+Completed 302 Found in 20ms (ActiveRecord: 0.0ms)
+  [1m[33mProfessor Search (77.6ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"multi_match":{"fields":["first_name.autocomplete","last_name.autocomplete","netid.autocomplete","department.autocomplete"],"query":"Fe","analyzer":"searchkick_autocomplete_search"}},"size":100000,"from":0,"fields":[]}'
+  [1m[36mProfessor Load (0.3ms)[0m  [1mSELECT "professors".* FROM "professors" WHERE "professors"."id" = 3[0m
+  [1m[33mProfessor Search (74.3ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"multi_match":{"fields":["first_name.autocomplete","last_name.autocomplete","netid.autocomplete","department.autocomplete"],"query":"Ci","analyzer":"searchkick_autocomplete_search"}},"size":100000,"from":0,"fields":[]}'
+  [1m[35mProfessor Load (0.3ms)[0m  SELECT "professors".* FROM "professors" WHERE "professors"."id" = 4
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-25 20:27:00 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+Existing local CAS session detected for "cxduan". Previous ticket "ST-13020-hLAJBTZhgC3g1Gq57LoW-fed06" will be re-used.
+  Rendered static_pages/home.html.erb within layouts/application (30.9ms)
+  Rendered layouts/_shim.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (15.7ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 1201ms (Views: 1145.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom-53f59fc9def409f9dde5e3a0bbf2ef8f.css?body=1" for 127.0.0.1 at 2015-04-25 20:27:02 -0400
+
+
+Started GET "/assets/searchs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 20:27:02 -0400
+
+
+Started GET "/assets/reviews-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 20:27:02 -0400
+
+
+Started GET "/assets/professors-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 20:27:02 -0400
+
+
+Started GET "/assets/application-43e3eee9388d8722a4a0fc5dfbfc57c6.css?body=1" for 127.0.0.1 at 2015-04-25 20:27:02 -0400
+
+
+Started GET "/assets/static_pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 20:27:02 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 20:27:02 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-25 20:27:02 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-25 20:27:03 -0400
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for 127.0.0.1 at 2015-04-25 20:27:03 -0400
+
+
+Started GET "/assets/turbolinks-d9dcd5206ee131f11181e8ca09537148.js?body=1" for 127.0.0.1 at 2015-04-25 20:27:03 -0400
+
+
+Started GET "/assets/professors-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 20:27:03 -0400
+
+
+Started GET "/assets/reviews-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 20:27:03 -0400
+
+
+Started GET "/assets/searchs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 20:27:03 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 20:27:03 -0400
+
+
+Started GET "/assets/static_pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 20:27:03 -0400
+
+
+Started GET "/assets/application-b215c12cd796dcac63e0ba0c049eb42b.js?body=1" for 127.0.0.1 at 2015-04-25 20:27:03 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-25 20:27:03 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-25 20:27:03 -0400
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for 127.0.0.1 at 2015-04-25 20:27:03 -0400
+
+
+Started GET "/assets/turbolinks-d9dcd5206ee131f11181e8ca09537148.js?body=1" for 127.0.0.1 at 2015-04-25 20:27:03 -0400
+
+
+Started GET "/assets/professors-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 20:27:03 -0400
+
+
+Started GET "/assets/reviews-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 20:27:03 -0400
+
+
+Started GET "/assets/searchs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 20:27:03 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 20:27:03 -0400
+
+
+Started GET "/assets/static_pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 20:27:03 -0400
+
+
+Started GET "/assets/application-b215c12cd796dcac63e0ba0c049eb42b.js?body=1" for 127.0.0.1 at 2015-04-25 20:27:03 -0400
+
+
+Started GET "/assets/check-mark-md-152688ec8b538da2b1908d0ae1368711.png" for 127.0.0.1 at 2015-04-25 20:27:03 -0400
+
+
+Started GET "/professors?utf8=%E2%9C%93&query=far&commit=Search" for 127.0.0.1 at 2015-04-25 20:57:55 -0400
+
+SyntaxError (/home/cindy/ratemyadviser/ratemyadviser-app/config/routes.rb:18: syntax error, unexpected end-of-input, expecting keyword_end):
+  config/routes.rb:18: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /home/cindy/.gem/ruby/2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_source.erb (58.9ms)
+  Rendered /home/cindy/.gem/ruby/2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (58.8ms)
+  Rendered /home/cindy/.gem/ruby/2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (33.7ms)
+  Rendered /home/cindy/.gem/ruby/2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_web_console.html.erb (13.0ms)
+  Rendered /home/cindy/.gem/ruby/2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (357.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-25 21:00:32 -0400
+Processing by StaticPagesController#home as HTML
+Existing local CAS session detected for "cxduan". Previous ticket "ST-13020-hLAJBTZhgC3g1Gq57LoW-fed06" will be re-used.
+  Rendered static_pages/home.html.erb within layouts/application (55.7ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (2.4ms)
+Completed 200 OK in 3533ms (Views: 3491.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom-53f59fc9def409f9dde5e3a0bbf2ef8f.css?body=1" for 127.0.0.1 at 2015-04-25 21:00:38 -0400
+
+
+Started GET "/assets/static_pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:00:38 -0400
+
+
+Started GET "/assets/searchs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:00:38 -0400
+
+
+Started GET "/assets/professors-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:00:38 -0400
+
+
+Started GET "/assets/reviews-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:00:38 -0400
+
+
+Started GET "/assets/application-43e3eee9388d8722a4a0fc5dfbfc57c6.css?body=1" for 127.0.0.1 at 2015-04-25 21:00:38 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:00:38 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-25 21:00:38 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-25 21:00:38 -0400
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for 127.0.0.1 at 2015-04-25 21:00:38 -0400
+
+
+Started GET "/assets/turbolinks-d9dcd5206ee131f11181e8ca09537148.js?body=1" for 127.0.0.1 at 2015-04-25 21:00:38 -0400
+
+
+Started GET "/assets/professors-dbcedf1ec3fc3568fcbe0852c0f80a9d.js?body=1" for 127.0.0.1 at 2015-04-25 21:00:38 -0400
+
+
+Started GET "/assets/reviews-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:00:38 -0400
+
+
+Started GET "/assets/searchs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:00:38 -0400
+
+
+Started GET "/assets/static_pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:00:38 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:00:38 -0400
+
+
+Started GET "/assets/application-38157071f3b978f57526663e1a720b55.js?body=1" for 127.0.0.1 at 2015-04-25 21:00:38 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-25 21:00:39 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-25 21:00:39 -0400
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for 127.0.0.1 at 2015-04-25 21:00:39 -0400
+
+
+Started GET "/assets/turbolinks-d9dcd5206ee131f11181e8ca09537148.js?body=1" for 127.0.0.1 at 2015-04-25 21:00:39 -0400
+
+
+Started GET "/assets/professors-dbcedf1ec3fc3568fcbe0852c0f80a9d.js?body=1" for 127.0.0.1 at 2015-04-25 21:00:39 -0400
+
+
+Started GET "/assets/reviews-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:00:39 -0400
+
+
+Started GET "/assets/searchs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:00:39 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:00:39 -0400
+
+
+Started GET "/assets/static_pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:00:39 -0400
+
+
+Started GET "/assets/application-38157071f3b978f57526663e1a720b55.js?body=1" for 127.0.0.1 at 2015-04-25 21:00:39 -0400
+
+
+Started GET "/professors/autocomplete?query=af" for 127.0.0.1 at 2015-04-25 21:00:57 -0400
+Processing by ProfessorsController#autocomplete as JSON
+  Parameters: {"query"=>"af"}
+  [1m[33mProfessor Search (142.7ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"multi_match":{"fields":["first_name.autocomplete","last_name.autocomplete","netid.autocomplete","department.autocomplete"],"query":"af","analyzer":"searchkick_autocomplete_search"}},"size":10,"from":0,"fields":[]}'
+Completed 200 OK in 435ms (Views: 0.4ms | Searchkick: 142.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/professors/autocomplete?query=afr" for 127.0.0.1 at 2015-04-25 21:00:58 -0400
+Processing by ProfessorsController#autocomplete as JSON
+  Parameters: {"query"=>"afr"}
+  [1m[33mProfessor Search (74.6ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"multi_match":{"fields":["first_name.autocomplete","last_name.autocomplete","netid.autocomplete","department.autocomplete"],"query":"afr","analyzer":"searchkick_autocomplete_search"}},"size":10,"from":0,"fields":[]}'
+Completed 200 OK in 87ms (Views: 0.1ms | Searchkick: 74.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/professors/autocomplete?query=far" for 127.0.0.1 at 2015-04-25 21:01:09 -0400
+Processing by ProfessorsController#autocomplete as JSON
+  Parameters: {"query"=>"far"}
+  [1m[33mProfessor Search (141.5ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"multi_match":{"fields":["first_name.autocomplete","last_name.autocomplete","netid.autocomplete","department.autocomplete"],"query":"far","analyzer":"searchkick_autocomplete_search"}},"size":10,"from":0,"fields":[]}'
+  [1m[35mProfessor Load (0.3ms)[0m  SELECT "professors".* FROM "professors" WHERE "professors"."id" = 2
+Completed 200 OK in 310ms (Views: 0.3ms | Searchkick: 141.5ms | ActiveRecord: 20.5ms)
+
+
+Started GET "/professors/autocomplete?query=f" for 127.0.0.1 at 2015-04-25 21:01:40 -0400
+Processing by ProfessorsController#autocomplete as JSON
+  Parameters: {"query"=>"f"}
+  [1m[33mProfessor Search (109.3ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"multi_match":{"fields":["first_name.autocomplete","last_name.autocomplete","netid.autocomplete","department.autocomplete"],"query":"f","analyzer":"searchkick_autocomplete_search"}},"size":10,"from":0,"fields":[]}'
+  [1m[36mProfessor Load (0.4ms)[0m  [1mSELECT "professors".* FROM "professors" WHERE "professors"."id" IN (3, 2)[0m
+Completed 200 OK in 114ms (Views: 0.2ms | Searchkick: 109.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/professors/autocomplete?query=fa" for 127.0.0.1 at 2015-04-25 21:01:41 -0400
+Processing by ProfessorsController#autocomplete as JSON
+  Parameters: {"query"=>"fa"}
+  [1m[33mProfessor Search (65.6ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"multi_match":{"fields":["first_name.autocomplete","last_name.autocomplete","netid.autocomplete","department.autocomplete"],"query":"fa","analyzer":"searchkick_autocomplete_search"}},"size":10,"from":0,"fields":[]}'
+  [1m[35mProfessor Load (1.7ms)[0m  SELECT "professors".* FROM "professors" WHERE "professors"."id" = 2
+Completed 200 OK in 80ms (Views: 1.7ms | Searchkick: 65.6ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/professors/autocomplete?query=fe" for 127.0.0.1 at 2015-04-25 21:01:43 -0400
+Processing by ProfessorsController#autocomplete as JSON
+  Parameters: {"query"=>"fe"}
+  [1m[33mProfessor Search (43.0ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"multi_match":{"fields":["first_name.autocomplete","last_name.autocomplete","netid.autocomplete","department.autocomplete"],"query":"fe","analyzer":"searchkick_autocomplete_search"}},"size":10,"from":0,"fields":[]}'
+  [1m[36mProfessor Load (0.3ms)[0m  [1mSELECT "professors".* FROM "professors" WHERE "professors"."id" = 3[0m
+Completed 200 OK in 47ms (Views: 0.9ms | Searchkick: 43.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/professors/autocomplete?query=c" for 127.0.0.1 at 2015-04-25 21:02:16 -0400
+Processing by ProfessorsController#autocomplete as JSON
+  Parameters: {"query"=>"c"}
+  [1m[33mProfessor Search (121.6ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"multi_match":{"fields":["first_name.autocomplete","last_name.autocomplete","netid.autocomplete","department.autocomplete"],"query":"c","analyzer":"searchkick_autocomplete_search"}},"size":10,"from":0,"fields":[]}'
+  [1m[35mProfessor Load (3.0ms)[0m  SELECT "professors".* FROM "professors" WHERE "professors"."id" = 4
+Completed 200 OK in 130ms (Views: 0.4ms | Searchkick: 121.6ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-25 21:03:26 -0400
+Processing by StaticPagesController#home as HTML
+Existing local CAS session detected for "cxduan". Previous ticket "ST-13020-hLAJBTZhgC3g1Gq57LoW-fed06" will be re-used.
+  Rendered static_pages/home.html.erb within layouts/application (4.8ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (13.9ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 770ms (Views: 759.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom-53f59fc9def409f9dde5e3a0bbf2ef8f.css?body=1" for 127.0.0.1 at 2015-04-25 21:03:27 -0400
+
+
+Started GET "/assets/professors-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:03:27 -0400
+
+
+Started GET "/assets/reviews-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:03:27 -0400
+
+
+Started GET "/assets/searchs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:03:27 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:03:27 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-25 21:03:27 -0400
+
+
+Started GET "/assets/application-43e3eee9388d8722a4a0fc5dfbfc57c6.css?body=1" for 127.0.0.1 at 2015-04-25 21:03:27 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-25 21:03:27 -0400
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for 127.0.0.1 at 2015-04-25 21:03:27 -0400
+
+
+Started GET "/assets/turbolinks-d9dcd5206ee131f11181e8ca09537148.js?body=1" for 127.0.0.1 at 2015-04-25 21:03:27 -0400
+
+
+Started GET "/assets/professors-dbcedf1ec3fc3568fcbe0852c0f80a9d.js?body=1" for 127.0.0.1 at 2015-04-25 21:03:27 -0400
+
+
+Started GET "/assets/reviews-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:03:27 -0400
+
+
+Started GET "/assets/searchs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:03:27 -0400
+
+
+Started GET "/assets/static_pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:03:27 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:03:28 -0400
+
+
+Started GET "/assets/static_pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:03:28 -0400
+
+
+Started GET "/assets/application-38157071f3b978f57526663e1a720b55.js?body=1" for 127.0.0.1 at 2015-04-25 21:03:28 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-25 21:03:28 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-25 21:03:28 -0400
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for 127.0.0.1 at 2015-04-25 21:03:28 -0400
+
+
+Started GET "/assets/turbolinks-d9dcd5206ee131f11181e8ca09537148.js?body=1" for 127.0.0.1 at 2015-04-25 21:03:28 -0400
+
+
+Started GET "/assets/professors-dbcedf1ec3fc3568fcbe0852c0f80a9d.js?body=1" for 127.0.0.1 at 2015-04-25 21:03:28 -0400
+
+
+Started GET "/assets/reviews-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:03:28 -0400
+
+
+Started GET "/assets/searchs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:03:28 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:03:28 -0400
+
+
+Started GET "/assets/static_pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:03:28 -0400
+
+
+Started GET "/assets/application-38157071f3b978f57526663e1a720b55.js?body=1" for 127.0.0.1 at 2015-04-25 21:03:28 -0400
+
+
+Started GET "/assets/check-mark-md-152688ec8b538da2b1908d0ae1368711.png" for 127.0.0.1 at 2015-04-25 21:03:28 -0400
+
+
+Started GET "/professors/autocomplete?query=cin" for 127.0.0.1 at 2015-04-25 21:03:39 -0400
+Processing by ProfessorsController#autocomplete as JSON
+  Parameters: {"query"=>"cin"}
+  [1m[33mProfessor Search (60.9ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"multi_match":{"fields":["first_name.autocomplete","last_name.autocomplete","netid.autocomplete","department.autocomplete"],"query":"cin","analyzer":"searchkick_autocomplete_search"}},"size":10,"from":0,"fields":[]}'
+  [1m[36mProfessor Load (2.3ms)[0m  [1mSELECT "professors".* FROM "professors" WHERE "professors"."id" = 4[0m
+Completed 200 OK in 73ms (Views: 0.3ms | Searchkick: 60.9ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/professors/autocomplete?query=cindy" for 127.0.0.1 at 2015-04-25 21:03:40 -0400
+Processing by ProfessorsController#autocomplete as JSON
+  Parameters: {"query"=>"cindy"}
+  [1m[33mProfessor Search (52.4ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"multi_match":{"fields":["first_name.autocomplete","last_name.autocomplete","netid.autocomplete","department.autocomplete"],"query":"cindy","analyzer":"searchkick_autocomplete_search"}},"size":10,"from":0,"fields":[]}'
+  [1m[35mProfessor Load (0.3ms)[0m  SELECT "professors".* FROM "professors" WHERE "professors"."id" = 4
+Completed 200 OK in 60ms (Views: 0.2ms | Searchkick: 52.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/professors/autocomplete?query=cind" for 127.0.0.1 at 2015-04-25 21:03:42 -0400
+Processing by ProfessorsController#autocomplete as JSON
+  Parameters: {"query"=>"cind"}
+  [1m[33mProfessor Search (40.5ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"multi_match":{"fields":["first_name.autocomplete","last_name.autocomplete","netid.autocomplete","department.autocomplete"],"query":"cind","analyzer":"searchkick_autocomplete_search"}},"size":10,"from":0,"fields":[]}'
+  [1m[36mProfessor Load (0.3ms)[0m  [1mSELECT "professors".* FROM "professors" WHERE "professors"."id" = 4[0m
+Completed 200 OK in 52ms (Views: 0.2ms | Searchkick: 40.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/professors/autocomplete?query=c" for 127.0.0.1 at 2015-04-25 21:03:43 -0400
+Processing by ProfessorsController#autocomplete as JSON
+  Parameters: {"query"=>"c"}
+  [1m[33mProfessor Search (32.9ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"multi_match":{"fields":["first_name.autocomplete","last_name.autocomplete","netid.autocomplete","department.autocomplete"],"query":"c","analyzer":"searchkick_autocomplete_search"}},"size":10,"from":0,"fields":[]}'
+  [1m[35mProfessor Load (0.2ms)[0m  SELECT "professors".* FROM "professors" WHERE "professors"."id" = 4
+Completed 200 OK in 36ms (Views: 0.3ms | Searchkick: 32.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/professors/autocomplete?query=di" for 127.0.0.1 at 2015-04-25 21:03:44 -0400
+Processing by ProfessorsController#autocomplete as JSON
+  Parameters: {"query"=>"di"}
+  [1m[33mProfessor Search (70.4ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"multi_match":{"fields":["first_name.autocomplete","last_name.autocomplete","netid.autocomplete","department.autocomplete"],"query":"di","analyzer":"searchkick_autocomplete_search"}},"size":10,"from":0,"fields":[]}'
+Completed 200 OK in 72ms (Views: 0.1ms | Searchkick: 70.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/professors/autocomplete?query=d" for 127.0.0.1 at 2015-04-25 21:03:44 -0400
+Processing by ProfessorsController#autocomplete as JSON
+  Parameters: {"query"=>"d"}
+  [1m[33mProfessor Search (31.4ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"multi_match":{"fields":["first_name.autocomplete","last_name.autocomplete","netid.autocomplete","department.autocomplete"],"query":"d","analyzer":"searchkick_autocomplete_search"}},"size":10,"from":0,"fields":[]}'
+  [1m[36mProfessor Load (0.4ms)[0m  [1mSELECT "professors".* FROM "professors" WHERE "professors"."id" = 4[0m
+Completed 200 OK in 36ms (Views: 0.2ms | Searchkick: 31.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/professors/autocomplete?query=ci" for 127.0.0.1 at 2015-04-25 21:03:45 -0400
+Processing by ProfessorsController#autocomplete as JSON
+  Parameters: {"query"=>"ci"}
+  [1m[33mProfessor Search (94.3ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"multi_match":{"fields":["first_name.autocomplete","last_name.autocomplete","netid.autocomplete","department.autocomplete"],"query":"ci","analyzer":"searchkick_autocomplete_search"}},"size":10,"from":0,"fields":[]}'
+  [1m[35mProfessor Load (0.3ms)[0m  SELECT "professors".* FROM "professors" WHERE "professors"."id" = 4
+Completed 200 OK in 98ms (Views: 0.2ms | Searchkick: 94.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/professors/autocomplete?query=ec" for 127.0.0.1 at 2015-04-25 21:03:51 -0400
+Processing by ProfessorsController#autocomplete as JSON
+  Parameters: {"query"=>"ec"}
+  [1m[33mProfessor Search (77.2ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"multi_match":{"fields":["first_name.autocomplete","last_name.autocomplete","netid.autocomplete","department.autocomplete"],"query":"ec","analyzer":"searchkick_autocomplete_search"}},"size":10,"from":0,"fields":[]}'
+  [1m[36mProfessor Load (0.4ms)[0m  [1mSELECT "professors".* FROM "professors" WHERE "professors"."id" IN (4, 1, 2)[0m
+Completed 200 OK in 84ms (Views: 0.2ms | Searchkick: 77.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/professors/autocomplete?query=eco" for 127.0.0.1 at 2015-04-25 21:03:53 -0400
+Processing by ProfessorsController#autocomplete as JSON
+  Parameters: {"query"=>"eco"}
+  [1m[33mProfessor Search (98.0ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"multi_match":{"fields":["first_name.autocomplete","last_name.autocomplete","netid.autocomplete","department.autocomplete"],"query":"eco","analyzer":"searchkick_autocomplete_search"}},"size":10,"from":0,"fields":[]}'
+  [1m[35mProfessor Load (0.4ms)[0m  SELECT "professors".* FROM "professors" WHERE "professors"."id" IN (4, 1, 2)
+Completed 200 OK in 102ms (Views: 0.2ms | Searchkick: 98.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/professors/autocomplete?query=econ" for 127.0.0.1 at 2015-04-25 21:03:56 -0400
+Processing by ProfessorsController#autocomplete as JSON
+  Parameters: {"query"=>"econ"}
+  [1m[33mProfessor Search (69.0ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"multi_match":{"fields":["first_name.autocomplete","last_name.autocomplete","netid.autocomplete","department.autocomplete"],"query":"econ","analyzer":"searchkick_autocomplete_search"}},"size":10,"from":0,"fields":[]}'
+  [1m[36mProfessor Load (1.0ms)[0m  [1mSELECT "professors".* FROM "professors" WHERE "professors"."id" IN (4, 1, 2)[0m
+Completed 200 OK in 74ms (Views: 0.3ms | Searchkick: 69.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/professors/autocomplete?query=e" for 127.0.0.1 at 2015-04-25 21:04:05 -0400
+Processing by ProfessorsController#autocomplete as JSON
+  Parameters: {"query"=>"e"}
+  [1m[33mProfessor Search (79.8ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"multi_match":{"fields":["first_name.autocomplete","last_name.autocomplete","netid.autocomplete","department.autocomplete"],"query":"e","analyzer":"searchkick_autocomplete_search"}},"size":10,"from":0,"fields":[]}'
+  [1m[35mProfessor Load (0.3ms)[0m  SELECT "professors".* FROM "professors" WHERE "professors"."id" IN (4, 1, 2)
+Completed 200 OK in 86ms (Views: 0.3ms | Searchkick: 79.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/professors/autocomplete?query=econo" for 127.0.0.1 at 2015-04-25 21:04:07 -0400
+Processing by ProfessorsController#autocomplete as JSON
+  Parameters: {"query"=>"econo"}
+  [1m[33mProfessor Search (57.1ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"multi_match":{"fields":["first_name.autocomplete","last_name.autocomplete","netid.autocomplete","department.autocomplete"],"query":"econo","analyzer":"searchkick_autocomplete_search"}},"size":10,"from":0,"fields":[]}'
+  [1m[36mProfessor Load (0.3ms)[0m  [1mSELECT "professors".* FROM "professors" WHERE "professors"."id" IN (4, 1, 2)[0m
+Completed 200 OK in 61ms (Views: 0.2ms | Searchkick: 57.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/professors/autocomplete?query=economics" for 127.0.0.1 at 2015-04-25 21:04:08 -0400
+Processing by ProfessorsController#autocomplete as JSON
+  Parameters: {"query"=>"economics"}
+  [1m[33mProfessor Search (71.9ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"multi_match":{"fields":["first_name.autocomplete","last_name.autocomplete","netid.autocomplete","department.autocomplete"],"query":"economics","analyzer":"searchkick_autocomplete_search"}},"size":10,"from":0,"fields":[]}'
+  [1m[35mProfessor Load (0.4ms)[0m  SELECT "professors".* FROM "professors" WHERE "professors"."id" IN (4, 1, 2)
+Completed 200 OK in 76ms (Views: 0.2ms | Searchkick: 71.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/professors/autocomplete?query=econom" for 127.0.0.1 at 2015-04-25 21:04:50 -0400
+Processing by ProfessorsController#autocomplete as JSON
+  Parameters: {"query"=>"econom"}
+  [1m[33mProfessor Search (87.7ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"multi_match":{"fields":["first_name.autocomplete","last_name.autocomplete","netid.autocomplete","department.autocomplete"],"query":"econom","analyzer":"searchkick_autocomplete_search"}},"size":10,"from":0,"fields":[]}'
+  [1m[36mProfessor Load (0.9ms)[0m  [1mSELECT "professors".* FROM "professors" WHERE "professors"."id" IN (4, 1, 2)[0m
+Completed 200 OK in 94ms (Views: 0.0ms | Searchkick: 87.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/professors/autocomplete?query=cind" for 127.0.0.1 at 2015-04-25 21:04:52 -0400
+Processing by ProfessorsController#autocomplete as JSON
+  Parameters: {"query"=>"cind"}
+  [1m[33mProfessor Search (99.8ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"multi_match":{"fields":["first_name.autocomplete","last_name.autocomplete","netid.autocomplete","department.autocomplete"],"query":"cind","analyzer":"searchkick_autocomplete_search"}},"size":10,"from":0,"fields":[]}'
+  [1m[35mProfessor Load (0.3ms)[0m  SELECT "professors".* FROM "professors" WHERE "professors"."id" = 4
+Completed 200 OK in 109ms (Views: 0.3ms | Searchkick: 99.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/professors/autocomplete?query=c" for 127.0.0.1 at 2015-04-25 21:04:54 -0400
+Processing by ProfessorsController#autocomplete as JSON
+  Parameters: {"query"=>"c"}
+  [1m[33mProfessor Search (73.3ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"multi_match":{"fields":["first_name.autocomplete","last_name.autocomplete","netid.autocomplete","department.autocomplete"],"query":"c","analyzer":"searchkick_autocomplete_search"}},"size":10,"from":0,"fields":[]}'
+  [1m[36mProfessor Load (0.3ms)[0m  [1mSELECT "professors".* FROM "professors" WHERE "professors"."id" = 4[0m
+Completed 200 OK in 77ms (Views: 0.2ms | Searchkick: 73.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/professors/autocomplete?query=henr" for 127.0.0.1 at 2015-04-25 21:04:55 -0400
+Processing by ProfessorsController#autocomplete as JSON
+  Parameters: {"query"=>"henr"}
+  [1m[33mProfessor Search (60.4ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"multi_match":{"fields":["first_name.autocomplete","last_name.autocomplete","netid.autocomplete","department.autocomplete"],"query":"henr","analyzer":"searchkick_autocomplete_search"}},"size":10,"from":0,"fields":[]}'
+  [1m[35mProfessor Load (0.3ms)[0m  SELECT "professors".* FROM "professors" WHERE "professors"."id" = 2
+Completed 200 OK in 64ms (Views: 0.2ms | Searchkick: 60.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/professors/autocomplete?query=h" for 127.0.0.1 at 2015-04-25 21:04:57 -0400
+Processing by ProfessorsController#autocomplete as JSON
+  Parameters: {"query"=>"h"}
+  [1m[33mProfessor Search (69.9ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"multi_match":{"fields":["first_name.autocomplete","last_name.autocomplete","netid.autocomplete","department.autocomplete"],"query":"h","analyzer":"searchkick_autocomplete_search"}},"size":10,"from":0,"fields":[]}'
+  [1m[36mProfessor Load (0.2ms)[0m  [1mSELECT "professors".* FROM "professors" WHERE "professors"."id" = 2[0m
+Completed 200 OK in 73ms (Views: 0.3ms | Searchkick: 69.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/professors/autocomplete?query=sw" for 127.0.0.1 at 2015-04-25 21:04:59 -0400
+Processing by ProfessorsController#autocomplete as JSON
+  Parameters: {"query"=>"sw"}
+  [1m[33mProfessor Search (88.3ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"multi_match":{"fields":["first_name.autocomplete","last_name.autocomplete","netid.autocomplete","department.autocomplete"],"query":"sw","analyzer":"searchkick_autocomplete_search"}},"size":10,"from":0,"fields":[]}'
+  [1m[35mProfessor Load (0.4ms)[0m  SELECT "professors".* FROM "professors" WHERE "professors"."id" = 1
+Completed 200 OK in 99ms (Views: 0.6ms | Searchkick: 88.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/professors/autocomplete?query=s" for 127.0.0.1 at 2015-04-25 21:05:00 -0400
+Processing by ProfessorsController#autocomplete as JSON
+  Parameters: {"query"=>"s"}
+  [1m[33mProfessor Search (86.6ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"multi_match":{"fields":["first_name.autocomplete","last_name.autocomplete","netid.autocomplete","department.autocomplete"],"query":"s","analyzer":"searchkick_autocomplete_search"}},"size":10,"from":0,"fields":[]}'
+  [1m[36mProfessor Load (6.8ms)[0m  [1mSELECT "professors".* FROM "professors" WHERE "professors"."id" = 1[0m
+Completed 200 OK in 97ms (Views: 0.2ms | Searchkick: 86.6ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/professors/autocomplete?query=feli" for 127.0.0.1 at 2015-04-25 21:05:00 -0400
+Processing by ProfessorsController#autocomplete as JSON
+  Parameters: {"query"=>"feli"}
+  [1m[33mProfessor Search (98.9ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"multi_match":{"fields":["first_name.autocomplete","last_name.autocomplete","netid.autocomplete","department.autocomplete"],"query":"feli","analyzer":"searchkick_autocomplete_search"}},"size":10,"from":0,"fields":[]}'
+  [1m[35mProfessor Load (2.6ms)[0m  SELECT "professors".* FROM "professors" WHERE "professors"."id" = 3
+Completed 200 OK in 106ms (Views: 0.2ms | Searchkick: 98.9ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/professors/autocomplete?query=f" for 127.0.0.1 at 2015-04-25 21:05:02 -0400
+Processing by ProfessorsController#autocomplete as JSON
+  Parameters: {"query"=>"f"}
+  [1m[33mProfessor Search (60.2ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"multi_match":{"fields":["first_name.autocomplete","last_name.autocomplete","netid.autocomplete","department.autocomplete"],"query":"f","analyzer":"searchkick_autocomplete_search"}},"size":10,"from":0,"fields":[]}'
+  [1m[36mProfessor Load (0.4ms)[0m  [1mSELECT "professors".* FROM "professors" WHERE "professors"."id" IN (3, 2)[0m
+Completed 200 OK in 65ms (Views: 0.3ms | Searchkick: 60.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/professors/autocomplete?query=fe" for 127.0.0.1 at 2015-04-25 21:05:03 -0400
+Processing by ProfessorsController#autocomplete as JSON
+  Parameters: {"query"=>"fe"}
+  [1m[33mProfessor Search (58.0ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"multi_match":{"fields":["first_name.autocomplete","last_name.autocomplete","netid.autocomplete","department.autocomplete"],"query":"fe","analyzer":"searchkick_autocomplete_search"}},"size":10,"from":0,"fields":[]}'
+  [1m[35mProfessor Load (0.3ms)[0m  SELECT "professors".* FROM "professors" WHERE "professors"."id" = 3
+Completed 200 OK in 62ms (Views: 0.1ms | Searchkick: 58.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/professors/autocomplete?query=fel" for 127.0.0.1 at 2015-04-25 21:05:04 -0400
+Processing by ProfessorsController#autocomplete as JSON
+  Parameters: {"query"=>"fel"}
+  [1m[33mProfessor Search (48.8ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"multi_match":{"fields":["first_name.autocomplete","last_name.autocomplete","netid.autocomplete","department.autocomplete"],"query":"fel","analyzer":"searchkick_autocomplete_search"}},"size":10,"from":0,"fields":[]}'
+  [1m[36mProfessor Load (0.4ms)[0m  [1mSELECT "professors".* FROM "professors" WHERE "professors"."id" = 3[0m
+Completed 200 OK in 63ms (Views: 0.2ms | Searchkick: 48.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/professors/autocomplete?query=economic" for 127.0.0.1 at 2015-04-25 21:05:06 -0400
+Processing by ProfessorsController#autocomplete as JSON
+  Parameters: {"query"=>"economic"}
+  [1m[33mProfessor Search (68.6ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"multi_match":{"fields":["first_name.autocomplete","last_name.autocomplete","netid.autocomplete","department.autocomplete"],"query":"economic","analyzer":"searchkick_autocomplete_search"}},"size":10,"from":0,"fields":[]}'
+  [1m[35mProfessor Load (0.5ms)[0m  SELECT "professors".* FROM "professors" WHERE "professors"."id" IN (4, 1, 2)
+Completed 200 OK in 76ms (Views: 0.4ms | Searchkick: 68.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/professors/autocomplete?query=e" for 127.0.0.1 at 2015-04-25 21:05:12 -0400
+Processing by ProfessorsController#autocomplete as JSON
+  Parameters: {"query"=>"e"}
+  [1m[33mProfessor Search (61.4ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"multi_match":{"fields":["first_name.autocomplete","last_name.autocomplete","netid.autocomplete","department.autocomplete"],"query":"e","analyzer":"searchkick_autocomplete_search"}},"size":10,"from":0,"fields":[]}'
+  [1m[36mProfessor Load (0.4ms)[0m  [1mSELECT "professors".* FROM "professors" WHERE "professors"."id" IN (4, 1, 2)[0m
+Completed 200 OK in 65ms (Views: 0.2ms | Searchkick: 61.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/professors/autocomplete?query=p" for 127.0.0.1 at 2015-04-25 21:05:13 -0400
+Processing by ProfessorsController#autocomplete as JSON
+  Parameters: {"query"=>"p"}
+  [1m[33mProfessor Search (32.9ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"multi_match":{"fields":["first_name.autocomplete","last_name.autocomplete","netid.autocomplete","department.autocomplete"],"query":"p","analyzer":"searchkick_autocomplete_search"}},"size":10,"from":0,"fields":[]}'
+  [1m[35mProfessor Load (1.5ms)[0m  SELECT "professors".* FROM "professors" WHERE "professors"."id" = 3
+Completed 200 OK in 43ms (Views: 0.3ms | Searchkick: 32.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/professors/autocomplete?query=psy" for 127.0.0.1 at 2015-04-25 21:05:14 -0400
+Processing by ProfessorsController#autocomplete as JSON
+  Parameters: {"query"=>"psy"}
+  [1m[33mProfessor Search (26.6ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"multi_match":{"fields":["first_name.autocomplete","last_name.autocomplete","netid.autocomplete","department.autocomplete"],"query":"psy","analyzer":"searchkick_autocomplete_search"}},"size":10,"from":0,"fields":[]}'
+  [1m[36mProfessor Load (0.4ms)[0m  [1mSELECT "professors".* FROM "professors" WHERE "professors"."id" = 3[0m
+Completed 200 OK in 32ms (Views: 0.2ms | Searchkick: 26.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/professors/autocomplete?query=ps" for 127.0.0.1 at 2015-04-25 21:05:18 -0400
+Processing by ProfessorsController#autocomplete as JSON
+  Parameters: {"query"=>"ps"}
+  [1m[33mProfessor Search (70.7ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"multi_match":{"fields":["first_name.autocomplete","last_name.autocomplete","netid.autocomplete","department.autocomplete"],"query":"ps","analyzer":"searchkick_autocomplete_search"}},"size":10,"from":0,"fields":[]}'
+  [1m[35mProfessor Load (0.3ms)[0m  SELECT "professors".* FROM "professors" WHERE "professors"."id" = 3
+Completed 200 OK in 90ms (Views: 0.2ms | Searchkick: 70.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-25 21:12:41 -0400
+Processing by StaticPagesController#home as HTML
+Existing local CAS session detected for "cxduan". Previous ticket "ST-13020-hLAJBTZhgC3g1Gq57LoW-fed06" will be re-used.
+  Rendered static_pages/home.html.erb within layouts/application (20.5ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 1256ms (Views: 1248.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom-53f59fc9def409f9dde5e3a0bbf2ef8f.css?body=1" for 127.0.0.1 at 2015-04-25 21:12:43 -0400
+
+
+Started GET "/assets/professors-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:12:43 -0400
+
+
+Started GET "/assets/reviews-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:12:43 -0400
+
+
+Started GET "/assets/application-1f589d71220a992feacb9a3213d16c3a.css?body=1" for 127.0.0.1 at 2015-04-25 21:12:43 -0400
+
+
+Started GET "/assets/searchs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:12:43 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:12:43 -0400
+
+
+Started GET "/assets/typeahead-d7e226e5c8309c6d5570dabaf78c0185.css?body=1" for 127.0.0.1 at 2015-04-25 21:12:43 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-25 21:12:43 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-25 21:12:43 -0400
+
+
+Started GET "/assets/turbolinks-d9dcd5206ee131f11181e8ca09537148.js?body=1" for 127.0.0.1 at 2015-04-25 21:12:43 -0400
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for 127.0.0.1 at 2015-04-25 21:12:43 -0400
+
+
+Started GET "/assets/professors-dbcedf1ec3fc3568fcbe0852c0f80a9d.js?body=1" for 127.0.0.1 at 2015-04-25 21:12:43 -0400
+
+
+Started GET "/assets/reviews-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:12:43 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:12:43 -0400
+
+
+Started GET "/assets/searchs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:12:43 -0400
+
+
+Started GET "/assets/static_pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:12:43 -0400
+
+
+Started GET "/assets/application-38157071f3b978f57526663e1a720b55.js?body=1" for 127.0.0.1 at 2015-04-25 21:12:43 -0400
+
+
+Started GET "/assets/static_pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:12:43 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-25 21:12:43 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-25 21:12:44 -0400
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for 127.0.0.1 at 2015-04-25 21:12:44 -0400
+
+
+Started GET "/assets/turbolinks-d9dcd5206ee131f11181e8ca09537148.js?body=1" for 127.0.0.1 at 2015-04-25 21:12:44 -0400
+
+
+Started GET "/assets/professors-dbcedf1ec3fc3568fcbe0852c0f80a9d.js?body=1" for 127.0.0.1 at 2015-04-25 21:12:44 -0400
+
+
+Started GET "/assets/reviews-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:12:44 -0400
+
+
+Started GET "/assets/searchs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:12:44 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:12:44 -0400
+
+
+Started GET "/assets/static_pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:12:44 -0400
+
+
+Started GET "/assets/application-38157071f3b978f57526663e1a720b55.js?body=1" for 127.0.0.1 at 2015-04-25 21:12:44 -0400
+
+
+Started GET "/assets/check-mark-md-152688ec8b538da2b1908d0ae1368711.png" for 127.0.0.1 at 2015-04-25 21:12:44 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-25 21:16:39 -0400
+Processing by StaticPagesController#home as HTML
+Existing local CAS session detected for "cxduan". Previous ticket "ST-13020-hLAJBTZhgC3g1Gq57LoW-fed06" will be re-used.
+  Rendered static_pages/home.html.erb within layouts/application (15.1ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 779ms (Views: 767.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom-53f59fc9def409f9dde5e3a0bbf2ef8f.css?body=1" for 127.0.0.1 at 2015-04-25 21:16:40 -0400
+
+
+Started GET "/assets/reviews-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:16:40 -0400
+
+
+Started GET "/assets/professors-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:16:40 -0400
+
+
+Started GET "/assets/typeahead-d7e226e5c8309c6d5570dabaf78c0185.css?body=1" for 127.0.0.1 at 2015-04-25 21:16:40 -0400
+
+
+Started GET "/assets/static_pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:16:40 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:16:40 -0400
+
+
+Started GET "/assets/searchs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:16:40 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-25 21:16:40 -0400
+
+
+Started GET "/assets/application-1f589d71220a992feacb9a3213d16c3a.css?body=1" for 127.0.0.1 at 2015-04-25 21:16:40 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-25 21:16:40 -0400
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for 127.0.0.1 at 2015-04-25 21:16:40 -0400
+
+
+Started GET "/assets/turbolinks-d9dcd5206ee131f11181e8ca09537148.js?body=1" for 127.0.0.1 at 2015-04-25 21:16:40 -0400
+
+
+Started GET "/assets/reviews-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:16:40 -0400
+
+
+Started GET "/assets/professors-dbcedf1ec3fc3568fcbe0852c0f80a9d.js?body=1" for 127.0.0.1 at 2015-04-25 21:16:40 -0400
+
+
+Started GET "/assets/searchs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:16:40 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:16:40 -0400
+
+
+Started GET "/assets/static_pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:16:40 -0400
+
+
+Started GET "/assets/application-38157071f3b978f57526663e1a720b55.js?body=1" for 127.0.0.1 at 2015-04-25 21:16:40 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-25 21:16:41 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-25 21:16:41 -0400
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for 127.0.0.1 at 2015-04-25 21:16:41 -0400
+
+
+Started GET "/assets/turbolinks-d9dcd5206ee131f11181e8ca09537148.js?body=1" for 127.0.0.1 at 2015-04-25 21:16:41 -0400
+
+
+Started GET "/assets/professors-dbcedf1ec3fc3568fcbe0852c0f80a9d.js?body=1" for 127.0.0.1 at 2015-04-25 21:16:41 -0400
+
+
+Started GET "/assets/reviews-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:16:41 -0400
+
+
+Started GET "/assets/searchs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:16:41 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:16:41 -0400
+
+
+Started GET "/assets/static_pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:16:41 -0400
+
+
+Started GET "/assets/application-38157071f3b978f57526663e1a720b55.js?body=1" for 127.0.0.1 at 2015-04-25 21:16:41 -0400
+
+
+Started GET "/assets/check-mark-md-152688ec8b538da2b1908d0ae1368711.png" for 127.0.0.1 at 2015-04-25 21:16:41 -0400
+
+
+Started GET "/professors/autocomplete?query=f" for 127.0.0.1 at 2015-04-25 21:17:01 -0400
+Processing by ProfessorsController#autocomplete as JSON
+  Parameters: {"query"=>"f"}
+  [1m[33mProfessor Search (68.9ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"multi_match":{"fields":["first_name.autocomplete","last_name.autocomplete","netid.autocomplete","department.autocomplete"],"query":"f","analyzer":"searchkick_autocomplete_search"}},"size":10,"from":0,"fields":[]}'
+  [1m[36mProfessor Load (13.5ms)[0m  [1mSELECT "professors".* FROM "professors" WHERE "professors"."id" IN (3, 2)[0m
+Completed 200 OK in 96ms (Views: 0.4ms | Searchkick: 68.9ms | ActiveRecord: 13.5ms)
+
+
+Started GET "/professors/autocomplete?query=ec" for 127.0.0.1 at 2015-04-25 21:17:06 -0400
+Processing by ProfessorsController#autocomplete as JSON
+  Parameters: {"query"=>"ec"}
+  [1m[33mProfessor Search (68.7ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"multi_match":{"fields":["first_name.autocomplete","last_name.autocomplete","netid.autocomplete","department.autocomplete"],"query":"ec","analyzer":"searchkick_autocomplete_search"}},"size":10,"from":0,"fields":[]}'
+  [1m[35mProfessor Load (0.7ms)[0m  SELECT "professors".* FROM "professors" WHERE "professors"."id" IN (4, 1, 2)
+Completed 200 OK in 72ms (Views: 0.2ms | Searchkick: 68.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/professors/autocomplete?query=eco" for 127.0.0.1 at 2015-04-25 21:17:07 -0400
+Processing by ProfessorsController#autocomplete as JSON
+  Parameters: {"query"=>"eco"}
+  [1m[33mProfessor Search (60.8ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"multi_match":{"fields":["first_name.autocomplete","last_name.autocomplete","netid.autocomplete","department.autocomplete"],"query":"eco","analyzer":"searchkick_autocomplete_search"}},"size":10,"from":0,"fields":[]}'
+  [1m[36mProfessor Load (0.9ms)[0m  [1mSELECT "professors".* FROM "professors" WHERE "professors"."id" IN (4, 1, 2)[0m
+Completed 200 OK in 65ms (Views: 0.2ms | Searchkick: 60.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/professors/autocomplete?query=econ" for 127.0.0.1 at 2015-04-25 21:17:08 -0400
+Processing by ProfessorsController#autocomplete as JSON
+  Parameters: {"query"=>"econ"}
+  [1m[33mProfessor Search (79.1ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"multi_match":{"fields":["first_name.autocomplete","last_name.autocomplete","netid.autocomplete","department.autocomplete"],"query":"econ","analyzer":"searchkick_autocomplete_search"}},"size":10,"from":0,"fields":[]}'
+  [1m[35mProfessor Load (0.9ms)[0m  SELECT "professors".* FROM "professors" WHERE "professors"."id" IN (4, 1, 2)
+Completed 200 OK in 85ms (Views: 0.5ms | Searchkick: 79.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-25 21:17:43 -0400
+Processing by StaticPagesController#home as HTML
+Existing local CAS session detected for "cxduan". Previous ticket "ST-13020-hLAJBTZhgC3g1Gq57LoW-fed06" will be re-used.
+  Rendered static_pages/home.html.erb within layouts/application (13.5ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 708ms (Views: 704.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom-53f59fc9def409f9dde5e3a0bbf2ef8f.css?body=1" for 127.0.0.1 at 2015-04-25 21:17:44 -0400
+
+
+Started GET "/assets/professors-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:17:44 -0400
+
+
+Started GET "/assets/reviews-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:17:44 -0400
+
+
+Started GET "/assets/searchs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:17:44 -0400
+
+
+Started GET "/assets/typeahead-d7e226e5c8309c6d5570dabaf78c0185.css?body=1" for 127.0.0.1 at 2015-04-25 21:17:44 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:17:44 -0400
+
+
+Started GET "/assets/application-1f589d71220a992feacb9a3213d16c3a.css?body=1" for 127.0.0.1 at 2015-04-25 21:17:44 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-25 21:17:44 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-25 21:17:44 -0400
+
+
+Started GET "/assets/turbolinks-d9dcd5206ee131f11181e8ca09537148.js?body=1" for 127.0.0.1 at 2015-04-25 21:17:44 -0400
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for 127.0.0.1 at 2015-04-25 21:17:44 -0400
+
+
+Started GET "/assets/professors-dbcedf1ec3fc3568fcbe0852c0f80a9d.js?body=1" for 127.0.0.1 at 2015-04-25 21:17:44 -0400
+
+
+Started GET "/assets/reviews-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:17:44 -0400
+
+
+Started GET "/assets/searchs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:17:44 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:17:44 -0400
+
+
+Started GET "/assets/static_pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:17:44 -0400
+
+
+Started GET "/assets/application-38157071f3b978f57526663e1a720b55.js?body=1" for 127.0.0.1 at 2015-04-25 21:17:44 -0400
+
+
+Started GET "/assets/static_pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:17:44 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-25 21:17:44 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-25 21:17:44 -0400
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for 127.0.0.1 at 2015-04-25 21:17:44 -0400
+
+
+Started GET "/assets/turbolinks-d9dcd5206ee131f11181e8ca09537148.js?body=1" for 127.0.0.1 at 2015-04-25 21:17:45 -0400
+
+
+Started GET "/assets/professors-dbcedf1ec3fc3568fcbe0852c0f80a9d.js?body=1" for 127.0.0.1 at 2015-04-25 21:17:45 -0400
+
+
+Started GET "/assets/reviews-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:17:45 -0400
+
+
+Started GET "/assets/searchs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:17:45 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:17:45 -0400
+
+
+Started GET "/assets/static_pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:17:45 -0400
+
+
+Started GET "/assets/application-38157071f3b978f57526663e1a720b55.js?body=1" for 127.0.0.1 at 2015-04-25 21:17:45 -0400
+
+
+Started GET "/assets/check-mark-md-152688ec8b538da2b1908d0ae1368711.png" for 127.0.0.1 at 2015-04-25 21:17:45 -0400
+
+
+Started GET "/professors/autocomplete?query=feli" for 127.0.0.1 at 2015-04-25 21:17:55 -0400
+Processing by ProfessorsController#autocomplete as JSON
+  Parameters: {"query"=>"feli"}
+  [1m[33mProfessor Search (259.3ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"multi_match":{"fields":["first_name.autocomplete","last_name.autocomplete","netid.autocomplete","department.autocomplete"],"query":"feli","analyzer":"searchkick_autocomplete_search"}},"size":10,"from":0,"fields":[]}'
+  [1m[36mProfessor Load (3.4ms)[0m  [1mSELECT "professors".* FROM "professors" WHERE "professors"."id" = 3[0m
+Completed 200 OK in 274ms (Views: 0.3ms | Searchkick: 259.3ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/professors/autocomplete?query=f" for 127.0.0.1 at 2015-04-25 21:17:59 -0400
+Processing by ProfessorsController#autocomplete as JSON
+  Parameters: {"query"=>"f"}
+  [1m[33mProfessor Search (44.7ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"multi_match":{"fields":["first_name.autocomplete","last_name.autocomplete","netid.autocomplete","department.autocomplete"],"query":"f","analyzer":"searchkick_autocomplete_search"}},"size":10,"from":0,"fields":[]}'
+  [1m[35mProfessor Load (0.3ms)[0m  SELECT "professors".* FROM "professors" WHERE "professors"."id" IN (3, 2)
+Completed 200 OK in 56ms (Views: 0.3ms | Searchkick: 44.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/professors/autocomplete?query=econ" for 127.0.0.1 at 2015-04-25 21:18:00 -0400
+Processing by ProfessorsController#autocomplete as JSON
+  Parameters: {"query"=>"econ"}
+  [1m[33mProfessor Search (33.6ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"multi_match":{"fields":["first_name.autocomplete","last_name.autocomplete","netid.autocomplete","department.autocomplete"],"query":"econ","analyzer":"searchkick_autocomplete_search"}},"size":10,"from":0,"fields":[]}'
+  [1m[36mProfessor Load (0.3ms)[0m  [1mSELECT "professors".* FROM "professors" WHERE "professors"."id" IN (4, 1, 2)[0m
+Completed 200 OK in 38ms (Views: 0.2ms | Searchkick: 33.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/professors/autocomplete?query=e" for 127.0.0.1 at 2015-04-25 21:18:03 -0400
+Processing by ProfessorsController#autocomplete as JSON
+  Parameters: {"query"=>"e"}
+  [1m[33mProfessor Search (44.1ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"multi_match":{"fields":["first_name.autocomplete","last_name.autocomplete","netid.autocomplete","department.autocomplete"],"query":"e","analyzer":"searchkick_autocomplete_search"}},"size":10,"from":0,"fields":[]}'
+  [1m[35mProfessor Load (0.3ms)[0m  SELECT "professors".* FROM "professors" WHERE "professors"."id" IN (4, 1, 2)
+Completed 200 OK in 48ms (Views: 0.2ms | Searchkick: 44.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/professors/autocomplete?query=psy" for 127.0.0.1 at 2015-04-25 21:18:05 -0400
+Processing by ProfessorsController#autocomplete as JSON
+  Parameters: {"query"=>"psy"}
+  [1m[33mProfessor Search (58.7ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"multi_match":{"fields":["first_name.autocomplete","last_name.autocomplete","netid.autocomplete","department.autocomplete"],"query":"psy","analyzer":"searchkick_autocomplete_search"}},"size":10,"from":0,"fields":[]}'
+  [1m[36mProfessor Load (0.3ms)[0m  [1mSELECT "professors".* FROM "professors" WHERE "professors"."id" = 3[0m
+Completed 200 OK in 63ms (Views: 0.2ms | Searchkick: 58.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/professors/autocomplete?query=psyo" for 127.0.0.1 at 2015-04-25 21:18:07 -0400
+Processing by ProfessorsController#autocomplete as JSON
+  Parameters: {"query"=>"psyo"}
+  [1m[33mProfessor Search (76.2ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"multi_match":{"fields":["first_name.autocomplete","last_name.autocomplete","netid.autocomplete","department.autocomplete"],"query":"psyo","analyzer":"searchkick_autocomplete_search"}},"size":10,"from":0,"fields":[]}'
+Completed 200 OK in 78ms (Views: 0.1ms | Searchkick: 76.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/professors/autocomplete?query=psycho" for 127.0.0.1 at 2015-04-25 21:18:09 -0400
+Processing by ProfessorsController#autocomplete as JSON
+  Parameters: {"query"=>"psycho"}
+  [1m[33mProfessor Search (64.8ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"multi_match":{"fields":["first_name.autocomplete","last_name.autocomplete","netid.autocomplete","department.autocomplete"],"query":"psycho","analyzer":"searchkick_autocomplete_search"}},"size":10,"from":0,"fields":[]}'
+  [1m[35mProfessor Load (0.3ms)[0m  SELECT "professors".* FROM "professors" WHERE "professors"."id" = 3
+Completed 200 OK in 74ms (Views: 0.2ms | Searchkick: 64.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/professors/autocomplete?query=psychology" for 127.0.0.1 at 2015-04-25 21:18:10 -0400
+Processing by ProfessorsController#autocomplete as JSON
+  Parameters: {"query"=>"psychology"}
+  [1m[33mProfessor Search (67.4ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"multi_match":{"fields":["first_name.autocomplete","last_name.autocomplete","netid.autocomplete","department.autocomplete"],"query":"psychology","analyzer":"searchkick_autocomplete_search"}},"size":10,"from":0,"fields":[]}'
+  [1m[36mProfessor Load (0.5ms)[0m  [1mSELECT "professors".* FROM "professors" WHERE "professors"."id" = 3[0m
+Completed 200 OK in 78ms (Views: 0.2ms | Searchkick: 67.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/professors/autocomplete?query=p" for 127.0.0.1 at 2015-04-25 21:18:14 -0400
+Processing by ProfessorsController#autocomplete as JSON
+  Parameters: {"query"=>"p"}
+  [1m[33mProfessor Search (74.9ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"multi_match":{"fields":["first_name.autocomplete","last_name.autocomplete","netid.autocomplete","department.autocomplete"],"query":"p","analyzer":"searchkick_autocomplete_search"}},"size":10,"from":0,"fields":[]}'
+  [1m[35mProfessor Load (0.3ms)[0m  SELECT "professors".* FROM "professors" WHERE "professors"."id" = 3
+Completed 200 OK in 78ms (Views: 0.2ms | Searchkick: 74.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/professors/autocomplete?query=ps" for 127.0.0.1 at 2015-04-25 21:18:23 -0400
+Processing by ProfessorsController#autocomplete as JSON
+  Parameters: {"query"=>"ps"}
+  [1m[33mProfessor Search (76.0ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"multi_match":{"fields":["first_name.autocomplete","last_name.autocomplete","netid.autocomplete","department.autocomplete"],"query":"ps","analyzer":"searchkick_autocomplete_search"}},"size":10,"from":0,"fields":[]}'
+  [1m[36mProfessor Load (0.3ms)[0m  [1mSELECT "professors".* FROM "professors" WHERE "professors"."id" = 3[0m
+Completed 200 OK in 92ms (Views: 3.1ms | Searchkick: 76.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/professors/autocomplete?query=psych" for 127.0.0.1 at 2015-04-25 21:18:24 -0400
+Processing by ProfessorsController#autocomplete as JSON
+  Parameters: {"query"=>"psych"}
+  [1m[33mProfessor Search (55.7ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"multi_match":{"fields":["first_name.autocomplete","last_name.autocomplete","netid.autocomplete","department.autocomplete"],"query":"psych","analyzer":"searchkick_autocomplete_search"}},"size":10,"from":0,"fields":[]}'
+  [1m[35mProfessor Load (0.3ms)[0m  SELECT "professors".* FROM "professors" WHERE "professors"."id" = 3
+Completed 200 OK in 60ms (Views: 0.2ms | Searchkick: 55.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-25 21:20:22 -0400
+Processing by StaticPagesController#home as HTML
+Existing local CAS session detected for "cxduan". Previous ticket "ST-13020-hLAJBTZhgC3g1Gq57LoW-fed06" will be re-used.
+  Rendered static_pages/home.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 645ms (Views: 638.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom-53f59fc9def409f9dde5e3a0bbf2ef8f.css?body=1" for 127.0.0.1 at 2015-04-25 21:20:23 -0400
+
+
+Started GET "/assets/professors-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:20:23 -0400
+
+
+Started GET "/assets/reviews-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:20:23 -0400
+
+
+Started GET "/assets/typeahead-d7e226e5c8309c6d5570dabaf78c0185.css?body=1" for 127.0.0.1 at 2015-04-25 21:20:23 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:20:23 -0400
+
+
+Started GET "/assets/searchs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:20:23 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-25 21:20:23 -0400
+
+
+Started GET "/assets/application-1f589d71220a992feacb9a3213d16c3a.css?body=1" for 127.0.0.1 at 2015-04-25 21:20:23 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-25 21:20:23 -0400
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for 127.0.0.1 at 2015-04-25 21:20:23 -0400
+
+
+Started GET "/assets/turbolinks-d9dcd5206ee131f11181e8ca09537148.js?body=1" for 127.0.0.1 at 2015-04-25 21:20:23 -0400
+
+
+Started GET "/assets/professors-dbcedf1ec3fc3568fcbe0852c0f80a9d.js?body=1" for 127.0.0.1 at 2015-04-25 21:20:23 -0400
+
+
+Started GET "/assets/reviews-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:20:23 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:20:23 -0400
+
+
+Started GET "/assets/searchs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:20:23 -0400
+
+
+Started GET "/assets/application-38157071f3b978f57526663e1a720b55.js?body=1" for 127.0.0.1 at 2015-04-25 21:20:23 -0400
+
+
+Started GET "/assets/static_pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:20:23 -0400
+
+
+Started GET "/assets/static_pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:20:23 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-25 21:20:24 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-25 21:20:24 -0400
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for 127.0.0.1 at 2015-04-25 21:20:24 -0400
+
+
+Started GET "/assets/turbolinks-d9dcd5206ee131f11181e8ca09537148.js?body=1" for 127.0.0.1 at 2015-04-25 21:20:24 -0400
+
+
+Started GET "/assets/professors-dbcedf1ec3fc3568fcbe0852c0f80a9d.js?body=1" for 127.0.0.1 at 2015-04-25 21:20:24 -0400
+
+
+Started GET "/assets/reviews-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:20:24 -0400
+
+
+Started GET "/assets/searchs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:20:24 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:20:24 -0400
+
+
+Started GET "/assets/static_pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:20:24 -0400
+
+
+Started GET "/assets/application-38157071f3b978f57526663e1a720b55.js?body=1" for 127.0.0.1 at 2015-04-25 21:20:24 -0400
+
+
+Started GET "/assets/check-mark-md-152688ec8b538da2b1908d0ae1368711.png" for 127.0.0.1 at 2015-04-25 21:20:24 -0400
+
+
+Started GET "/professors/autocomplete?query=feli" for 127.0.0.1 at 2015-04-25 21:20:28 -0400
+Processing by ProfessorsController#autocomplete as JSON
+  Parameters: {"query"=>"feli"}
+  [1m[33mProfessor Search (95.3ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"multi_match":{"fields":["first_name.autocomplete","last_name.autocomplete","netid.autocomplete","department.autocomplete"],"query":"feli","analyzer":"searchkick_autocomplete_search"}},"size":10,"from":0,"fields":[]}'
+  [1m[36mProfessor Load (0.2ms)[0m  [1mSELECT "professors".* FROM "professors" WHERE "professors"."id" = 3[0m
+Completed 200 OK in 179ms (Views: 0.4ms | Searchkick: 95.3ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/professors/autocomplete?query=Felicia%20Ng%2C%20fng%2C%20Psychology" for 127.0.0.1 at 2015-04-25 21:20:41 -0400
+Processing by ProfessorsController#autocomplete as JSON
+  Parameters: {"query"=>"Felicia Ng, fng, Psychology"}
+  [1m[33mProfessor Search (97.6ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"multi_match":{"fields":["first_name.autocomplete","last_name.autocomplete","netid.autocomplete","department.autocomplete"],"query":"Felicia Ng, fng, Psychology","analyzer":"searchkick_autocomplete_search"}},"size":10,"from":0,"fields":[]}'
+Completed 200 OK in 108ms (Views: 0.2ms | Searchkick: 97.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/professors?utf8=%E2%9C%93&query=Felicia+Ng%2C+fng%2C+Psychology&commit=Search" for 127.0.0.1 at 2015-04-25 21:20:44 -0400
+Processing by ProfessorsController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"Felicia Ng, fng, Psychology", "commit"=>"Search"}
+  [1m[33mProfessor Search (1834.7ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"dis_max":{"queries":[{"match":{"first_name.analyzed":{"query":"Felicia Ng, fng, Psychology","operator":"and","boost":10,"analyzer":"searchkick_search"}}},{"match":{"first_name.analyzed":{"query":"Felicia Ng, fng, Psychology","operator":"and","boost":10,"analyzer":"searchkick_search2"}}},{"match":{"first_name.analyzed":{"query":"Felicia Ng, fng, Psychology","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search"}}},{"match":{"first_name.analyzed":{"query":"Felicia Ng, fng, Psychology","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search2"}}},{"match":{"last_name.analyzed":{"query":"Felicia Ng, fng, Psychology","operator":"and","boost":10,"analyzer":"searchkick_search"}}},{"match":{"last_name.analyzed":{"query":"Felicia Ng, fng, Psychology","operator":"and","boost":10,"analyzer":"searchkick_search2"}}},{"match":{"last_name.analyzed":{"query":"Felicia Ng, fng, Psychology","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search"}}},{"match":{"last_name.analyzed":{"query":"Felicia Ng, fng, Psychology","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search2"}}},{"match":{"netid.analyzed":{"query":"Felicia Ng, fng, Psychology","operator":"and","boost":10,"analyzer":"searchkick_search"}}},{"match":{"netid.analyzed":{"query":"Felicia Ng, fng, Psychology","operator":"and","boost":10,"analyzer":"searchkick_search2"}}},{"match":{"netid.analyzed":{"query":"Felicia Ng, fng, Psychology","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search"}}},{"match":{"netid.analyzed":{"query":"Felicia Ng, fng, Psychology","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search2"}}},{"match":{"department.analyzed":{"query":"Felicia Ng, fng, Psychology","operator":"and","boost":10,"analyzer":"searchkick_search"}}},{"match":{"department.analyzed":{"query":"Felicia Ng, fng, Psychology","operator":"and","boost":10,"analyzer":"searchkick_search2"}}},{"match":{"department.analyzed":{"query":"Felicia Ng, fng, Psychology","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search"}}},{"match":{"department.analyzed":{"query":"Felicia Ng, fng, Psychology","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search2"}}}]}},"size":100000,"from":0,"fields":[]}'
+  Rendered professors/index.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 3299ms (Views: 1462.0ms | Searchkick: 1834.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom-53f59fc9def409f9dde5e3a0bbf2ef8f.css?body=1" for 127.0.0.1 at 2015-04-25 21:20:47 -0400
+
+
+Started GET "/assets/professors-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:20:47 -0400
+
+
+Started GET "/assets/reviews-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:20:47 -0400
+
+
+Started GET "/assets/searchs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:20:47 -0400
+
+
+Started GET "/assets/static_pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:20:47 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:20:47 -0400
+
+
+Started GET "/assets/typeahead-d7e226e5c8309c6d5570dabaf78c0185.css?body=1" for 127.0.0.1 at 2015-04-25 21:20:47 -0400
+
+
+Started GET "/assets/application-1f589d71220a992feacb9a3213d16c3a.css?body=1" for 127.0.0.1 at 2015-04-25 21:20:47 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-25 21:20:47 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-25 21:20:47 -0400
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for 127.0.0.1 at 2015-04-25 21:20:47 -0400
+
+
+Started GET "/assets/turbolinks-d9dcd5206ee131f11181e8ca09537148.js?body=1" for 127.0.0.1 at 2015-04-25 21:20:47 -0400
+
+
+Started GET "/assets/professors-dbcedf1ec3fc3568fcbe0852c0f80a9d.js?body=1" for 127.0.0.1 at 2015-04-25 21:20:47 -0400
+
+
+Started GET "/assets/reviews-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:20:48 -0400
+
+
+Started GET "/assets/searchs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:20:48 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:20:48 -0400
+
+
+Started GET "/assets/application-38157071f3b978f57526663e1a720b55.js?body=1" for 127.0.0.1 at 2015-04-25 21:20:48 -0400
+
+
+Started GET "/assets/static_pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:20:48 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-25 21:20:48 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-25 21:20:48 -0400
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for 127.0.0.1 at 2015-04-25 21:20:48 -0400
+
+
+Started GET "/assets/turbolinks-d9dcd5206ee131f11181e8ca09537148.js?body=1" for 127.0.0.1 at 2015-04-25 21:20:48 -0400
+
+
+Started GET "/assets/professors-dbcedf1ec3fc3568fcbe0852c0f80a9d.js?body=1" for 127.0.0.1 at 2015-04-25 21:20:48 -0400
+
+
+Started GET "/assets/reviews-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:20:48 -0400
+
+
+Started GET "/assets/searchs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:20:48 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:20:48 -0400
+
+
+Started GET "/assets/static_pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:20:48 -0400
+
+
+Started GET "/assets/application-38157071f3b978f57526663e1a720b55.js?body=1" for 127.0.0.1 at 2015-04-25 21:20:48 -0400
+
+
+Started GET "/professors/autocomplete?query=Felicia" for 127.0.0.1 at 2015-04-25 21:21:11 -0400
+Processing by ProfessorsController#autocomplete as JSON
+  Parameters: {"query"=>"Felicia"}
+  [1m[33mProfessor Search (71.9ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"multi_match":{"fields":["first_name.autocomplete","last_name.autocomplete","netid.autocomplete","department.autocomplete"],"query":"Felicia","analyzer":"searchkick_autocomplete_search"}},"size":10,"from":0,"fields":[]}'
+  [1m[35mProfessor Load (5.8ms)[0m  SELECT "professors".* FROM "professors" WHERE "professors"."id" = 3
+Completed 200 OK in 83ms (Views: 0.3ms | Searchkick: 71.9ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/professors?utf8=%E2%9C%93&query=Felicia&commit=Search" for 127.0.0.1 at 2015-04-25 21:21:12 -0400
+Processing by ProfessorsController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"Felicia", "commit"=>"Search"}
+  [1m[33mProfessor Search (371.2ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"dis_max":{"queries":[{"match":{"first_name.analyzed":{"query":"Felicia","operator":"and","boost":10,"analyzer":"searchkick_search"}}},{"match":{"first_name.analyzed":{"query":"Felicia","operator":"and","boost":10,"analyzer":"searchkick_search2"}}},{"match":{"first_name.analyzed":{"query":"Felicia","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search"}}},{"match":{"first_name.analyzed":{"query":"Felicia","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search2"}}},{"match":{"last_name.analyzed":{"query":"Felicia","operator":"and","boost":10,"analyzer":"searchkick_search"}}},{"match":{"last_name.analyzed":{"query":"Felicia","operator":"and","boost":10,"analyzer":"searchkick_search2"}}},{"match":{"last_name.analyzed":{"query":"Felicia","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search"}}},{"match":{"last_name.analyzed":{"query":"Felicia","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search2"}}},{"match":{"netid.analyzed":{"query":"Felicia","operator":"and","boost":10,"analyzer":"searchkick_search"}}},{"match":{"netid.analyzed":{"query":"Felicia","operator":"and","boost":10,"analyzer":"searchkick_search2"}}},{"match":{"netid.analyzed":{"query":"Felicia","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search"}}},{"match":{"netid.analyzed":{"query":"Felicia","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search2"}}},{"match":{"department.analyzed":{"query":"Felicia","operator":"and","boost":10,"analyzer":"searchkick_search"}}},{"match":{"department.analyzed":{"query":"Felicia","operator":"and","boost":10,"analyzer":"searchkick_search2"}}},{"match":{"department.analyzed":{"query":"Felicia","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search"}}},{"match":{"department.analyzed":{"query":"Felicia","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search2"}}}]}},"size":100000,"from":0,"fields":[]}'
+  [1m[36mProfessor Load (0.3ms)[0m  [1mSELECT "professors".* FROM "professors" WHERE "professors"."id" = 3[0m
+  Rendered professors/index.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 1225ms (Views: 849.2ms | Searchkick: 371.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/custom-53f59fc9def409f9dde5e3a0bbf2ef8f.css?body=1" for 127.0.0.1 at 2015-04-25 21:21:13 -0400
+
+
+Started GET "/assets/professors-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:21:13 -0400
+
+
+Started GET "/assets/reviews-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:21:13 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:21:13 -0400
+
+
+Started GET "/assets/searchs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:21:13 -0400
+
+
+Started GET "/assets/typeahead-d7e226e5c8309c6d5570dabaf78c0185.css?body=1" for 127.0.0.1 at 2015-04-25 21:21:14 -0400
+
+
+Started GET "/assets/application-1f589d71220a992feacb9a3213d16c3a.css?body=1" for 127.0.0.1 at 2015-04-25 21:21:14 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-25 21:21:14 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-25 21:21:14 -0400
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for 127.0.0.1 at 2015-04-25 21:21:14 -0400
+
+
+Started GET "/assets/turbolinks-d9dcd5206ee131f11181e8ca09537148.js?body=1" for 127.0.0.1 at 2015-04-25 21:21:14 -0400
+
+
+Started GET "/assets/professors-dbcedf1ec3fc3568fcbe0852c0f80a9d.js?body=1" for 127.0.0.1 at 2015-04-25 21:21:14 -0400
+
+
+Started GET "/assets/reviews-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:21:14 -0400
+
+
+Started GET "/assets/searchs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:21:14 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:21:14 -0400
+
+
+Started GET "/assets/static_pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:21:14 -0400
+
+
+Started GET "/assets/application-38157071f3b978f57526663e1a720b55.js?body=1" for 127.0.0.1 at 2015-04-25 21:21:14 -0400
+
+
+Started GET "/assets/static_pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:21:14 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-25 21:21:14 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-25 21:21:14 -0400
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for 127.0.0.1 at 2015-04-25 21:21:14 -0400
+
+
+Started GET "/assets/turbolinks-d9dcd5206ee131f11181e8ca09537148.js?body=1" for 127.0.0.1 at 2015-04-25 21:21:14 -0400
+
+
+Started GET "/assets/professors-dbcedf1ec3fc3568fcbe0852c0f80a9d.js?body=1" for 127.0.0.1 at 2015-04-25 21:21:14 -0400
+
+
+Started GET "/assets/reviews-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:21:14 -0400
+
+
+Started GET "/assets/searchs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:21:14 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:21:14 -0400
+
+
+Started GET "/assets/static_pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:21:14 -0400
+
+
+Started GET "/assets/application-38157071f3b978f57526663e1a720b55.js?body=1" for 127.0.0.1 at 2015-04-25 21:21:14 -0400
+
+
+Started GET "/professors/autocomplete?query=Fe%3Bocoa" for 127.0.0.1 at 2015-04-25 21:21:21 -0400
+Processing by ProfessorsController#autocomplete as JSON
+  Parameters: {"query"=>"Fe;ocoa"}
+  [1m[33mProfessor Search (74.8ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"multi_match":{"fields":["first_name.autocomplete","last_name.autocomplete","netid.autocomplete","department.autocomplete"],"query":"Fe;ocoa","analyzer":"searchkick_autocomplete_search"}},"size":10,"from":0,"fields":[]}'
+Completed 200 OK in 120ms (Views: 0.2ms | Searchkick: 74.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/professors/autocomplete?query=F" for 127.0.0.1 at 2015-04-25 21:21:33 -0400
+Processing by ProfessorsController#autocomplete as JSON
+  Parameters: {"query"=>"F"}
+  [1m[33mProfessor Search (28.7ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"multi_match":{"fields":["first_name.autocomplete","last_name.autocomplete","netid.autocomplete","department.autocomplete"],"query":"F","analyzer":"searchkick_autocomplete_search"}},"size":10,"from":0,"fields":[]}'
+  [1m[35mProfessor Load (3.1ms)[0m  SELECT "professors".* FROM "professors" WHERE "professors"."id" IN (3, 2)
+Completed 200 OK in 39ms (Views: 0.2ms | Searchkick: 28.7ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/professors/autocomplete?query=Felicia%20Ng%20fng" for 127.0.0.1 at 2015-04-25 21:21:35 -0400
+Processing by ProfessorsController#autocomplete as JSON
+  Parameters: {"query"=>"Felicia Ng fng"}
+  [1m[33mProfessor Search (143.1ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"multi_match":{"fields":["first_name.autocomplete","last_name.autocomplete","netid.autocomplete","department.autocomplete"],"query":"Felicia Ng fng","analyzer":"searchkick_autocomplete_search"}},"size":10,"from":0,"fields":[]}'
+Completed 200 OK in 145ms (Views: 0.1ms | Searchkick: 143.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/professors?utf8=%E2%9C%93&query=Felicia+Ng+fng&commit=Search" for 127.0.0.1 at 2015-04-25 21:21:35 -0400
+Processing by ProfessorsController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"Felicia Ng fng", "commit"=>"Search"}
+  [1m[33mProfessor Search (871.5ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"dis_max":{"queries":[{"match":{"first_name.analyzed":{"query":"Felicia Ng fng","operator":"and","boost":10,"analyzer":"searchkick_search"}}},{"match":{"first_name.analyzed":{"query":"Felicia Ng fng","operator":"and","boost":10,"analyzer":"searchkick_search2"}}},{"match":{"first_name.analyzed":{"query":"Felicia Ng fng","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search"}}},{"match":{"first_name.analyzed":{"query":"Felicia Ng fng","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search2"}}},{"match":{"last_name.analyzed":{"query":"Felicia Ng fng","operator":"and","boost":10,"analyzer":"searchkick_search"}}},{"match":{"last_name.analyzed":{"query":"Felicia Ng fng","operator":"and","boost":10,"analyzer":"searchkick_search2"}}},{"match":{"last_name.analyzed":{"query":"Felicia Ng fng","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search"}}},{"match":{"last_name.analyzed":{"query":"Felicia Ng fng","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search2"}}},{"match":{"netid.analyzed":{"query":"Felicia Ng fng","operator":"and","boost":10,"analyzer":"searchkick_search"}}},{"match":{"netid.analyzed":{"query":"Felicia Ng fng","operator":"and","boost":10,"analyzer":"searchkick_search2"}}},{"match":{"netid.analyzed":{"query":"Felicia Ng fng","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search"}}},{"match":{"netid.analyzed":{"query":"Felicia Ng fng","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search2"}}},{"match":{"department.analyzed":{"query":"Felicia Ng fng","operator":"and","boost":10,"analyzer":"searchkick_search"}}},{"match":{"department.analyzed":{"query":"Felicia Ng fng","operator":"and","boost":10,"analyzer":"searchkick_search2"}}},{"match":{"department.analyzed":{"query":"Felicia Ng fng","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search"}}},{"match":{"department.analyzed":{"query":"Felicia Ng fng","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search2"}}}]}},"size":100000,"from":0,"fields":[]}'
+  Rendered professors/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 1564ms (Views: 689.1ms | Searchkick: 871.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom-53f59fc9def409f9dde5e3a0bbf2ef8f.css?body=1" for 127.0.0.1 at 2015-04-25 21:21:37 -0400
+
+
+Started GET "/assets/searchs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:21:37 -0400
+
+
+Started GET "/assets/static_pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:21:37 -0400
+
+
+Started GET "/assets/typeahead-d7e226e5c8309c6d5570dabaf78c0185.css?body=1" for 127.0.0.1 at 2015-04-25 21:21:37 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:21:37 -0400
+
+
+Started GET "/assets/reviews-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:21:37 -0400
+
+
+Started GET "/assets/professors-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:21:37 -0400
+
+
+Started GET "/assets/application-1f589d71220a992feacb9a3213d16c3a.css?body=1" for 127.0.0.1 at 2015-04-25 21:21:37 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-25 21:21:37 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-25 21:21:37 -0400
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for 127.0.0.1 at 2015-04-25 21:21:37 -0400
+
+
+Started GET "/assets/turbolinks-d9dcd5206ee131f11181e8ca09537148.js?body=1" for 127.0.0.1 at 2015-04-25 21:21:37 -0400
+
+
+Started GET "/assets/professors-dbcedf1ec3fc3568fcbe0852c0f80a9d.js?body=1" for 127.0.0.1 at 2015-04-25 21:21:37 -0400
+
+
+Started GET "/assets/reviews-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:21:37 -0400
+
+
+Started GET "/assets/searchs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:21:37 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:21:37 -0400
+
+
+Started GET "/assets/static_pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:21:37 -0400
+
+
+Started GET "/assets/application-38157071f3b978f57526663e1a720b55.js?body=1" for 127.0.0.1 at 2015-04-25 21:21:37 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-25 21:21:38 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-25 21:21:38 -0400
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for 127.0.0.1 at 2015-04-25 21:21:38 -0400
+
+
+Started GET "/assets/turbolinks-d9dcd5206ee131f11181e8ca09537148.js?body=1" for 127.0.0.1 at 2015-04-25 21:21:38 -0400
+
+
+Started GET "/assets/professors-dbcedf1ec3fc3568fcbe0852c0f80a9d.js?body=1" for 127.0.0.1 at 2015-04-25 21:21:38 -0400
+
+
+Started GET "/assets/reviews-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:21:38 -0400
+
+
+Started GET "/assets/searchs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:21:38 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:21:38 -0400
+
+
+Started GET "/assets/static_pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:21:38 -0400
+
+
+Started GET "/assets/application-38157071f3b978f57526663e1a720b55.js?body=1" for 127.0.0.1 at 2015-04-25 21:21:38 -0400
+
+
+Started GET "/professors/autocomplete?query=Felicia%20Ng" for 127.0.0.1 at 2015-04-25 21:21:47 -0400
+Processing by ProfessorsController#autocomplete as JSON
+  Parameters: {"query"=>"Felicia Ng"}
+  [1m[33mProfessor Search (55.8ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"multi_match":{"fields":["first_name.autocomplete","last_name.autocomplete","netid.autocomplete","department.autocomplete"],"query":"Felicia Ng","analyzer":"searchkick_autocomplete_search"}},"size":10,"from":0,"fields":[]}'
+Completed 200 OK in 63ms (Views: 0.2ms | Searchkick: 55.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/professors?utf8=%E2%9C%93&query=Felicia+Ng&commit=Search" for 127.0.0.1 at 2015-04-25 21:21:47 -0400
+Processing by ProfessorsController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"Felicia Ng", "commit"=>"Search"}
+  [1m[33mProfessor Search (503.8ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"dis_max":{"queries":[{"match":{"first_name.analyzed":{"query":"Felicia Ng","operator":"and","boost":10,"analyzer":"searchkick_search"}}},{"match":{"first_name.analyzed":{"query":"Felicia Ng","operator":"and","boost":10,"analyzer":"searchkick_search2"}}},{"match":{"first_name.analyzed":{"query":"Felicia Ng","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search"}}},{"match":{"first_name.analyzed":{"query":"Felicia Ng","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search2"}}},{"match":{"last_name.analyzed":{"query":"Felicia Ng","operator":"and","boost":10,"analyzer":"searchkick_search"}}},{"match":{"last_name.analyzed":{"query":"Felicia Ng","operator":"and","boost":10,"analyzer":"searchkick_search2"}}},{"match":{"last_name.analyzed":{"query":"Felicia Ng","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search"}}},{"match":{"last_name.analyzed":{"query":"Felicia Ng","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search2"}}},{"match":{"netid.analyzed":{"query":"Felicia Ng","operator":"and","boost":10,"analyzer":"searchkick_search"}}},{"match":{"netid.analyzed":{"query":"Felicia Ng","operator":"and","boost":10,"analyzer":"searchkick_search2"}}},{"match":{"netid.analyzed":{"query":"Felicia Ng","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search"}}},{"match":{"netid.analyzed":{"query":"Felicia Ng","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search2"}}},{"match":{"department.analyzed":{"query":"Felicia Ng","operator":"and","boost":10,"analyzer":"searchkick_search"}}},{"match":{"department.analyzed":{"query":"Felicia Ng","operator":"and","boost":10,"analyzer":"searchkick_search2"}}},{"match":{"department.analyzed":{"query":"Felicia Ng","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search"}}},{"match":{"department.analyzed":{"query":"Felicia Ng","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search2"}}}]}},"size":100000,"from":0,"fields":[]}'
+  Rendered professors/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 1247ms (Views: 740.7ms | Searchkick: 503.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom-53f59fc9def409f9dde5e3a0bbf2ef8f.css?body=1" for 127.0.0.1 at 2015-04-25 21:21:49 -0400
+
+
+Started GET "/assets/professors-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:21:49 -0400
+
+
+Started GET "/assets/reviews-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:21:49 -0400
+
+
+Started GET "/assets/searchs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:21:49 -0400
+
+
+Started GET "/assets/static_pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:21:49 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:21:49 -0400
+
+
+Started GET "/assets/typeahead-d7e226e5c8309c6d5570dabaf78c0185.css?body=1" for 127.0.0.1 at 2015-04-25 21:21:49 -0400
+
+
+Started GET "/assets/application-1f589d71220a992feacb9a3213d16c3a.css?body=1" for 127.0.0.1 at 2015-04-25 21:21:49 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-25 21:21:49 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-25 21:21:49 -0400
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for 127.0.0.1 at 2015-04-25 21:21:49 -0400
+
+
+Started GET "/assets/turbolinks-d9dcd5206ee131f11181e8ca09537148.js?body=1" for 127.0.0.1 at 2015-04-25 21:21:49 -0400
+
+
+Started GET "/assets/professors-dbcedf1ec3fc3568fcbe0852c0f80a9d.js?body=1" for 127.0.0.1 at 2015-04-25 21:21:49 -0400
+
+
+Started GET "/assets/reviews-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:21:49 -0400
+
+
+Started GET "/assets/searchs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:21:49 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:21:49 -0400
+
+
+Started GET "/assets/static_pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:21:49 -0400
+
+
+Started GET "/assets/application-38157071f3b978f57526663e1a720b55.js?body=1" for 127.0.0.1 at 2015-04-25 21:21:49 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-25 21:21:49 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-25 21:21:49 -0400
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for 127.0.0.1 at 2015-04-25 21:21:49 -0400
+
+
+Started GET "/assets/turbolinks-d9dcd5206ee131f11181e8ca09537148.js?body=1" for 127.0.0.1 at 2015-04-25 21:21:49 -0400
+
+
+Started GET "/assets/professors-dbcedf1ec3fc3568fcbe0852c0f80a9d.js?body=1" for 127.0.0.1 at 2015-04-25 21:21:49 -0400
+
+
+Started GET "/assets/reviews-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:21:50 -0400
+
+
+Started GET "/assets/searchs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:21:50 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:21:50 -0400
+
+
+Started GET "/assets/static_pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:21:50 -0400
+
+
+Started GET "/assets/application-38157071f3b978f57526663e1a720b55.js?body=1" for 127.0.0.1 at 2015-04-25 21:21:50 -0400
+
+
+Started GET "/professors/autocomplete?query=Ng" for 127.0.0.1 at 2015-04-25 21:21:56 -0400
+Processing by ProfessorsController#autocomplete as JSON
+  Parameters: {"query"=>"Ng"}
+  [1m[33mProfessor Search (136.3ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"multi_match":{"fields":["first_name.autocomplete","last_name.autocomplete","netid.autocomplete","department.autocomplete"],"query":"Ng","analyzer":"searchkick_autocomplete_search"}},"size":10,"from":0,"fields":[]}'
+  [1m[36mProfessor Load (5.1ms)[0m  [1mSELECT "professors".* FROM "professors" WHERE "professors"."id" = 3[0m
+Completed 200 OK in 158ms (Views: 0.5ms | Searchkick: 136.3ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/professors?utf8=%E2%9C%93&query=Ng&commit=Search" for 127.0.0.1 at 2015-04-25 21:21:57 -0400
+Processing by ProfessorsController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"Ng", "commit"=>"Search"}
+  [1m[33mProfessor Search (300.9ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"dis_max":{"queries":[{"match":{"first_name.analyzed":{"query":"Ng","operator":"and","boost":10,"analyzer":"searchkick_search"}}},{"match":{"first_name.analyzed":{"query":"Ng","operator":"and","boost":10,"analyzer":"searchkick_search2"}}},{"match":{"first_name.analyzed":{"query":"Ng","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search"}}},{"match":{"first_name.analyzed":{"query":"Ng","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search2"}}},{"match":{"last_name.analyzed":{"query":"Ng","operator":"and","boost":10,"analyzer":"searchkick_search"}}},{"match":{"last_name.analyzed":{"query":"Ng","operator":"and","boost":10,"analyzer":"searchkick_search2"}}},{"match":{"last_name.analyzed":{"query":"Ng","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search"}}},{"match":{"last_name.analyzed":{"query":"Ng","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search2"}}},{"match":{"netid.analyzed":{"query":"Ng","operator":"and","boost":10,"analyzer":"searchkick_search"}}},{"match":{"netid.analyzed":{"query":"Ng","operator":"and","boost":10,"analyzer":"searchkick_search2"}}},{"match":{"netid.analyzed":{"query":"Ng","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search"}}},{"match":{"netid.analyzed":{"query":"Ng","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search2"}}},{"match":{"department.analyzed":{"query":"Ng","operator":"and","boost":10,"analyzer":"searchkick_search"}}},{"match":{"department.analyzed":{"query":"Ng","operator":"and","boost":10,"analyzer":"searchkick_search2"}}},{"match":{"department.analyzed":{"query":"Ng","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search"}}},{"match":{"department.analyzed":{"query":"Ng","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search2"}}}]}},"size":100000,"from":0,"fields":[]}'
+  [1m[35mProfessor Load (1.2ms)[0m  SELECT "professors".* FROM "professors" WHERE "professors"."id" = 3
+  Rendered professors/index.html.erb within layouts/application (7.7ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 1223ms (Views: 916.9ms | Searchkick: 300.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/custom-53f59fc9def409f9dde5e3a0bbf2ef8f.css?body=1" for 127.0.0.1 at 2015-04-25 21:21:58 -0400
+
+
+Started GET "/assets/professors-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:21:58 -0400
+
+
+Started GET "/assets/reviews-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:21:58 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:21:58 -0400
+
+
+Started GET "/assets/searchs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:21:58 -0400
+
+
+Started GET "/assets/typeahead-d7e226e5c8309c6d5570dabaf78c0185.css?body=1" for 127.0.0.1 at 2015-04-25 21:21:58 -0400
+
+
+Started GET "/assets/application-1f589d71220a992feacb9a3213d16c3a.css?body=1" for 127.0.0.1 at 2015-04-25 21:21:59 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-25 21:21:59 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-25 21:21:59 -0400
+
+
+Started GET "/assets/turbolinks-d9dcd5206ee131f11181e8ca09537148.js?body=1" for 127.0.0.1 at 2015-04-25 21:21:59 -0400
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for 127.0.0.1 at 2015-04-25 21:21:59 -0400
+
+
+Started GET "/assets/professors-dbcedf1ec3fc3568fcbe0852c0f80a9d.js?body=1" for 127.0.0.1 at 2015-04-25 21:21:59 -0400
+
+
+Started GET "/assets/reviews-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:21:59 -0400
+
+
+Started GET "/assets/searchs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:21:59 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:21:59 -0400
+
+
+Started GET "/assets/static_pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:21:59 -0400
+
+
+Started GET "/assets/application-38157071f3b978f57526663e1a720b55.js?body=1" for 127.0.0.1 at 2015-04-25 21:21:59 -0400
+
+
+Started GET "/assets/static_pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:21:59 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-25 21:21:59 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-25 21:21:59 -0400
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for 127.0.0.1 at 2015-04-25 21:21:59 -0400
+
+
+Started GET "/assets/turbolinks-d9dcd5206ee131f11181e8ca09537148.js?body=1" for 127.0.0.1 at 2015-04-25 21:21:59 -0400
+
+
+Started GET "/assets/professors-dbcedf1ec3fc3568fcbe0852c0f80a9d.js?body=1" for 127.0.0.1 at 2015-04-25 21:22:00 -0400
+
+
+Started GET "/assets/reviews-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:22:00 -0400
+
+
+Started GET "/assets/searchs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:22:00 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:22:00 -0400
+
+
+Started GET "/assets/static_pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:22:00 -0400
+
+
+Started GET "/assets/application-38157071f3b978f57526663e1a720b55.js?body=1" for 127.0.0.1 at 2015-04-25 21:22:00 -0400
+
+
+Started GET "/assets/static_pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:22:04 -0400
+
+
+Started GET "/professors/autocomplete?query=psycho" for 127.0.0.1 at 2015-04-25 21:22:10 -0400
+Processing by ProfessorsController#autocomplete as JSON
+  Parameters: {"query"=>"psycho"}
+  [1m[33mProfessor Search (39.1ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"multi_match":{"fields":["first_name.autocomplete","last_name.autocomplete","netid.autocomplete","department.autocomplete"],"query":"psycho","analyzer":"searchkick_autocomplete_search"}},"size":10,"from":0,"fields":[]}'
+  [1m[36mProfessor Load (3.1ms)[0m  [1mSELECT "professors".* FROM "professors" WHERE "professors"."id" = 3[0m
+Completed 200 OK in 48ms (Views: 0.3ms | Searchkick: 39.1ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/professors/autocomplete?query=Felicia%20Ng%2C%20fng%2C%20Psycho" for 127.0.0.1 at 2015-04-25 21:22:16 -0400
+Processing by ProfessorsController#autocomplete as JSON
+  Parameters: {"query"=>"Felicia Ng, fng, Psycho"}
+  [1m[33mProfessor Search (53.5ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"multi_match":{"fields":["first_name.autocomplete","last_name.autocomplete","netid.autocomplete","department.autocomplete"],"query":"Felicia Ng, fng, Psycho","analyzer":"searchkick_autocomplete_search"}},"size":10,"from":0,"fields":[]}'
+Completed 200 OK in 63ms (Views: 0.2ms | Searchkick: 53.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/professors/autocomplete?query=F" for 127.0.0.1 at 2015-04-25 21:22:17 -0400
+Processing by ProfessorsController#autocomplete as JSON
+  Parameters: {"query"=>"F"}
+  [1m[33mProfessor Search (74.4ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"multi_match":{"fields":["first_name.autocomplete","last_name.autocomplete","netid.autocomplete","department.autocomplete"],"query":"F","analyzer":"searchkick_autocomplete_search"}},"size":10,"from":0,"fields":[]}'
+  [1m[35mProfessor Load (0.4ms)[0m  SELECT "professors".* FROM "professors" WHERE "professors"."id" IN (3, 2)
+Completed 200 OK in 82ms (Views: 0.2ms | Searchkick: 74.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/professors/autocomplete?query=Felicia" for 127.0.0.1 at 2015-04-25 21:22:19 -0400
+Processing by ProfessorsController#autocomplete as JSON
+  Parameters: {"query"=>"Felicia"}
+  [1m[33mProfessor Search (27.5ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"multi_match":{"fields":["first_name.autocomplete","last_name.autocomplete","netid.autocomplete","department.autocomplete"],"query":"Felicia","analyzer":"searchkick_autocomplete_search"}},"size":10,"from":0,"fields":[]}'
+  [1m[36mProfessor Load (0.4ms)[0m  [1mSELECT "professors".* FROM "professors" WHERE "professors"."id" = 3[0m
+Completed 200 OK in 45ms (Views: 0.4ms | Searchkick: 27.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/professors/autocomplete?query=Felicia%20" for 127.0.0.1 at 2015-04-25 21:22:21 -0400
+Processing by ProfessorsController#autocomplete as JSON
+  Parameters: {"query"=>"Felicia "}
+  [1m[33mProfessor Search (26.9ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"multi_match":{"fields":["first_name.autocomplete","last_name.autocomplete","netid.autocomplete","department.autocomplete"],"query":"Felicia ","analyzer":"searchkick_autocomplete_search"}},"size":10,"from":0,"fields":[]}'
+Completed 200 OK in 29ms (Views: 0.1ms | Searchkick: 26.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/professors/autocomplete?query=Felicia%20Ng" for 127.0.0.1 at 2015-04-25 21:22:23 -0400
+Processing by ProfessorsController#autocomplete as JSON
+  Parameters: {"query"=>"Felicia Ng"}
+  [1m[33mProfessor Search (111.2ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"multi_match":{"fields":["first_name.autocomplete","last_name.autocomplete","netid.autocomplete","department.autocomplete"],"query":"Felicia Ng","analyzer":"searchkick_autocomplete_search"}},"size":10,"from":0,"fields":[]}'
+Completed 200 OK in 116ms (Views: 0.2ms | Searchkick: 111.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/professors?utf8=%E2%9C%93&query=Felicia+Ng&commit=Search" for 127.0.0.1 at 2015-04-25 21:22:36 -0400
+Processing by ProfessorsController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"Felicia Ng", "commit"=>"Search"}
+  [1m[33mProfessor Search (615.9ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"dis_max":{"queries":[{"match":{"first_name.analyzed":{"query":"Felicia Ng","operator":"and","boost":10,"analyzer":"searchkick_search"}}},{"match":{"first_name.analyzed":{"query":"Felicia Ng","operator":"and","boost":10,"analyzer":"searchkick_search2"}}},{"match":{"first_name.analyzed":{"query":"Felicia Ng","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search"}}},{"match":{"first_name.analyzed":{"query":"Felicia Ng","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search2"}}},{"match":{"last_name.analyzed":{"query":"Felicia Ng","operator":"and","boost":10,"analyzer":"searchkick_search"}}},{"match":{"last_name.analyzed":{"query":"Felicia Ng","operator":"and","boost":10,"analyzer":"searchkick_search2"}}},{"match":{"last_name.analyzed":{"query":"Felicia Ng","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search"}}},{"match":{"last_name.analyzed":{"query":"Felicia Ng","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search2"}}},{"match":{"netid.analyzed":{"query":"Felicia Ng","operator":"and","boost":10,"analyzer":"searchkick_search"}}},{"match":{"netid.analyzed":{"query":"Felicia Ng","operator":"and","boost":10,"analyzer":"searchkick_search2"}}},{"match":{"netid.analyzed":{"query":"Felicia Ng","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search"}}},{"match":{"netid.analyzed":{"query":"Felicia Ng","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search2"}}},{"match":{"department.analyzed":{"query":"Felicia Ng","operator":"and","boost":10,"analyzer":"searchkick_search"}}},{"match":{"department.analyzed":{"query":"Felicia Ng","operator":"and","boost":10,"analyzer":"searchkick_search2"}}},{"match":{"department.analyzed":{"query":"Felicia Ng","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search"}}},{"match":{"department.analyzed":{"query":"Felicia Ng","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search2"}}}]}},"size":100000,"from":0,"fields":[]}'
+  Rendered professors/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 1496ms (Views: 872.7ms | Searchkick: 615.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom-53f59fc9def409f9dde5e3a0bbf2ef8f.css?body=1" for 127.0.0.1 at 2015-04-25 21:22:38 -0400
+
+
+Started GET "/assets/professors-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:22:38 -0400
+
+
+Started GET "/assets/searchs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:22:38 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:22:38 -0400
+
+
+Started GET "/assets/reviews-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:22:38 -0400
+
+
+Started GET "/assets/application-1f589d71220a992feacb9a3213d16c3a.css?body=1" for 127.0.0.1 at 2015-04-25 21:22:38 -0400
+
+
+Started GET "/assets/static_pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:22:38 -0400
+
+
+Started GET "/assets/typeahead-d7e226e5c8309c6d5570dabaf78c0185.css?body=1" for 127.0.0.1 at 2015-04-25 21:22:38 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-25 21:22:38 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-25 21:22:38 -0400
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for 127.0.0.1 at 2015-04-25 21:22:38 -0400
+
+
+Started GET "/assets/turbolinks-d9dcd5206ee131f11181e8ca09537148.js?body=1" for 127.0.0.1 at 2015-04-25 21:22:38 -0400
+
+
+Started GET "/assets/reviews-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:22:38 -0400
+
+
+Started GET "/assets/professors-dbcedf1ec3fc3568fcbe0852c0f80a9d.js?body=1" for 127.0.0.1 at 2015-04-25 21:22:38 -0400
+
+
+Started GET "/assets/searchs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:22:38 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:22:38 -0400
+
+
+Started GET "/assets/static_pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:22:38 -0400
+
+
+Started GET "/assets/application-38157071f3b978f57526663e1a720b55.js?body=1" for 127.0.0.1 at 2015-04-25 21:22:38 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-25 21:22:38 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-25 21:22:38 -0400
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for 127.0.0.1 at 2015-04-25 21:22:38 -0400
+
+
+Started GET "/assets/turbolinks-d9dcd5206ee131f11181e8ca09537148.js?body=1" for 127.0.0.1 at 2015-04-25 21:22:38 -0400
+
+
+Started GET "/assets/professors-dbcedf1ec3fc3568fcbe0852c0f80a9d.js?body=1" for 127.0.0.1 at 2015-04-25 21:22:38 -0400
+
+
+Started GET "/assets/reviews-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:22:38 -0400
+
+
+Started GET "/assets/searchs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:22:38 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:22:38 -0400
+
+
+Started GET "/assets/static_pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:22:39 -0400
+
+
+Started GET "/assets/application-38157071f3b978f57526663e1a720b55.js?body=1" for 127.0.0.1 at 2015-04-25 21:22:39 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-25 21:22:52 -0400
+Processing by StaticPagesController#home as HTML
+Existing local CAS session detected for "cxduan". Previous ticket "ST-13020-hLAJBTZhgC3g1Gq57LoW-fed06" will be re-used.
+  Rendered static_pages/home.html.erb within layouts/application (4.9ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 360ms (Views: 347.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-25 21:23:23 -0400
+Processing by StaticPagesController#home as HTML
+Existing local CAS session detected for "cxduan". Previous ticket "ST-13020-hLAJBTZhgC3g1Gq57LoW-fed06" will be re-used.
+  Rendered static_pages/home.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 615ms (Views: 612.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom-53f59fc9def409f9dde5e3a0bbf2ef8f.css?body=1" for 127.0.0.1 at 2015-04-25 21:23:24 -0400
+
+
+Started GET "/assets/reviews-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:23:24 -0400
+
+
+Started GET "/assets/professors-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:23:24 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:23:24 -0400
+
+
+Started GET "/assets/searchs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:23:24 -0400
+
+
+Started GET "/assets/static_pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:23:24 -0400
+
+
+Started GET "/assets/typeahead-d7e226e5c8309c6d5570dabaf78c0185.css?body=1" for 127.0.0.1 at 2015-04-25 21:23:24 -0400
+
+
+Started GET "/assets/application-1f589d71220a992feacb9a3213d16c3a.css?body=1" for 127.0.0.1 at 2015-04-25 21:23:24 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-25 21:23:24 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-25 21:23:24 -0400
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for 127.0.0.1 at 2015-04-25 21:23:24 -0400
+
+
+Started GET "/assets/professors-dbcedf1ec3fc3568fcbe0852c0f80a9d.js?body=1" for 127.0.0.1 at 2015-04-25 21:23:24 -0400
+
+
+Started GET "/assets/turbolinks-d9dcd5206ee131f11181e8ca09537148.js?body=1" for 127.0.0.1 at 2015-04-25 21:23:24 -0400
+
+
+Started GET "/assets/reviews-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:23:24 -0400
+
+
+Started GET "/assets/searchs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:23:24 -0400
+
+
+Started GET "/assets/static_pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:23:24 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:23:24 -0400
+
+
+Started GET "/assets/application-38157071f3b978f57526663e1a720b55.js?body=1" for 127.0.0.1 at 2015-04-25 21:23:24 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-25 21:23:24 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-25 21:23:24 -0400
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for 127.0.0.1 at 2015-04-25 21:23:24 -0400
+
+
+Started GET "/assets/turbolinks-d9dcd5206ee131f11181e8ca09537148.js?body=1" for 127.0.0.1 at 2015-04-25 21:23:24 -0400
+
+
+Started GET "/assets/professors-dbcedf1ec3fc3568fcbe0852c0f80a9d.js?body=1" for 127.0.0.1 at 2015-04-25 21:23:24 -0400
+
+
+Started GET "/assets/reviews-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:23:24 -0400
+
+
+Started GET "/assets/searchs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:23:24 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:23:24 -0400
+
+
+Started GET "/assets/static_pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:23:24 -0400
+
+
+Started GET "/assets/application-38157071f3b978f57526663e1a720b55.js?body=1" for 127.0.0.1 at 2015-04-25 21:23:24 -0400
+
+
+Started GET "/assets/check-mark-md-152688ec8b538da2b1908d0ae1368711.png" for 127.0.0.1 at 2015-04-25 21:23:25 -0400
+
+
+Started GET "/professors/autocomplete?query=ec" for 127.0.0.1 at 2015-04-25 21:23:27 -0400
+Processing by ProfessorsController#autocomplete as JSON
+  Parameters: {"query"=>"ec"}
+  [1m[33mProfessor Search (72.5ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"multi_match":{"fields":["first_name.autocomplete","last_name.autocomplete","netid.autocomplete","department.autocomplete"],"query":"ec","analyzer":"searchkick_autocomplete_search"}},"size":10,"from":0,"fields":[]}'
+  [1m[35mProfessor Load (3.8ms)[0m  SELECT "professors".* FROM "professors" WHERE "professors"."id" IN (4, 1, 2)
+Completed 200 OK in 81ms (Views: 0.3ms | Searchkick: 72.5ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/professors/autocomplete?query=econ" for 127.0.0.1 at 2015-04-25 21:23:30 -0400
+Processing by ProfessorsController#autocomplete as JSON
+  Parameters: {"query"=>"econ"}
+  [1m[33mProfessor Search (34.2ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"multi_match":{"fields":["first_name.autocomplete","last_name.autocomplete","netid.autocomplete","department.autocomplete"],"query":"econ","analyzer":"searchkick_autocomplete_search"}},"size":10,"from":0,"fields":[]}'
+  [1m[36mProfessor Load (0.4ms)[0m  [1mSELECT "professors".* FROM "professors" WHERE "professors"."id" IN (4, 1, 2)[0m
+Completed 200 OK in 40ms (Views: 1.9ms | Searchkick: 34.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/professors/autocomplete?query=Swati%20Bhatt%2C%20sbhatt%2C%20Economics" for 127.0.0.1 at 2015-04-25 21:23:50 -0400
+Processing by ProfessorsController#autocomplete as JSON
+  Parameters: {"query"=>"Swati Bhatt, sbhatt, Economics"}
+  [1m[33mProfessor Search (39.3ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"multi_match":{"fields":["first_name.autocomplete","last_name.autocomplete","netid.autocomplete","department.autocomplete"],"query":"Swati Bhatt, sbhatt, Economics","analyzer":"searchkick_autocomplete_search"}},"size":10,"from":0,"fields":[]}'
+Completed 200 OK in 41ms (Views: 0.2ms | Searchkick: 39.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/professors?utf8=%E2%9C%93&query=Swati+Bhatt%2C+sbhatt%2C+Economics&commit=Search" for 127.0.0.1 at 2015-04-25 21:23:51 -0400
+Processing by ProfessorsController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"Swati Bhatt, sbhatt, Economics", "commit"=>"Search"}
+  [1m[33mProfessor Search (953.0ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"dis_max":{"queries":[{"match":{"first_name.analyzed":{"query":"Swati Bhatt, sbhatt, Economics","operator":"and","boost":10,"analyzer":"searchkick_search"}}},{"match":{"first_name.analyzed":{"query":"Swati Bhatt, sbhatt, Economics","operator":"and","boost":10,"analyzer":"searchkick_search2"}}},{"match":{"first_name.analyzed":{"query":"Swati Bhatt, sbhatt, Economics","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search"}}},{"match":{"first_name.analyzed":{"query":"Swati Bhatt, sbhatt, Economics","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search2"}}},{"match":{"last_name.analyzed":{"query":"Swati Bhatt, sbhatt, Economics","operator":"and","boost":10,"analyzer":"searchkick_search"}}},{"match":{"last_name.analyzed":{"query":"Swati Bhatt, sbhatt, Economics","operator":"and","boost":10,"analyzer":"searchkick_search2"}}},{"match":{"last_name.analyzed":{"query":"Swati Bhatt, sbhatt, Economics","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search"}}},{"match":{"last_name.analyzed":{"query":"Swati Bhatt, sbhatt, Economics","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search2"}}},{"match":{"netid.analyzed":{"query":"Swati Bhatt, sbhatt, Economics","operator":"and","boost":10,"analyzer":"searchkick_search"}}},{"match":{"netid.analyzed":{"query":"Swati Bhatt, sbhatt, Economics","operator":"and","boost":10,"analyzer":"searchkick_search2"}}},{"match":{"netid.analyzed":{"query":"Swati Bhatt, sbhatt, Economics","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search"}}},{"match":{"netid.analyzed":{"query":"Swati Bhatt, sbhatt, Economics","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search2"}}},{"match":{"department.analyzed":{"query":"Swati Bhatt, sbhatt, Economics","operator":"and","boost":10,"analyzer":"searchkick_search"}}},{"match":{"department.analyzed":{"query":"Swati Bhatt, sbhatt, Economics","operator":"and","boost":10,"analyzer":"searchkick_search2"}}},{"match":{"department.analyzed":{"query":"Swati Bhatt, sbhatt, Economics","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search"}}},{"match":{"department.analyzed":{"query":"Swati Bhatt, sbhatt, Economics","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search2"}}}]}},"size":100000,"from":0,"fields":[]}'
+  Rendered professors/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 1610ms (Views: 651.5ms | Searchkick: 953.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom-53f59fc9def409f9dde5e3a0bbf2ef8f.css?body=1" for 127.0.0.1 at 2015-04-25 21:23:53 -0400
+
+
+Started GET "/assets/professors-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:23:53 -0400
+
+
+Started GET "/assets/reviews-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:23:53 -0400
+
+
+Started GET "/assets/static_pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:23:53 -0400
+
+
+Started GET "/assets/searchs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:23:53 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:23:53 -0400
+
+
+Started GET "/assets/typeahead-d7e226e5c8309c6d5570dabaf78c0185.css?body=1" for 127.0.0.1 at 2015-04-25 21:23:53 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-25 21:23:53 -0400
+
+
+Started GET "/assets/application-1f589d71220a992feacb9a3213d16c3a.css?body=1" for 127.0.0.1 at 2015-04-25 21:23:53 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-25 21:23:53 -0400
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for 127.0.0.1 at 2015-04-25 21:23:53 -0400
+
+
+Started GET "/assets/turbolinks-d9dcd5206ee131f11181e8ca09537148.js?body=1" for 127.0.0.1 at 2015-04-25 21:23:53 -0400
+
+
+Started GET "/assets/professors-dbcedf1ec3fc3568fcbe0852c0f80a9d.js?body=1" for 127.0.0.1 at 2015-04-25 21:23:53 -0400
+
+
+Started GET "/assets/reviews-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:23:53 -0400
+
+
+Started GET "/assets/searchs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:23:53 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:23:53 -0400
+
+
+Started GET "/assets/static_pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:23:53 -0400
+
+
+Started GET "/assets/application-38157071f3b978f57526663e1a720b55.js?body=1" for 127.0.0.1 at 2015-04-25 21:23:53 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-25 21:23:53 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-25 21:23:53 -0400
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for 127.0.0.1 at 2015-04-25 21:23:54 -0400
+
+
+Started GET "/assets/turbolinks-d9dcd5206ee131f11181e8ca09537148.js?body=1" for 127.0.0.1 at 2015-04-25 21:23:54 -0400
+
+
+Started GET "/assets/professors-dbcedf1ec3fc3568fcbe0852c0f80a9d.js?body=1" for 127.0.0.1 at 2015-04-25 21:23:54 -0400
+
+
+Started GET "/assets/reviews-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:23:54 -0400
+
+
+Started GET "/assets/searchs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:23:54 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:23:54 -0400
+
+
+Started GET "/assets/static_pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:23:54 -0400
+
+
+Started GET "/assets/application-38157071f3b978f57526663e1a720b55.js?body=1" for 127.0.0.1 at 2015-04-25 21:23:54 -0400
+
+
+Started GET "/professors/autocomplete?query=feli" for 127.0.0.1 at 2015-04-25 21:25:14 -0400
+Processing by ProfessorsController#autocomplete as JSON
+  Parameters: {"query"=>"feli"}
+  [1m[33mProfessor Search (72.8ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"multi_match":{"fields":["first_name.autocomplete","last_name.autocomplete","netid.autocomplete","department.autocomplete"],"query":"feli","analyzer":"searchkick_autocomplete_search"}},"size":10,"from":0,"fields":[]}'
+  [1m[35mProfessor Load (4.0ms)[0m  SELECT "professors".* FROM "professors" WHERE "professors"."id" = 3
+Completed 200 OK in 82ms (Views: 0.2ms | Searchkick: 72.8ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/professors/autocomplete?query=Felicia%20Ng%2C%20fng%2C%20Psychol" for 127.0.0.1 at 2015-04-25 21:25:24 -0400
+Processing by ProfessorsController#autocomplete as JSON
+  Parameters: {"query"=>"Felicia Ng, fng, Psychol"}
+  [1m[33mProfessor Search (117.8ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"multi_match":{"fields":["first_name.autocomplete","last_name.autocomplete","netid.autocomplete","department.autocomplete"],"query":"Felicia Ng, fng, Psychol","analyzer":"searchkick_autocomplete_search"}},"size":10,"from":0,"fields":[]}'
+Completed 200 OK in 124ms (Views: 0.7ms | Searchkick: 117.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/professors/autocomplete?query=Felici" for 127.0.0.1 at 2015-04-25 21:25:26 -0400
+Processing by ProfessorsController#autocomplete as JSON
+  Parameters: {"query"=>"Felici"}
+  [1m[33mProfessor Search (33.8ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"multi_match":{"fields":["first_name.autocomplete","last_name.autocomplete","netid.autocomplete","department.autocomplete"],"query":"Felici","analyzer":"searchkick_autocomplete_search"}},"size":10,"from":0,"fields":[]}'
+  [1m[36mProfessor Load (3.6ms)[0m  [1mSELECT "professors".* FROM "professors" WHERE "professors"."id" = 3[0m
+Completed 200 OK in 42ms (Views: 0.3ms | Searchkick: 33.8ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/professors/autocomplete?query=Felicia" for 127.0.0.1 at 2015-04-25 21:25:27 -0400
+Processing by ProfessorsController#autocomplete as JSON
+  Parameters: {"query"=>"Felicia"}
+  [1m[33mProfessor Search (43.4ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"multi_match":{"fields":["first_name.autocomplete","last_name.autocomplete","netid.autocomplete","department.autocomplete"],"query":"Felicia","analyzer":"searchkick_autocomplete_search"}},"size":10,"from":0,"fields":[]}'
+  [1m[35mProfessor Load (0.3ms)[0m  SELECT "professors".* FROM "professors" WHERE "professors"."id" = 3
+Completed 200 OK in 47ms (Views: 0.2ms | Searchkick: 43.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/professors?utf8=%E2%9C%93&query=Felicia&commit=Search" for 127.0.0.1 at 2015-04-25 21:25:28 -0400
+Processing by ProfessorsController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"Felicia", "commit"=>"Search"}
+  [1m[33mProfessor Search (424.7ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"dis_max":{"queries":[{"match":{"first_name.analyzed":{"query":"Felicia","operator":"and","boost":10,"analyzer":"searchkick_search"}}},{"match":{"first_name.analyzed":{"query":"Felicia","operator":"and","boost":10,"analyzer":"searchkick_search2"}}},{"match":{"first_name.analyzed":{"query":"Felicia","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search"}}},{"match":{"first_name.analyzed":{"query":"Felicia","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search2"}}},{"match":{"last_name.analyzed":{"query":"Felicia","operator":"and","boost":10,"analyzer":"searchkick_search"}}},{"match":{"last_name.analyzed":{"query":"Felicia","operator":"and","boost":10,"analyzer":"searchkick_search2"}}},{"match":{"last_name.analyzed":{"query":"Felicia","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search"}}},{"match":{"last_name.analyzed":{"query":"Felicia","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search2"}}},{"match":{"netid.analyzed":{"query":"Felicia","operator":"and","boost":10,"analyzer":"searchkick_search"}}},{"match":{"netid.analyzed":{"query":"Felicia","operator":"and","boost":10,"analyzer":"searchkick_search2"}}},{"match":{"netid.analyzed":{"query":"Felicia","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search"}}},{"match":{"netid.analyzed":{"query":"Felicia","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search2"}}},{"match":{"department.analyzed":{"query":"Felicia","operator":"and","boost":10,"analyzer":"searchkick_search"}}},{"match":{"department.analyzed":{"query":"Felicia","operator":"and","boost":10,"analyzer":"searchkick_search2"}}},{"match":{"department.analyzed":{"query":"Felicia","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search"}}},{"match":{"department.analyzed":{"query":"Felicia","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search2"}}}]}},"size":100000,"from":0,"fields":[]}'
+  [1m[36mProfessor Load (0.6ms)[0m  [1mSELECT "professors".* FROM "professors" WHERE "professors"."id" = 3[0m
+  Rendered professors/index.html.erb within layouts/application (7.8ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 1269ms (Views: 825.5ms | Searchkick: 424.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/custom-53f59fc9def409f9dde5e3a0bbf2ef8f.css?body=1" for 127.0.0.1 at 2015-04-25 21:25:30 -0400
+
+
+Started GET "/assets/professors-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:25:30 -0400
+
+
+Started GET "/assets/reviews-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:25:30 -0400
+
+
+Started GET "/assets/application-1f589d71220a992feacb9a3213d16c3a.css?body=1" for 127.0.0.1 at 2015-04-25 21:25:30 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:25:30 -0400
+
+
+Started GET "/assets/searchs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:25:30 -0400
+
+
+Started GET "/assets/typeahead-d7e226e5c8309c6d5570dabaf78c0185.css?body=1" for 127.0.0.1 at 2015-04-25 21:25:30 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-25 21:25:30 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-25 21:25:30 -0400
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for 127.0.0.1 at 2015-04-25 21:25:30 -0400
+
+
+Started GET "/assets/turbolinks-d9dcd5206ee131f11181e8ca09537148.js?body=1" for 127.0.0.1 at 2015-04-25 21:25:30 -0400
+
+
+Started GET "/assets/professors-dbcedf1ec3fc3568fcbe0852c0f80a9d.js?body=1" for 127.0.0.1 at 2015-04-25 21:25:30 -0400
+
+
+Started GET "/assets/searchs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:25:30 -0400
+
+
+Started GET "/assets/reviews-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:25:30 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:25:30 -0400
+
+
+Started GET "/assets/static_pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:25:30 -0400
+
+
+Started GET "/assets/application-38157071f3b978f57526663e1a720b55.js?body=1" for 127.0.0.1 at 2015-04-25 21:25:30 -0400
+
+
+Started GET "/assets/static_pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:25:30 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-25 21:25:30 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-25 21:25:30 -0400
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for 127.0.0.1 at 2015-04-25 21:25:30 -0400
+
+
+Started GET "/assets/turbolinks-d9dcd5206ee131f11181e8ca09537148.js?body=1" for 127.0.0.1 at 2015-04-25 21:25:30 -0400
+
+
+Started GET "/assets/professors-dbcedf1ec3fc3568fcbe0852c0f80a9d.js?body=1" for 127.0.0.1 at 2015-04-25 21:25:30 -0400
+
+
+Started GET "/assets/reviews-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:25:30 -0400
+
+
+Started GET "/assets/searchs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:25:31 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:25:31 -0400
+
+
+Started GET "/assets/static_pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:25:31 -0400
+
+
+Started GET "/assets/application-38157071f3b978f57526663e1a720b55.js?body=1" for 127.0.0.1 at 2015-04-25 21:25:31 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-25 21:26:13 -0400
+Processing by StaticPagesController#home as HTML
+Existing local CAS session detected for "cxduan". Previous ticket "ST-13020-hLAJBTZhgC3g1Gq57LoW-fed06" will be re-used.
+  Rendered static_pages/home.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 661ms (Views: 657.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom-53f59fc9def409f9dde5e3a0bbf2ef8f.css?body=1" for 127.0.0.1 at 2015-04-25 21:26:14 -0400
+
+
+Started GET "/assets/professors-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:26:14 -0400
+
+
+Started GET "/assets/reviews-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:26:15 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:26:15 -0400
+
+
+Started GET "/assets/searchs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:26:15 -0400
+
+
+Started GET "/assets/application-1f589d71220a992feacb9a3213d16c3a.css?body=1" for 127.0.0.1 at 2015-04-25 21:26:15 -0400
+
+
+Started GET "/assets/typeahead-d7e226e5c8309c6d5570dabaf78c0185.css?body=1" for 127.0.0.1 at 2015-04-25 21:26:15 -0400
+
+
+Started GET "/assets/static_pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:26:15 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-25 21:26:15 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-25 21:26:15 -0400
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for 127.0.0.1 at 2015-04-25 21:26:15 -0400
+
+
+Started GET "/assets/turbolinks-d9dcd5206ee131f11181e8ca09537148.js?body=1" for 127.0.0.1 at 2015-04-25 21:26:15 -0400
+
+
+Started GET "/assets/professors-dbcedf1ec3fc3568fcbe0852c0f80a9d.js?body=1" for 127.0.0.1 at 2015-04-25 21:26:15 -0400
+
+
+Started GET "/assets/reviews-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:26:15 -0400
+
+
+Started GET "/assets/searchs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:26:15 -0400
+
+
+Started GET "/assets/static_pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:26:15 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:26:15 -0400
+
+
+Started GET "/assets/application-38157071f3b978f57526663e1a720b55.js?body=1" for 127.0.0.1 at 2015-04-25 21:26:15 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-25 21:26:15 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-25 21:26:15 -0400
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for 127.0.0.1 at 2015-04-25 21:26:15 -0400
+
+
+Started GET "/assets/turbolinks-d9dcd5206ee131f11181e8ca09537148.js?body=1" for 127.0.0.1 at 2015-04-25 21:26:15 -0400
+
+
+Started GET "/assets/professors-dbcedf1ec3fc3568fcbe0852c0f80a9d.js?body=1" for 127.0.0.1 at 2015-04-25 21:26:15 -0400
+
+
+Started GET "/assets/reviews-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:26:15 -0400
+
+
+Started GET "/assets/searchs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:26:15 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:26:15 -0400
+
+
+Started GET "/assets/static_pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:26:15 -0400
+
+
+Started GET "/assets/application-38157071f3b978f57526663e1a720b55.js?body=1" for 127.0.0.1 at 2015-04-25 21:26:15 -0400
+
+
+Started GET "/assets/check-mark-md-152688ec8b538da2b1908d0ae1368711.png" for 127.0.0.1 at 2015-04-25 21:26:15 -0400
+
+
+Started GET "/professors/autocomplete?query=Felic" for 127.0.0.1 at 2015-04-25 21:26:18 -0400
+Processing by ProfessorsController#autocomplete as JSON
+  Parameters: {"query"=>"Felic"}
+  [1m[33mProfessor Search (34.4ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"multi_match":{"fields":["first_name.autocomplete","last_name.autocomplete","netid.autocomplete","department.autocomplete"],"query":"Felic","analyzer":"searchkick_autocomplete_search"}},"size":10,"from":0,"fields":[]}'
+  [1m[35mProfessor Load (0.4ms)[0m  SELECT "professors".* FROM "professors" WHERE "professors"."id" = 3
+Completed 200 OK in 99ms (Views: 3.0ms | Searchkick: 34.4ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/professors/autocomplete?query=Felicia%20Ng%20fng%20Psychology" for 127.0.0.1 at 2015-04-25 21:26:21 -0400
+Processing by ProfessorsController#autocomplete as JSON
+  Parameters: {"query"=>"Felicia Ng fng Psychology"}
+  [1m[33mProfessor Search (37.8ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"multi_match":{"fields":["first_name.autocomplete","last_name.autocomplete","netid.autocomplete","department.autocomplete"],"query":"Felicia Ng fng Psychology","analyzer":"searchkick_autocomplete_search"}},"size":10,"from":0,"fields":[]}'
+Completed 200 OK in 41ms (Views: 0.8ms | Searchkick: 37.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/professors?utf8=%E2%9C%93&query=Felicia+Ng+fng+Psychology&commit=Search" for 127.0.0.1 at 2015-04-25 21:26:23 -0400
+Processing by ProfessorsController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"Felicia Ng fng Psychology", "commit"=>"Search"}
+  [1m[33mProfessor Search (908.0ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"dis_max":{"queries":[{"match":{"first_name.analyzed":{"query":"Felicia Ng fng Psychology","operator":"and","boost":10,"analyzer":"searchkick_search"}}},{"match":{"first_name.analyzed":{"query":"Felicia Ng fng Psychology","operator":"and","boost":10,"analyzer":"searchkick_search2"}}},{"match":{"first_name.analyzed":{"query":"Felicia Ng fng Psychology","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search"}}},{"match":{"first_name.analyzed":{"query":"Felicia Ng fng Psychology","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search2"}}},{"match":{"last_name.analyzed":{"query":"Felicia Ng fng Psychology","operator":"and","boost":10,"analyzer":"searchkick_search"}}},{"match":{"last_name.analyzed":{"query":"Felicia Ng fng Psychology","operator":"and","boost":10,"analyzer":"searchkick_search2"}}},{"match":{"last_name.analyzed":{"query":"Felicia Ng fng Psychology","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search"}}},{"match":{"last_name.analyzed":{"query":"Felicia Ng fng Psychology","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search2"}}},{"match":{"netid.analyzed":{"query":"Felicia Ng fng Psychology","operator":"and","boost":10,"analyzer":"searchkick_search"}}},{"match":{"netid.analyzed":{"query":"Felicia Ng fng Psychology","operator":"and","boost":10,"analyzer":"searchkick_search2"}}},{"match":{"netid.analyzed":{"query":"Felicia Ng fng Psychology","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search"}}},{"match":{"netid.analyzed":{"query":"Felicia Ng fng Psychology","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search2"}}},{"match":{"department.analyzed":{"query":"Felicia Ng fng Psychology","operator":"and","boost":10,"analyzer":"searchkick_search"}}},{"match":{"department.analyzed":{"query":"Felicia Ng fng Psychology","operator":"and","boost":10,"analyzer":"searchkick_search2"}}},{"match":{"department.analyzed":{"query":"Felicia Ng fng Psychology","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search"}}},{"match":{"department.analyzed":{"query":"Felicia Ng fng Psychology","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search2"}}}]}},"size":100000,"from":0,"fields":[]}'
+  Rendered professors/index.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 1666ms (Views: 754.4ms | Searchkick: 908.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom-53f59fc9def409f9dde5e3a0bbf2ef8f.css?body=1" for 127.0.0.1 at 2015-04-25 21:26:24 -0400
+
+
+Started GET "/assets/professors-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:26:24 -0400
+
+
+Started GET "/assets/reviews-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:26:24 -0400
+
+
+Started GET "/assets/static_pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:26:24 -0400
+
+
+Started GET "/assets/searchs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:26:24 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:26:24 -0400
+
+
+Started GET "/assets/typeahead-d7e226e5c8309c6d5570dabaf78c0185.css?body=1" for 127.0.0.1 at 2015-04-25 21:26:25 -0400
+
+
+Started GET "/assets/application-1f589d71220a992feacb9a3213d16c3a.css?body=1" for 127.0.0.1 at 2015-04-25 21:26:25 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-25 21:26:25 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-25 21:26:25 -0400
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for 127.0.0.1 at 2015-04-25 21:26:25 -0400
+
+
+Started GET "/assets/turbolinks-d9dcd5206ee131f11181e8ca09537148.js?body=1" for 127.0.0.1 at 2015-04-25 21:26:25 -0400
+
+
+Started GET "/assets/professors-dbcedf1ec3fc3568fcbe0852c0f80a9d.js?body=1" for 127.0.0.1 at 2015-04-25 21:26:25 -0400
+
+
+Started GET "/assets/reviews-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:26:25 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:26:25 -0400
+
+
+Started GET "/assets/searchs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:26:25 -0400
+
+
+Started GET "/assets/static_pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:26:25 -0400
+
+
+Started GET "/assets/application-38157071f3b978f57526663e1a720b55.js?body=1" for 127.0.0.1 at 2015-04-25 21:26:25 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-25 21:26:25 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-25 21:26:25 -0400
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for 127.0.0.1 at 2015-04-25 21:26:25 -0400
+
+
+Started GET "/assets/turbolinks-d9dcd5206ee131f11181e8ca09537148.js?body=1" for 127.0.0.1 at 2015-04-25 21:26:25 -0400
+
+
+Started GET "/assets/professors-dbcedf1ec3fc3568fcbe0852c0f80a9d.js?body=1" for 127.0.0.1 at 2015-04-25 21:26:25 -0400
+
+
+Started GET "/assets/reviews-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:26:25 -0400
+
+
+Started GET "/assets/searchs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:26:25 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:26:25 -0400
+
+
+Started GET "/assets/static_pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:26:25 -0400
+
+
+Started GET "/assets/application-38157071f3b978f57526663e1a720b55.js?body=1" for 127.0.0.1 at 2015-04-25 21:26:25 -0400
+
+
+Started GET "/professors/autocomplete?query=Felicia%20Ng" for 127.0.0.1 at 2015-04-25 21:26:34 -0400
+Processing by ProfessorsController#autocomplete as JSON
+  Parameters: {"query"=>"Felicia Ng"}
+  [1m[33mProfessor Search (29.9ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"multi_match":{"fields":["first_name.autocomplete","last_name.autocomplete","netid.autocomplete","department.autocomplete"],"query":"Felicia Ng","analyzer":"searchkick_autocomplete_search"}},"size":10,"from":0,"fields":[]}'
+Completed 200 OK in 35ms (Views: 0.2ms | Searchkick: 29.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/professors?utf8=%E2%9C%93&query=Felicia+Ng&commit=Search" for 127.0.0.1 at 2015-04-25 21:26:34 -0400
+Processing by ProfessorsController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"Felicia Ng", "commit"=>"Search"}
+  [1m[33mProfessor Search (523.6ms)[0m  curl http://localhost:9200/professors_development/_search?pretty -d '{"query":{"dis_max":{"queries":[{"match":{"first_name.analyzed":{"query":"Felicia Ng","operator":"and","boost":10,"analyzer":"searchkick_search"}}},{"match":{"first_name.analyzed":{"query":"Felicia Ng","operator":"and","boost":10,"analyzer":"searchkick_search2"}}},{"match":{"first_name.analyzed":{"query":"Felicia Ng","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search"}}},{"match":{"first_name.analyzed":{"query":"Felicia Ng","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search2"}}},{"match":{"last_name.analyzed":{"query":"Felicia Ng","operator":"and","boost":10,"analyzer":"searchkick_search"}}},{"match":{"last_name.analyzed":{"query":"Felicia Ng","operator":"and","boost":10,"analyzer":"searchkick_search2"}}},{"match":{"last_name.analyzed":{"query":"Felicia Ng","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search"}}},{"match":{"last_name.analyzed":{"query":"Felicia Ng","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search2"}}},{"match":{"netid.analyzed":{"query":"Felicia Ng","operator":"and","boost":10,"analyzer":"searchkick_search"}}},{"match":{"netid.analyzed":{"query":"Felicia Ng","operator":"and","boost":10,"analyzer":"searchkick_search2"}}},{"match":{"netid.analyzed":{"query":"Felicia Ng","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search"}}},{"match":{"netid.analyzed":{"query":"Felicia Ng","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search2"}}},{"match":{"department.analyzed":{"query":"Felicia Ng","operator":"and","boost":10,"analyzer":"searchkick_search"}}},{"match":{"department.analyzed":{"query":"Felicia Ng","operator":"and","boost":10,"analyzer":"searchkick_search2"}}},{"match":{"department.analyzed":{"query":"Felicia Ng","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search"}}},{"match":{"department.analyzed":{"query":"Felicia Ng","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search2"}}}]}},"size":100000,"from":0,"fields":[]}'
+  Rendered professors/index.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 1147ms (Views: 620.0ms | Searchkick: 523.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom-53f59fc9def409f9dde5e3a0bbf2ef8f.css?body=1" for 127.0.0.1 at 2015-04-25 21:26:35 -0400
+
+
+Started GET "/assets/professors-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:26:35 -0400
+
+
+Started GET "/assets/reviews-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:26:35 -0400
+
+
+Started GET "/assets/searchs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:26:35 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:26:35 -0400
+
+
+Started GET "/assets/typeahead-d7e226e5c8309c6d5570dabaf78c0185.css?body=1" for 127.0.0.1 at 2015-04-25 21:26:35 -0400
+
+
+Started GET "/assets/application-1f589d71220a992feacb9a3213d16c3a.css?body=1" for 127.0.0.1 at 2015-04-25 21:26:36 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-25 21:26:36 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-25 21:26:36 -0400
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for 127.0.0.1 at 2015-04-25 21:26:36 -0400
+
+
+Started GET "/assets/turbolinks-d9dcd5206ee131f11181e8ca09537148.js?body=1" for 127.0.0.1 at 2015-04-25 21:26:36 -0400
+
+
+Started GET "/assets/professors-dbcedf1ec3fc3568fcbe0852c0f80a9d.js?body=1" for 127.0.0.1 at 2015-04-25 21:26:36 -0400
+
+
+Started GET "/assets/reviews-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:26:36 -0400
+
+
+Started GET "/assets/searchs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:26:36 -0400
+
+
+Started GET "/assets/static_pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:26:36 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:26:36 -0400
+
+
+Started GET "/assets/application-38157071f3b978f57526663e1a720b55.js?body=1" for 127.0.0.1 at 2015-04-25 21:26:36 -0400
+
+
+Started GET "/assets/static_pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-25 21:26:36 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-25 21:26:36 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-25 21:26:36 -0400
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for 127.0.0.1 at 2015-04-25 21:26:36 -0400
+
+
+Started GET "/assets/turbolinks-d9dcd5206ee131f11181e8ca09537148.js?body=1" for 127.0.0.1 at 2015-04-25 21:26:36 -0400
+
+
+Started GET "/assets/professors-dbcedf1ec3fc3568fcbe0852c0f80a9d.js?body=1" for 127.0.0.1 at 2015-04-25 21:26:36 -0400
+
+
+Started GET "/assets/reviews-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:26:36 -0400
+
+
+Started GET "/assets/searchs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:26:37 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:26:37 -0400
+
+
+Started GET "/assets/static_pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-25 21:26:37 -0400
+
+
+Started GET "/assets/application-38157071f3b978f57526663e1a720b55.js?body=1" for 127.0.0.1 at 2015-04-25 21:26:37 -0400
