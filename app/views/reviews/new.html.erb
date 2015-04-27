@@ -20,30 +20,83 @@
 
       <% if false %>
       <%= f.label :availability, "Availability" %>
+      <%= range_field(:availability, in: 1..5) %>
+      <% end %>
+
+      <% if false %>
       <%= f.radio_button :availability, 1, class: 'form-control' %>
       <%= f.label :availability, :value => "1" %>
       <%= f.radio_button :availability, 2, class: 'form-control' %>
       <%= f.label :availability, :value => "2" %>
       <% end %>
 
+      <table>
+      <tr>
       <%= f.label :availability, "Availability" %>
-      <%= f.text_field :availability, class: 'form-control' %>
+      <td><%= f.radio_button :availability, 1, :style => "margin-left: 10px" %><%= f.label :availability, '1', :style => "display:inline", :style => "margin-left: 15px" %></td>
+      <td><%= f.radio_button :availability, 2, :style => "margin-left: 10px" %><%= f.label :availability, '2', :style => "display:inline", :style => "margin-left: 15px" %></td>
+      <td><%= f.radio_button :availability, 3, :style => "margin-left: 10px" %><%= f.label :availability, '3', :style => "display:inline", :style => "margin-left: 15px" %> </td>
+      <td><%= f.radio_button :availability, 4, :style => "margin-left: 10px" %><%= f.label :availability, '4', :style => "display:inline", :style => "margin-left: 15px" %> </td>
+      <td><%= f.radio_button :availability, 5, :style => "margin-left: 10px" %><%= f.label :availability, '5', :style => "display:inline", :style => "margin-left: 15px" %> </td>
+      </tr>
+      </table>
 
+      <table>
+      <tr>
       <%= f.label :responsiveness, "Responsiveness" %>
-      <%= f.text_field :responsiveness, class: 'form-control' %>
+      <td><%= f.radio_button :responsiveness, 1, :style => "margin-left: 10px" %><%= f.label :responsiveness, '1', :style => "display:inline", :style => "margin-left: 15px" %></td>
+      <td><%= f.radio_button :responsiveness, 2, :style => "margin-left: 10px" %><%= f.label :responsivenes, '2', :style => "display:inline", :style => "margin-left: 15px" %></td>
+      <td><%= f.radio_button :responsiveness, 3, :style => "margin-left: 10px" %><%= f.label :responsiveness, '3', :style => "display:inline", :style => "margin-left: 15px" %> </td>
+      <td><%= f.radio_button :responsiveness, 4, :style => "margin-left: 10px" %><%= f.label :responsiveness, '4', :style => "display:inline", :style => "margin-left: 15px" %> </td>
+      <td><%= f.radio_button :responsiveness, 5, :style => "margin-left: 10px" %><%= f.label :responsiveness, '5', :style => "display:inline", :style => "margin-left: 15px" %> </td>
+      </tr>
+      </table>
 
+      <table>
+      <tr>
       <%= f.label :knowledge, "Knowledge" %>
-      <%= f.text_field :knowledge, class: 'form-control' %>
+      <td><%= f.radio_button :knowledge, 1, :style => "margin-left: 10px" %><%= f.label :knowledge, '1', :style => "display:inline", :style => "margin-left: 15px" %></td>
+      <td><%= f.radio_button :knowledge, 2, :style => "margin-left: 10px" %><%= f.label :knowledge, '2', :style => "display:inline", :style => "margin-left: 15px" %></td>
+      <td><%= f.radio_button :knowledge, 3, :style => "margin-left: 10px" %><%= f.label :knowledge, '3', :style => "display:inline", :style => "margin-left: 15px" %> </td>
+      <td><%= f.radio_button :knowledge, 4, :style => "margin-left: 10px" %><%= f.label :knowledge, '4', :style => "display:inline", :style => "margin-left: 15px" %> </td>
+      <td><%= f.radio_button :knowledge, 5, :style => "margin-left: 10px" %><%= f.label :knowledge, '5', :style => "display:inline", :style => "margin-left: 15px" %> </td>
+      </tr>
+      </table>
 
+      <table>
+      <tr>
       <%= f.label :organization, "Organization" %>
-      <%= f.text_field :organization, class: 'form-control' %>
+      <td><%= f.radio_button :organization, 1, :style => "margin-left: 10px" %><%= f.label :organization, '1', :style => "display:inline", :style => "margin-left: 15px" %></td>
+      <td><%= f.radio_button :organization, 2, :style => "margin-left: 10px" %><%= f.label :organization, '2', :style => "display:inline", :style => "margin-left: 15px" %></td>
+      <td><%= f.radio_button :organization, 3, :style => "margin-left: 10px" %><%= f.label :organization, '3', :style => "display:inline", :style => "margin-left: 15px" %> </td>
+      <td><%= f.radio_button :organization, 4, :style => "margin-left: 10px" %><%= f.label :organization, '4', :style => "display:inline", :style => "margin-left: 15px" %> </td>
+      <td><%= f.radio_button :organization, 5, :style => "margin-left: 10px" %><%= f.label :organization, '5', :style => "display:inline", :style => "margin-left: 15px" %> </td>
+      </tr>
+      </table>
 
+      <table>
+      <tr>
       <%= f.label :friendliness, "Friendliness" %>
-      <%= f.text_field :friendliness, class: 'form-control' %>
+      <td><%= f.radio_button :friendliness, 1, :style => "margin-left: 10px" %><%= f.label :friendliness, '1', :style => "display:inline", :style => "margin-left: 15px" %></td>
+      <td><%= f.radio_button :friendliness, 2, :style => "margin-left: 10px" %><%= f.label :friendliness, '2', :style => "display:inline", :style => "margin-left: 15px" %></td>
+      <td><%= f.radio_button :friendliness, 3, :style => "margin-left: 10px" %><%= f.label :friendliness, '3', :style => "display:inline", :style => "margin-left: 15px" %> </td>
+      <td><%= f.radio_button :friendliness, 4, :style => "margin-left: 10px" %><%= f.label :friendliness, '4', :style => "display:inline", :style => "margin-left: 15px" %> </td>
+      <td><%= f.radio_button :friendliness, 5, :style => "margin-left: 10px" %><%= f.label :friendliness, '5', :style => "display:inline", :style => "margin-left: 15px" %> </td>
+      </tr>
+      </table>
 
+      <table>
+      <tr>
       <%= f.label :helpfulness, "Helpfulness" %>
-      <%= f.text_field :helpfulness, class: 'form-control' %>
+      <td><%= f.radio_button :helpfulness, 1, :style => "margin-left: 10px" %><%= f.label :helpfulness, '1', :style => "display:inline", :style => "margin-left: 15px" %></td>
+      <td><%= f.radio_button :helpfulness, 2, :style => "margin-left: 10px" %><%= f.label :helpfulness, '2', :style => "display:inline", :style => "margin-left: 15px" %></td>
+      <td><%= f.radio_button :helpfulness, 3, :style => "margin-left: 10px" %><%= f.label :helpfulness, '3', :style => "display:inline", :style => "margin-left: 15px" %> </td>
+      <td><%= f.radio_button :helpfulness, 4, :style => "margin-left: 10px" %><%= f.label :helpfulness, '4', :style => "display:inline", :style => "margin-left: 15px" %> </td>
+      <td><%= f.radio_button :helpfulness, 5, :style => "margin-left: 10px" %><%= f.label :helpfulness, '5', :style => "display:inline", :style => "margin-left: 15px" %> </td>
+      </tr>
+      </table>
 
+      <p></p>
       <div class="field">
 	<%= f.text_area :comments, placeholder: "Comments" %>
       </div>
