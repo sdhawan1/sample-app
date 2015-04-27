@@ -19813,3 +19813,677 @@ Started GET "/assets/static_pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" fo
 
 
 Started GET "/assets/application-38157071f3b978f57526663e1a720b55.js?body=1" for 127.0.0.1 at 2015-04-25 21:26:37 -0400
+
+
+Started GET "/" for ::1 at 2015-04-27 10:46:37 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+Guessed service url: "http://localhost:3000/"
+Generated login url: https://fed.princeton.edu/cas/login?service=http%3A%2F%2Flocalhost%3A3000%2F
+Redirecting to "https://fed.princeton.edu/cas/login?service=http%3A%2F%2Flocalhost%3A3000%2F"
+Redirected to https://fed.princeton.edu/cas/login?service=http%3A%2F%2Flocalhost%3A3000%2F
+Filter chain halted as CASClient::Frameworks::Rails::Filter rendered or redirected
+Completed 302 Found in 13ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/?ticket=ST-24648-rTePwh9TjidBqMiReJdE-fed05" for ::1 at 2015-04-27 10:46:40 -0400
+Processing by StaticPagesController#home as HTML
+  Parameters: {"ticket"=>"ST-24648-rTePwh9TjidBqMiReJdE-fed05"}
+Request contains ticket "ST-24648-rTePwh9TjidBqMiReJdE-fed05".
+Guessed service url: "http://localhost:3000/"
+Requesting CAS response for URI https://fed.princeton.edu/cas/proxyValidate?service=http%3A%2F%2Flocalhost%3A3000%2F&ticket=ST-24648-rTePwh9TjidBqMiReJdE-fed05
+CAS server responded with #<Net::HTTPOK 200 OK readbody=true>:
+<cas:serviceResponse xmlns:cas='http://www.yale.edu/tp/cas'>
+	<cas:authenticationSuccess>
+		<cas:user>fgiovann</cas:user>
+
+
+	</cas:authenticationSuccess>
+</cas:serviceResponse>
+
+Ticket "ST-24648-rTePwh9TjidBqMiReJdE-fed05" for service "http://localhost:3000/" belonging to user "fgiovann" is VALID.
+Extra user attributes provided along with ticket "ST-24648-rTePwh9TjidBqMiReJdE-fed05": {}.
+  Rendered static_pages/home.html.erb within layouts/application (7.2ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 5907ms (Views: 4204.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom-b8d93b7ec92c8701f149616f5a5aca8c.css?body=1" for ::1 at 2015-04-27 10:46:46 -0400
+
+
+Started GET "/assets/professors-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-27 10:46:46 -0400
+
+
+Started GET "/assets/reviews-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-27 10:46:46 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-27 10:46:46 -0400
+
+
+Started GET "/assets/typeahead-d7e226e5c8309c6d5570dabaf78c0185.css?body=1" for ::1 at 2015-04-27 10:46:47 -0400
+
+
+Started GET "/assets/searchs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-27 10:46:47 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-27 10:46:47 -0400
+
+
+Started GET "/assets/static_pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-27 10:46:47 -0400
+
+
+Started GET "/assets/application-bde2f26d2162a3113685dd112d1c665c.css?body=1" for ::1 at 2015-04-27 10:46:47 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-27 10:46:47 -0400
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for ::1 at 2015-04-27 10:46:47 -0400
+
+
+Started GET "/assets/turbolinks-d9dcd5206ee131f11181e8ca09537148.js?body=1" for ::1 at 2015-04-27 10:46:47 -0400
+
+
+Started GET "/assets/professors-dbcedf1ec3fc3568fcbe0852c0f80a9d.js?body=1" for ::1 at 2015-04-27 10:46:47 -0400
+
+
+Started GET "/assets/reviews-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-27 10:46:47 -0400
+
+
+Started GET "/assets/searchs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-27 10:46:47 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-27 10:46:47 -0400
+
+
+Started GET "/assets/static_pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-27 10:46:47 -0400
+
+
+Started GET "/assets/application-38157071f3b978f57526663e1a720b55.js?body=1" for ::1 at 2015-04-27 10:46:47 -0400
+
+
+Started GET "/assets/check-mark-md-152688ec8b538da2b1908d0ae1368711.png" for ::1 at 2015-04-27 10:46:47 -0400
+
+
+Started GET "/professors/autocomplete?query=Fab" for ::1 at 2015-04-27 10:46:56 -0400
+Processing by ProfessorsController#autocomplete as JSON
+  Parameters: {"query"=>"Fab"}
+Completed 500 Internal Server Error in 17ms
+
+Faraday::ConnectionFailed (Connection refused - connect(2) for "localhost" port 9200):
+  app/controllers/professors_controller.rb:33:in `autocomplete'
+
+
+  Rendered /Users/fabriziogf/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_source.erb (3.4ms)
+  Rendered /Users/fabriziogf/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.text.erb (1.4ms)
+  Rendered /Users/fabriziogf/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_request_and_response.text.erb (0.9ms)
+  Rendered /Users/fabriziogf/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/diagnostics.text.erb (67.2ms)
+
+
+Started GET "/professors/autocomplete?query=F" for ::1 at 2015-04-27 10:46:58 -0400
+Processing by ProfessorsController#autocomplete as JSON
+  Parameters: {"query"=>"F"}
+Completed 500 Internal Server Error in 2ms
+
+Faraday::ConnectionFailed (Connection refused - connect(2) for "localhost" port 9200):
+  app/controllers/professors_controller.rb:33:in `autocomplete'
+
+
+  Rendered /Users/fabriziogf/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_source.erb (3.6ms)
+  Rendered /Users/fabriziogf/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.text.erb (1.3ms)
+  Rendered /Users/fabriziogf/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_request_and_response.text.erb (1.0ms)
+  Rendered /Users/fabriziogf/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/diagnostics.text.erb (58.5ms)
+
+
+Started GET "/professors/autocomplete?query=Fabr" for ::1 at 2015-04-27 10:46:59 -0400
+Processing by ProfessorsController#autocomplete as JSON
+  Parameters: {"query"=>"Fabr"}
+Completed 500 Internal Server Error in 2ms
+
+Faraday::ConnectionFailed (Connection refused - connect(2) for "localhost" port 9200):
+  app/controllers/professors_controller.rb:33:in `autocomplete'
+
+
+  Rendered /Users/fabriziogf/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_source.erb (3.4ms)
+  Rendered /Users/fabriziogf/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.text.erb (1.3ms)
+  Rendered /Users/fabriziogf/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_request_and_response.text.erb (0.7ms)
+  Rendered /Users/fabriziogf/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/diagnostics.text.erb (53.7ms)
+
+
+Started GET "/professors/autocomplete?query=Fabrizio" for ::1 at 2015-04-27 10:47:00 -0400
+Processing by ProfessorsController#autocomplete as JSON
+  Parameters: {"query"=>"Fabrizio"}
+Completed 500 Internal Server Error in 2ms
+
+Faraday::ConnectionFailed (Connection refused - connect(2) for "localhost" port 9200):
+  app/controllers/professors_controller.rb:33:in `autocomplete'
+
+
+  Rendered /Users/fabriziogf/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_source.erb (3.8ms)
+  Rendered /Users/fabriziogf/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.text.erb (1.2ms)
+  Rendered /Users/fabriziogf/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_request_and_response.text.erb (1.0ms)
+  Rendered /Users/fabriziogf/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/diagnostics.text.erb (58.7ms)
+
+
+Started GET "/professors?utf8=%E2%9C%93&query=Fabrizio&commit=Search" for ::1 at 2015-04-27 10:47:01 -0400
+Processing by ProfessorsController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"Fabrizio", "commit"=>"Search"}
+Completed 500 Internal Server Error in 2ms
+
+Faraday::ConnectionFailed (Connection refused - connect(2) for "localhost" port 9200):
+  app/controllers/professors_controller.rb:24:in `index'
+
+
+  Rendered /Users/fabriziogf/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_source.erb (7.6ms)
+  Rendered /Users/fabriziogf/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /Users/fabriziogf/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/fabriziogf/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.0ms)
+  Rendered /Users/fabriziogf/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (87.4ms)
+
+
+Started GET "/find" for ::1 at 2015-04-27 10:47:12 -0400
+Processing by SearchsController#new as HTML
+  Rendered searchs/new.html.erb within layouts/application (14.5ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 257ms (Views: 255.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?ticket=ST-24648-rTePwh9TjidBqMiReJdE-fed05" for ::1 at 2015-04-27 10:47:14 -0400
+Processing by StaticPagesController#home as HTML
+  Parameters: {"ticket"=>"ST-24648-rTePwh9TjidBqMiReJdE-fed05"}
+Request contains ticket "ST-24648-rTePwh9TjidBqMiReJdE-fed05".
+Guessed service url: "http://localhost:3000/"
+Re-using previously validated ticket since the ticket id and service are the same.
+  Rendered static_pages/home.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 324ms (Views: 320.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reviews/new" for ::1 at 2015-04-27 10:47:15 -0400
+Processing by ReviewsController#new as HTML
+  Rendered shared/_error_messages.html.erb (5.2ms)
+  Rendered reviews/new.html.erb within layouts/application (15.0ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 269ms (Views: 248.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/reviews/new" for ::1 at 2015-04-27 10:47:28 -0400
+Processing by ReviewsController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered reviews/new.html.erb within layouts/application (6.6ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 258ms (Views: 256.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-04-27 11:05:09 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+Existing local CAS session detected for "fgiovann". Previous ticket "ST-24648-rTePwh9TjidBqMiReJdE-fed05" will be re-used.
+  Rendered static_pages/home.html.erb within layouts/application (5.2ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 376ms (Views: 365.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reviews/new" for ::1 at 2015-04-27 11:05:17 -0400
+Processing by ReviewsController#new as HTML
+  Rendered shared/_error_messages.html.erb (6.1ms)
+  Rendered reviews/new.html.erb within layouts/application (28.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 325ms (Views: 305.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2015-04-27 11:07:04 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+Existing local CAS session detected for "fgiovann". Previous ticket "ST-24648-rTePwh9TjidBqMiReJdE-fed05" will be re-used.
+  Rendered static_pages/home.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 346ms (Views: 334.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reviews/new" for ::1 at 2015-04-27 11:07:07 -0400
+Processing by ReviewsController#new as HTML
+  Rendered shared/_error_messages.html.erb (2.9ms)
+  Rendered reviews/new.html.erb within layouts/application (23.2ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 322ms (Views: 301.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2015-04-27 11:10:03 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+Existing local CAS session detected for "fgiovann". Previous ticket "ST-24648-rTePwh9TjidBqMiReJdE-fed05" will be re-used.
+  Rendered static_pages/home.html.erb within layouts/application (4.4ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 351ms (Views: 339.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reviews/new" for ::1 at 2015-04-27 11:10:06 -0400
+Processing by ReviewsController#new as HTML
+  Rendered shared/_error_messages.html.erb (2.8ms)
+  Rendered reviews/new.html.erb within layouts/application (24.0ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 326ms (Views: 303.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2015-04-27 11:11:53 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+Existing local CAS session detected for "fgiovann". Previous ticket "ST-24648-rTePwh9TjidBqMiReJdE-fed05" will be re-used.
+  Rendered static_pages/home.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 349ms (Views: 337.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reviews/new" for ::1 at 2015-04-27 11:11:56 -0400
+Processing by ReviewsController#new as HTML
+  Rendered shared/_error_messages.html.erb (2.7ms)
+  Rendered reviews/new.html.erb within layouts/application (21.5ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 323ms (Views: 304.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2015-04-27 11:16:15 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+Existing local CAS session detected for "fgiovann". Previous ticket "ST-24648-rTePwh9TjidBqMiReJdE-fed05" will be re-used.
+  Rendered static_pages/home.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 345ms (Views: 334.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reviews/new" for ::1 at 2015-04-27 11:16:19 -0400
+Processing by ReviewsController#new as HTML
+  Rendered shared/_error_messages.html.erb (2.9ms)
+  Rendered reviews/new.html.erb within layouts/application (489.5ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 759ms (Views: 739.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2015-04-27 11:32:06 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+Existing local CAS session detected for "fgiovann". Previous ticket "ST-24648-rTePwh9TjidBqMiReJdE-fed05" will be re-used.
+  Rendered static_pages/home.html.erb within layouts/application (5.3ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 373ms (Views: 362.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reviews/new" for ::1 at 2015-04-27 11:32:09 -0400
+Processing by ReviewsController#new as HTML
+  Rendered shared/_error_messages.html.erb (4.0ms)
+  Rendered reviews/new.html.erb within layouts/application (44.1ms)
+Completed 500 Internal Server Error in 79ms
+
+NoMethodError (undefined method `form_group' for #<ActionView::Helpers::FormBuilder:0x007feb84948118>):
+  app/views/reviews/new.html.erb:29:in `block in _app_views_reviews_new_html_erb___2446656638251533540_70324776616280'
+  app/views/reviews/new.html.erb:6:in `_app_views_reviews_new_html_erb___2446656638251533540_70324776616280'
+
+
+  Rendered /Users/fabriziogf/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_source.erb (9.0ms)
+  Rendered /Users/fabriziogf/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (4.2ms)
+  Rendered /Users/fabriziogf/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/fabriziogf/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.1ms)
+  Rendered /Users/fabriziogf/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (106.1ms)
+
+
+Started GET "/reviews/new" for ::1 at 2015-04-27 11:32:09 -0400
+Processing by ReviewsController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.9ms)
+  Rendered reviews/new.html.erb within layouts/application (32.3ms)
+Completed 500 Internal Server Error in 48ms
+
+NoMethodError (undefined method `form_group' for #<ActionView::Helpers::FormBuilder:0x007feb89199250>):
+  app/views/reviews/new.html.erb:29:in `block in _app_views_reviews_new_html_erb___2446656638251533540_70324796831380'
+  app/views/reviews/new.html.erb:6:in `_app_views_reviews_new_html_erb___2446656638251533540_70324796831380'
+
+
+  Rendered /Users/fabriziogf/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_source.erb (7.7ms)
+  Rendered /Users/fabriziogf/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered /Users/fabriziogf/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/fabriziogf/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.1ms)
+  Rendered /Users/fabriziogf/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (102.2ms)
+
+
+Started GET "/" for ::1 at 2015-04-27 11:32:49 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+Existing local CAS session detected for "fgiovann". Previous ticket "ST-24648-rTePwh9TjidBqMiReJdE-fed05" will be re-used.
+  Rendered static_pages/home.html.erb within layouts/application (4.4ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 363ms (Views: 348.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reviews/new" for ::1 at 2015-04-27 11:32:52 -0400
+Processing by ReviewsController#new as HTML
+  Rendered shared/_error_messages.html.erb (3.8ms)
+  Rendered reviews/new.html.erb within layouts/application (24.4ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 329ms (Views: 309.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2015-04-27 11:34:01 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+Existing local CAS session detected for "fgiovann". Previous ticket "ST-24648-rTePwh9TjidBqMiReJdE-fed05" will be re-used.
+  Rendered static_pages/home.html.erb within layouts/application (4.6ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 346ms (Views: 335.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reviews/new" for ::1 at 2015-04-27 11:34:04 -0400
+Processing by ReviewsController#new as HTML
+  Rendered shared/_error_messages.html.erb (4.3ms)
+  Rendered reviews/new.html.erb within layouts/application (27.6ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 323ms (Views: 304.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/reviews/new" for ::1 at 2015-04-27 11:37:23 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ReviewsController#new as HTML
+  Rendered shared/_error_messages.html.erb (2.4ms)
+  Rendered reviews/new.html.erb within layouts/application (35.4ms)
+Completed 500 Internal Server Error in 80ms
+
+NoMethodError (undefined method `input' for #<ActionView::Helpers::FormBuilder:0x007ffd2950b468>):
+  app/views/reviews/new.html.erb:43:in `block in _app_views_reviews_new_html_erb___3807870683199623395_70362682218580'
+  app/views/reviews/new.html.erb:6:in `_app_views_reviews_new_html_erb___3807870683199623395_70362682218580'
+
+
+  Rendered /Users/fabriziogf/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_source.erb (9.2ms)
+  Rendered /Users/fabriziogf/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /Users/fabriziogf/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/fabriziogf/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.9ms)
+  Rendered /Users/fabriziogf/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (99.7ms)
+
+
+Started GET "/" for ::1 at 2015-04-27 11:45:30 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+Existing local CAS session detected for "fgiovann". Previous ticket "ST-24648-rTePwh9TjidBqMiReJdE-fed05" will be re-used.
+  Rendered static_pages/home.html.erb within layouts/application (4.1ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 382ms (Views: 370.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reviews/new" for ::1 at 2015-04-27 11:45:33 -0400
+Processing by ReviewsController#new as HTML
+  Rendered shared/_error_messages.html.erb (3.2ms)
+  Rendered reviews/new.html.erb within layouts/application (26.8ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 324ms (Views: 303.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2015-04-27 11:46:08 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+Existing local CAS session detected for "fgiovann". Previous ticket "ST-24648-rTePwh9TjidBqMiReJdE-fed05" will be re-used.
+  Rendered static_pages/home.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 349ms (Views: 339.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reviews/new" for ::1 at 2015-04-27 11:46:10 -0400
+Processing by ReviewsController#new as HTML
+  Rendered shared/_error_messages.html.erb (3.8ms)
+  Rendered reviews/new.html.erb within layouts/application (24.3ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 325ms (Views: 305.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2015-04-27 11:46:45 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+Existing local CAS session detected for "fgiovann". Previous ticket "ST-24648-rTePwh9TjidBqMiReJdE-fed05" will be re-used.
+  Rendered static_pages/home.html.erb within layouts/application (4.8ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 355ms (Views: 343.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-04-27 11:46:46 -0400
+Processing by StaticPagesController#home as HTML
+Existing local CAS session detected for "fgiovann". Previous ticket "ST-24648-rTePwh9TjidBqMiReJdE-fed05" will be re-used.
+  Rendered static_pages/home.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 275ms (Views: 274.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reviews/new" for ::1 at 2015-04-27 11:46:48 -0400
+Processing by ReviewsController#new as HTML
+  Rendered shared/_error_messages.html.erb (3.3ms)
+  Rendered reviews/new.html.erb within layouts/application (25.5ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 287ms (Views: 268.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2015-04-27 11:50:59 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+Existing local CAS session detected for "fgiovann". Previous ticket "ST-24648-rTePwh9TjidBqMiReJdE-fed05" will be re-used.
+  Rendered static_pages/home.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 335ms (Views: 325.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reviews/new" for ::1 at 2015-04-27 11:51:01 -0400
+Processing by ReviewsController#new as HTML
+  Rendered shared/_error_messages.html.erb (3.2ms)
+  Rendered reviews/new.html.erb within layouts/application (425.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 687ms (Views: 667.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2015-04-27 12:01:19 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+Existing local CAS session detected for "fgiovann". Previous ticket "ST-24648-rTePwh9TjidBqMiReJdE-fed05" will be re-used.
+  Rendered static_pages/home.html.erb within layouts/application (4.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 340ms (Views: 329.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reviews/new" for ::1 at 2015-04-27 12:01:24 -0400
+Processing by ReviewsController#new as HTML
+  Rendered shared/_error_messages.html.erb (2.7ms)
+  Rendered reviews/new.html.erb within layouts/application (26.4ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 320ms (Views: 302.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2015-04-27 12:09:50 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+Existing local CAS session detected for "fgiovann". Previous ticket "ST-24648-rTePwh9TjidBqMiReJdE-fed05" will be re-used.
+  Rendered static_pages/home.html.erb within layouts/application (5.4ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 436ms (Views: 425.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reviews/new" for ::1 at 2015-04-27 12:09:52 -0400
+Processing by ReviewsController#new as HTML
+  Rendered shared/_error_messages.html.erb (3.4ms)
+  Rendered reviews/new.html.erb within layouts/application (26.8ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 331ms (Views: 308.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2015-04-27 12:10:31 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+Existing local CAS session detected for "fgiovann". Previous ticket "ST-24648-rTePwh9TjidBqMiReJdE-fed05" will be re-used.
+  Rendered static_pages/home.html.erb within layouts/application (4.8ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 339ms (Views: 327.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reviews/new" for ::1 at 2015-04-27 12:10:33 -0400
+Processing by ReviewsController#new as HTML
+  Rendered shared/_error_messages.html.erb (3.0ms)
+  Rendered reviews/new.html.erb within layouts/application (29.0ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 322ms (Views: 303.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2015-04-27 12:37:50 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+Existing local CAS session detected for "fgiovann". Previous ticket "ST-24648-rTePwh9TjidBqMiReJdE-fed05" will be re-used.
+  Rendered static_pages/home.html.erb within layouts/application (43.6ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 529ms (Views: 509.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-04-27 12:37:51 -0400
+Processing by StaticPagesController#home as HTML
+Existing local CAS session detected for "fgiovann". Previous ticket "ST-24648-rTePwh9TjidBqMiReJdE-fed05" will be re-used.
+  Rendered static_pages/home.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 307ms (Views: 306.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reviews/new" for ::1 at 2015-04-27 12:37:53 -0400
+Processing by ReviewsController#new as HTML
+  Rendered shared/_error_messages.html.erb (2.4ms)
+  Rendered reviews/new.html.erb within layouts/application (21.9ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 274ms (Views: 255.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2015-04-27 12:39:25 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+Existing local CAS session detected for "fgiovann". Previous ticket "ST-24648-rTePwh9TjidBqMiReJdE-fed05" will be re-used.
+  Rendered static_pages/home.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 339ms (Views: 328.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reviews/new" for ::1 at 2015-04-27 12:39:28 -0400
+Processing by ReviewsController#new as HTML
+  Rendered shared/_error_messages.html.erb (2.7ms)
+  Rendered reviews/new.html.erb within layouts/application (21.2ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 313ms (Views: 294.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2015-04-27 12:41:23 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+Existing local CAS session detected for "fgiovann". Previous ticket "ST-24648-rTePwh9TjidBqMiReJdE-fed05" will be re-used.
+  Rendered static_pages/home.html.erb within layouts/application (4.4ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 337ms (Views: 324.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reviews/new" for ::1 at 2015-04-27 12:41:26 -0400
+Processing by ReviewsController#new as HTML
+  Rendered shared/_error_messages.html.erb (2.7ms)
+  Rendered reviews/new.html.erb within layouts/application (23.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 327ms (Views: 308.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2015-04-27 12:53:57 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+Existing local CAS session detected for "fgiovann". Previous ticket "ST-24648-rTePwh9TjidBqMiReJdE-fed05" will be re-used.
+  Rendered static_pages/home.html.erb within layouts/application (6.7ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 390ms (Views: 378.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reviews/new" for ::1 at 2015-04-27 12:54:00 -0400
+Processing by ReviewsController#new as HTML
+  Rendered shared/_error_messages.html.erb (4.1ms)
+  Rendered reviews/new.html.erb within layouts/application (30.7ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 324ms (Views: 304.3ms | ActiveRecord: 0.6ms)

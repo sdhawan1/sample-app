@@ -20,14 +20,40 @@
 
       <% if false %>
       <%= f.label :availability, "Availability" %>
+      <%= range_field(:availability, in: 1..5) %>
+      <% end %>
+
+      <% if false %>
       <%= f.radio_button :availability, 1, class: 'form-control' %>
       <%= f.label :availability, :value => "1" %>
       <%= f.radio_button :availability, 2, class: 'form-control' %>
       <%= f.label :availability, :value => "2" %>
       <% end %>
 
+      <% if false %>
       <%= f.label :availability, "Availability" %>
-      <%= f.text_field :availability, class: 'form-control' %>
+      <div style="display:inline">
+            <input type="radio" name="availability" id="1" />
+            <label for="1">1</label>
+            <input type="radio" name="availability" id="2" />
+            <label for="2">2</label>
+            <input type="radio" name="availability" id="3" />
+            <label for="3">3</label>
+      </div>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
+      <% end %>
+
+      <table>
+      <tr>
+
+      <%= f.label :availability, "Availability" %>
+      <td><%= f.radio_button :availability, '1' %><%= f.label :availability, '1', :style => "display:inline" %></td>
+
+      <td><%= f.radio_button :availability, '2' %><%= f.label :availability, '2', :style => "display:inline" %></td>
+
+      <td><%= f.radio_button :availability, '3' %><%= f.label :availability, '3', :style => "display:inline"  %> </td>
+     
+      </tr>
+      </table>
 
       <%= f.label :responsiveness, "Responsiveness" %>
       <%= f.text_field :responsiveness, class: 'form-control' %>
