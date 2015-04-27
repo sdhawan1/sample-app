@@ -1,6 +1,23 @@
 <header class="navbar navbar-fixed-top navbar-inverse">
   <div class="container">
     <%= link_to "RateMyAdvisor", root_path, id: "logo" %>
+    
+    <div id="search_box">
+      <%= form_tag professors_path, class: "form-inline", method: :get do %>
+      <div class="input-group input-group-lg" >
+	<% if params[:query].present? %>
+	<div class="input-group-btn">
+	  <%= link_to "clear", professors_path, class: "btn btn-default" %>
+	</div>
+	<% end %>
+	<%= text_field_tag :query, params[:query], class: "form-control", id: "professor_search", autocomplete: "off" %>
+	<div class="input-group-btn">
+	  <%= submit_tag "Search", class: "btn btn-primary" %>
+	</div>
+	<% end %>
+      </div>
+    </div>
+
     <nav>
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to "Home", root_path %></li>

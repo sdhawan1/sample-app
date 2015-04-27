@@ -71,13 +71,22 @@ p {
   color: white;
   text-transform: uppercase;
   letter-spacing: -1px;
-  padding-top: 9px;
+  padding-top: 40px;
   font-weight: bold;
   &:hover {
     color: white;
     text-decoration: none;
   }
 }
+
+#search_box {
+  padding-top: 40px;
+}
+
+container {
+  padding-top: 40px;
+}
+
 
 /* footer */
 
