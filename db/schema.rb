@@ -44,16 +44,4 @@ ActiveRecord::Schema.define(version: 20150421130310) do
   add_index "reviews", ["professor_id", "created_at"], name: "index_reviews_on_professor_id_and_created_at"
   add_index "reviews", ["professor_id"], name: "index_reviews_on_professor_id"
 
-  create_table "users", force: :cascade do |t|
-    t.string   "name"
-    t.string   "email"
-    t.datetime "created_at",                      null: false
-    t.datetime "updated_at",                      null: false
-    t.string   "password_digest"
-    t.string   "remember_digest"
-    t.boolean  "admin",           default: false
-  end
-
-  add_index "users", ["email"], name: "index_users_on_email", unique: true
-
 end
