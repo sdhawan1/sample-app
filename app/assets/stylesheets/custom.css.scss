@@ -12,7 +12,6 @@ $gray-medium-light: #eaeaea;
   box-sizing:         border-box;
 }
 
-
 /* universal */
 
 body {
@@ -64,14 +63,32 @@ p {
 
 /* header */
 
+.btn-custom {
+  background-color: hsl(34, 96%, 53%) !important;
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fcc278", endColorstr="#fa9614");
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#fcc278), to(#fa9614));
+  background-image: -moz-linear-gradient(top, #fcc278, #fa9614);
+  background-image: -ms-linear-gradient(top, #fcc278, #fa9614);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fcc278), color-stop(100%, #fa9614));
+  background-image: -webkit-linear-gradient(top, #fcc278, #fa9614);
+  background-image: -o-linear-gradient(top, #fcc278, #fa9614);
+  background-image: linear-gradient(#fcc278, #fa9614);
+  border-color: #fa9614 #fa9614 hsl(34, 96%, 48%);
+  color: #333 !important;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.33);
+  -webkit-font-smoothing: antialiased;
+}
+
 #logo {
   float: left;
+  margin-left: 0px;
   margin-right: 10px;
   font-size: 1.7em;
-  color: white;
+  color: orange;
   text-transform: uppercase;
   letter-spacing: -1px;
-  padding-top: 40px;
+  padding-top: 10px;
   font-weight: bold;
   &:hover {
     color: white;
@@ -79,14 +96,45 @@ p {
   }
 }
 
-#search_box {
-  padding-top: 40px;
+#home_button {
+  color: orange;
+  &:hover {
+    color: white;
+    text-decoration: none;
+  }
 }
 
-container {
-  padding-top: 40px;
+#about_button {
+  color: orange;
+  &:hover {
+    color: white;
+    text-decoration: none;
+  }
 }
 
+#find_button {
+  color: orange;
+  &:hover {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+#rate_button {
+  color: orange;
+  &:hover {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+#logout_button {
+  color: orange;
+  &:hover {
+    color: white;
+    text-decoration: none;
+  }
+}
 
 /* footer */
 
@@ -113,6 +161,18 @@ footer {
     }
   }
 }
+
+/* new review raio buttons */
+/*
+relationship {
+   input[type="radio"], label{
+     float:left;
+    }
+    input{
+  clear:left;
+  }
+}
+*/
 
 /* miscellaneous */
 
