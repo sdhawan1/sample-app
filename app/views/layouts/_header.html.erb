@@ -1,10 +1,18 @@
 <header class="navbar navbar-fixed-top navbar-inverse">
   <div class="container center">
-    <%= link_to "RateMyAdvisor", root_path, id: "logo" %>
-    <div class="collapse navbar-collapse">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#somethingclever">
+	<span class="sr-only"></span>
+	<span class="icon-bar"></span>
+	<span class="icon-bar"></span>
+	<span class="icon-bar"></span>
+      </button>
+      <%= link_to "RateMyAdvisor", root_path, id: "logo" %>
+    </div>
+    <div class="collapse navbar-collapse" id="somethingclever">
       <%= form_tag professors_path, class: "form-inline", method: :get do %>
       <div class="input-group input-group-sm" >
-	<%= text_field_tag :query, params[:query], class: "form-control", id: "professor_search", autocomplete: "off", :size => 50 %>
+	<%= text_field_tag :query, params[:query], class: "form-control", id: "professor_search", autocomplete: "off", :size => 30 %>
 	<div class="input-group-btn">
 	  <%= submit_tag "Search", class: "btn btn-custom", id: "search_btn" %>
 	</div>
@@ -20,6 +28,7 @@
 	</div>
 	<% end %>
       </div>
+
     </div>
   </div>
 

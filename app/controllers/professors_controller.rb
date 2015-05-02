@@ -30,27 +30,16 @@ class ProfessorsController < ApplicationController
   def index
     if params[:query].present?
       # split query into 4 fields
-      search_strings = params[:query].split
-      if search_strings.length == 4
+      search_strings = params[:query].split(", ")
+      if search_strings.length == 3
         @professors = Professor.search(search_strings[0], 
-                                       fields: [:first_name],
+                                       fields: [:full_name],
                                        page: params[:page])
-        @professors = @professors.select { |professor| professor.last_name.downcase == search_strings[1].downcase }
-        @professors = @professors.select { |professor| professor.netid.downcase == search_strings[2].downcase }
-        @professors = @professors.select { |professor| professor.department.downcase == search_strings[3].downcase }
-      elsif search_strings.length == 2
-        @professors = Professor.search(search_strings[0], 
-                                       fields: [:first_name],
-                                       page: params[:page])
-        @professors = @professors.select { |professor| professor.last_name.downcase == search_strings[1].downcase }
+        @professors = @professors.select { |professor| professor.netid.downcase == search_strings[1].downcase }
+        @professors = @professors.select { |professor| professor.department.downcase == search_strings[2].downcase }
       else
         @professors = Professor.search(params[:query],
-                                       fields: [:first_name, :last_name, :netid, :department],
-                                       page: params[:page])
-      end
-      if @professors.length == 0
-        @professors = Professor.search(params[:query],
-                                       fields: [:first_name, :last_name, :netid, :department],
+                                       fields: [:first_name, :last_name, :netid, :department, :full_name],
                                        page: params[:page])
       end
     else
@@ -63,7 +52,7 @@ class ProfessorsController < ApplicationController
                  autocomplete: true,
                  fields: [:first_name, :last_name, :netid, :department, :full_name],
                  limit: 10).map { |professor|
-                   professor.first_name + " " + professor.last_name + " " + professor.netid + " " + professor.department
+                   professor.first_name + " " + professor.last_name + ", " + professor.netid + ", " + professor.department
                  }
   end
 
