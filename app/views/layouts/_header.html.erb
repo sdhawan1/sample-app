@@ -1,25 +1,26 @@
 <header class="navbar navbar-fixed-top navbar-inverse">
   <div class="container center">
     <%= link_to "RateMyAdvisor", root_path, id: "logo" %>
-    
+    <div class="collapse navbar-collapse">
       <%= form_tag professors_path, class: "form-inline", method: :get do %>
       <div class="input-group input-group-sm" >
-      <%= text_field_tag :query, params[:query], class: "form-control", id: "professor_search", autocomplete: "off", :size => 50 %>
-      <div class="input-group-btn">
-  <%= submit_tag "Search", class: "btn btn-custom", id: "search_btn" %>
+	<%= text_field_tag :query, params[:query], class: "form-control", id: "professor_search", autocomplete: "off", :size => 50 %>
+	<div class="input-group-btn">
+	  <%= submit_tag "Search", class: "btn btn-custom", id: "search_btn" %>
+	</div>
+	
+	<div class="navigation_bar">
+	  <nav>
+	    <ul class="nav navbar-nav navbar-right">
+	      <li><%= link_to "Find an advisor", find_path, id: "find_button"%></li>
+	      <li><%= link_to "Rate an advisor", new_review_path, id: "rate_button"%></li>
+              <li><%= link_to "Log out", logout_path, id: "logout_button"%></li>
+	    </ul>
+	  </nav>
+	</div>
+	<% end %>
       </div>
-     
-    <div class="navigation_bar">
-    <nav>
-      <ul class="nav navbar-nav navbar-right">
-  <li><%= link_to "Find an advisor", find_path, id: "find_button"%></li>
-  <li><%= link_to "Rate an advisor", new_review_path, id: "rate_button"%></li>
-        <li><%= link_to "Log out", logout_path, id: "logout_button"%></li>
-      </ul>
-    </nav>
     </div>
-       <% end %>
-      </div>
   </div>
 
 </header>
