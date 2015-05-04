@@ -9,16 +9,16 @@
 
       <%= f.hidden_field :student_netid, :value => session[:cas_user]%>
 
-      <% if false %>
-      <%= f.label :student_netid, "Your NetID" %>
-      <%= f.text_field :student_netid, class: 'form-control' %>
-      <% end %>
-
       <%= f.label :student_class, "Your Class Year" %>
       <%= f.text_field :student_class, class: 'form-control' %>
 
       <%= f.label :professor_netid, "Professor NetID" %>
-      <%= f.text_field :professor_netid, class: 'form-control' %>
+      <% if params[:id] %>
+      <% @professor = Professor.find(params[:id]) %>
+            <%= f.text_field :professor_netid, class: 'form-control', :value => @professor.netid %>
+      <% else %>
+            <%= f.text_field :professor_netid, class: 'form-control' %>
+	    <% end %>
 
       <div class="form-inline">
       <table>
