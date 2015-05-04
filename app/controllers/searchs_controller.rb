@@ -32,7 +32,7 @@ class SearchsController < ApplicationController
       render 'index'  # try redirect_to if render doesn't work
     else
       flash.now[:danger] = 'No professors match your criteria!'
-      render 'new'
+      render 'index'
     end
   end
 
