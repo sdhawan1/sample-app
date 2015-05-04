@@ -1,4 +1,5 @@
 class ReviewsController < ApplicationController
+  before_filter CASClient::Frameworks::Rails::Filter
 
   def new
     @review = Review.new
@@ -16,7 +17,7 @@ class ReviewsController < ApplicationController
       end
     else
       flash[:danger] = "This advisor does not yet exist in our system! Please add him/her before posting your review!"
-      redirect_to new_professor_path
+      redirect_to new_review_path
     end  
   end
 

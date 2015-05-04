@@ -1,4 +1,6 @@
 class ProfessorsController < ApplicationController
+  before_filter CASClient::Frameworks::Rails::Filter
+
   
   def show
     @professor = Professor.find(params[:id])

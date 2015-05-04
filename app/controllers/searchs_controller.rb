@@ -1,4 +1,6 @@
 class SearchsController < ApplicationController
+  before_filter CASClient::Frameworks::Rails::Filter
+
   def new
   end
 
