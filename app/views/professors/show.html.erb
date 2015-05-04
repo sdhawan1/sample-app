@@ -7,6 +7,8 @@
       </h1>
       <h2>
       <%= @professor.netid %>@princeton.edu
+      <br>
+      <%= link_to "Add a review", new_review_path(id: params[:id]), class: "btn btn-custom" %>
       </h2>
     </section>
   </aside>
