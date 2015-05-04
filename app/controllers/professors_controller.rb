@@ -2,7 +2,7 @@ class ProfessorsController < ApplicationController
   
   def show
     @professor = Professor.find(params[:id])
-    @reviews = @professor.reviews.paginate(page: params[:page])
+    @reviews = @professor.reviews
   end
 
   def new
@@ -33,14 +33,12 @@ class ProfessorsController < ApplicationController
       search_strings = params[:query].split(", ")
       if search_strings.length == 3
         @professors = Professor.search(search_strings[0], 
-                                       fields: [:full_name],
-                                       page: params[:page])
+                                       fields: [:full_name])
         @professors = @professors.select { |professor| professor.netid.downcase == search_strings[1].downcase }
         @professors = @professors.select { |professor| professor.department.downcase == search_strings[2].downcase }
       else
         @professors = Professor.search(params[:query],
-                                       fields: [:first_name, :last_name, :netid, :department, :full_name],
-                                       page: params[:page])
+                                       fields: [:first_name, :last_name, :netid, :department, :full_name])
       end
     else
       @professors = nil
