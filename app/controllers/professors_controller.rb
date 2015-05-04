@@ -49,7 +49,7 @@ class ProfessorsController < ApplicationController
     render json: Professor.search(params[:query],
                  autocomplete: true,
                  fields: [:first_name, :last_name, :netid, :department, :full_name],
-                 limit: 10).map { |professor|
+                 limit: 20).map { |professor|
                    professor.first_name + " " + professor.last_name + ", " + professor.netid + ", " + professor.department
                  }
   end
